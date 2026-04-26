@@ -40,5 +40,5 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Claude Code (config local — settings.json fica versionado se quiser; settings.local.json não)
-.claude/settings.local.json
+# Claude Code
+.claude/
