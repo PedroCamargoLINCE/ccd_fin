@@ -1,0 +1,44 @@
+# Dados brutos (não publicar)
+*.xlsx
+*.xls
+*.ods
+*.csv
+Taxas/
+
+# Cache e artefatos gerados
+reports/
+!reports/.gitkeep
+data/processed/
+lightning_logs/
+*.ckpt
+*.parquet
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Envs
+.venv/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+.specstory/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code (config local — settings.json fica versionado se quiser; settings.local.json não)
+.claude/settings.local.json
