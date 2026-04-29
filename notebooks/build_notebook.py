@@ -10,7 +10,7 @@ from pathlib import Path
 import nbformat as nbf
 
 HERE = Path(__file__).resolve().parent
-SOURCES = ["train_all.py", "ensemble.py"]
+SOURCES = ["train_all.py", "ensemble.py", "forecast_plots.py"]
 
 
 def parse_cells(text: str) -> list[tuple[str, str]]:
