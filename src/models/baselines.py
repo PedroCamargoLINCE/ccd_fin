@@ -9,6 +9,7 @@ from dataclasses import dataclass
 import lightgbm as lgb
 import numpy as np
 import pandas as pd
+from catboost import CatBoostRegressor
 from statsforecast import StatsForecast
 from statsforecast.models import AutoARIMA, SeasonalNaive, SeasonalWindowAverage
 
@@ -109,15 +110,56 @@ def run_lightgbm(
     return out
 
 
+def run_catboost(
+    panel: pd.DataFrame,
+    target_col: str,
+    split: Split,
+    use_count: bool = True,
+) -> pd.DataFrame:
+    feat = _lag_features(panel, target_col).copy()
+    feat["mun_id"] = feat["cd_mun"].astype(str)
+    feat["month_of_year"] = feat["month_of_year"].astype(int).astype(str)
+    categorical = ["mun_id", "month_of_year"]
+    id_cols = ["cd_mun", "date", "nm_mun"]
+    target = target_col
+    drop = [target] + [c for c in feat.columns if c.startswith(("tx_", "n_")) and c != target]
+    feature_cols = [c for c in feat.columns if c not in id_cols + drop]
+
+    train = feat[feat["date"] <= split.train_end].dropna(subset=feature_cols + [target])
+    max_h = max(split.horizons)
+    test_end = split.train_end + pd.DateOffset(months=max_h)
+    test = feat[(feat["date"] > split.train_end) & (feat["date"] <= test_end)]
+
+    loss = "Poisson" if use_count else "Tweedie:variance_power=1.3"
+    model = CatBoostRegressor(
+        iterations=600,
+        learning_rate=0.05,
+        depth=6,
+        l2_leaf_reg=3.0,
+        loss_function=loss,
+        verbose=0,
+        random_seed=42,
+        cat_features=categorical,
+    )
+    model.fit(train[feature_cols], train[target])
+    pred = model.predict(test[feature_cols])
+    out = test[id_cols + [target]].copy()
+    out["yhat_catboost"] = pred
+    out = out.rename(columns={target: "y_true"})
+    return out
+
+
 def run_all_baselines(
     panel: pd.DataFrame,
     diseases: list[str] = None,
     origins=DEFAULT_ORIGINS,
     horizons=DEFAULT_HORIZONS,
     target_kind: str = "count",  # 'count' treinamos no bruto; pós-processamos taxa se necessário
+    save_long_path: str | None = None,
 ) -> pd.DataFrame:
     diseases = diseases or DISEASES
     records = []
+    long_rows = []  # predições por (modelo, doença, horizonte, origem, cd_mun, time_idx)
 
     for d in diseases:
         target_col = f"n_{d}" if target_kind == "count" else f"tx_{d}"
@@ -131,25 +173,48 @@ def run_all_baselines(
             lgbm["origin"] = split.name
             lgbm["disease"] = d
 
-            # computa métricas por horizonte
+            cat = run_catboost(panel, target_col, split, use_count=(target_kind == "count"))
+            cat["origin"] = split.name
+            cat["disease"] = d
+
+            # computa métricas por horizonte + acumula long
             for h in horizons:
                 h_date = split.train_end + pd.DateOffset(months=h)
+                t_idx = (h_date.year - 2000) * 12 + (h_date.month - 1)
                 stats_h = stats[stats["date"] == h_date]
                 for col in ["seasonal_naive", "seasonal_ma3", "sarima"]:
                     if col not in stats_h.columns or stats_h[col].isna().all():
                         continue
                     records.append(evaluate(stats_h["y_true"].values, stats_h[col].values,
                                             name=col, disease=d, horizon=h) | {"origin": split.name})
+                    for _, r in stats_h.iterrows():
+                        long_rows.append({"model": col, "disease": d, "horizon": h,
+                                          "origin": split.name, "cd_mun": str(r["cd_mun"]).zfill(7),
+                                          "time_idx": t_idx, "y_true": r["y_true"], "y_pred": r[col]})
                 lgbm_h = lgbm[lgbm["date"] == h_date]
                 records.append(evaluate(lgbm_h["y_true"].values, lgbm_h["yhat_lgbm"].values,
                                         name="lgbm", disease=d, horizon=h) | {"origin": split.name})
+                for _, r in lgbm_h.iterrows():
+                    long_rows.append({"model": "lgbm", "disease": d, "horizon": h,
+                                      "origin": split.name, "cd_mun": str(r["cd_mun"]).zfill(7),
+                                      "time_idx": t_idx, "y_true": r["y_true"], "y_pred": r["yhat_lgbm"]})
+                cat_h = cat[cat["date"] == h_date]
+                records.append(evaluate(cat_h["y_true"].values, cat_h["yhat_catboost"].values,
+                                        name="catboost", disease=d, horizon=h) | {"origin": split.name})
+                for _, r in cat_h.iterrows():
+                    long_rows.append({"model": "catboost", "disease": d, "horizon": h,
+                                      "origin": split.name, "cd_mun": str(r["cd_mun"]).zfill(7),
+                                      "time_idx": t_idx, "y_true": r["y_true"], "y_pred": r["yhat_catboost"]})
+    if save_long_path:
+        pd.DataFrame(long_rows).to_csv(save_long_path, index=False)
     return pd.DataFrame(records)
 
 
 if __name__ == "__main__":
     panel = pd.read_parquet(PROCESSED / "panel_23munis.parquet")
     print(f"panel: {panel.shape}, munis={panel['cd_mun'].nunique()}")
-    df = run_all_baselines(panel)
+    long_path = PROJECT_ROOT / "reports" / "baselines_long.csv"
+    df = run_all_baselines(panel, save_long_path=str(long_path))
     (PROJECT_ROOT / "reports").mkdir(exist_ok=True)
     out = PROJECT_ROOT / "reports" / "baselines.csv"
     df.to_csv(out, index=False)

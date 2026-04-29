@@ -5,13 +5,14 @@
 *.csv
 Taxas/
 
-# Cache e artefatos gerados
+# Cache e artefatos gerados (results/ é versionado, reports/ é working dir)
 reports/
 !reports/.gitkeep
 data/processed/
 lightning_logs/
 *.ckpt
 *.parquet
+# results/ NÃO está aqui — é versionado de propósito
 
 # Python
 __pycache__/
@@ -42,3 +43,6 @@ Thumbs.db
 
 # Claude Code
 .claude/
+
+# CatBoost training artifacts
+catboost_info/

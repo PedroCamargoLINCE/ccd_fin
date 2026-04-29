@@ -91,9 +91,10 @@ def make_dataset(
     else:
         static_reals = []
 
-    # NB loss exige center=False (não pode subtrair média — distribuição de contagem)
+    # NB loss exige center=False; log1p é mais estável que softplus em séries com
+    # muitos zeros (softplus degenera e produz NaN nas predições).
     if for_nb_loss:
-        normalizer = GroupNormalizer(groups=["cd_mun"], transformation="softplus", center=False)
+        normalizer = GroupNormalizer(groups=["cd_mun"], transformation="log1p", center=False)
     else:
         normalizer = GroupNormalizer(groups=["cd_mun"], transformation="softplus")
 
