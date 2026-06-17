@@ -5,8 +5,10 @@ Estrutura gerada:
   results/
     README.md                       # síntese
     tables/
-      final_summary.csv            # modelo × doença × horizonte (agregado origem)
-      per_muni_<disease>.csv       # município × modelo, MAE médio
+      final_summary.csv            # modelo × doença × horizonte: MAE/RMSE/R²/SMAPE
+      per_muni_<disease>.csv       # município × modelo: MAE/RMSE/R²/SMAPE (tidy)
+      per_muni_mae_<disease>.csv   # matriz município × modelo (MAE)  [heatmap]
+      per_muni_rmse_<disease>.csv  # matriz município × modelo (RMSE)
       ranking.csv                  # melhor modelo por (doença, horizonte)
     figures/
       eda/                         # heatmaps, séries por muni
@@ -66,16 +68,23 @@ def load_all_results() -> tuple[pd.DataFrame, dict]:
     deep_df = pd.concat(deep_long, ignore_index=True) if deep_long else pd.DataFrame()
 
     bl = pd.read_csv(REPORTS / "baselines.csv")
-    return deep_df, {"baselines": bl}
+    # baselines_long: predições por município (geradas por run_all_baselines
+    # com save_long_path). Opcional — habilita tabelas por município também
+    # para os baselines, não só para os deep models.
+    bl_long_path = REPORTS / "baselines_long.csv"
+    bl_long = pd.read_csv(bl_long_path) if bl_long_path.exists() else pd.DataFrame()
+    return deep_df, {"baselines": bl, "baselines_long": bl_long}
 
 
 def per_horizon_summary(deep_df: pd.DataFrame, baselines: pd.DataFrame) -> pd.DataFrame:
     rows = []
-    # baselines: já tem mae/rmse pré-calculados
+    # baselines: já tem mae/rmse/r2/smape pré-calculados (média entre origens)
     for (m, d, h), g in baselines.groupby(["model", "disease", "horizon"]):
         rows.append({
             "model": m, "disease": d, "horizon": h,
-            "mae": g["mae"].mean(), "rmse": g["rmse"].mean(), "smape": g["smape"].mean(),
+            "mae": g["mae"].mean(), "rmse": g["rmse"].mean(),
+            "r2": g["r2"].mean() if "r2" in g.columns else np.nan,
+            "smape": g["smape"].mean(),
         })
     # deep: agrega por origem + cd_mun
     if not deep_df.empty:
@@ -83,41 +92,66 @@ def per_horizon_summary(deep_df: pd.DataFrame, baselines: pd.DataFrame) -> pd.Da
             ev = evaluate(g["y_true"].values, g["y_pred"].values, name=m, disease=d, horizon=h)
             rows.append({
                 "model": m, "disease": d, "horizon": h,
-                "mae": ev["mae"], "rmse": ev["rmse"], "smape": ev["smape"],
+                "mae": ev["mae"], "rmse": ev["rmse"], "r2": ev["r2"], "smape": ev["smape"],
             })
     return pd.DataFrame(rows)
 
 
-def per_muni_table(deep_df: pd.DataFrame, baselines: pd.DataFrame, panel: pd.DataFrame) -> dict[str, pd.DataFrame]:
-    """Para cada doença, retorna df: index=município, columns=modelo, value=MAE médio (todos h, todas origens)."""
-    name_map = MUNICIPIOS_ALVO
+def per_muni_table(
+    deep_df: pd.DataFrame,
+    baselines_long: pd.DataFrame,
+    panel: pd.DataFrame,
+) -> dict[str, pd.DataFrame]:
+    """Para cada doença gera, por (município × modelo), MAE/RMSE/R²/SMAPE
+    agregando todos os horizontes e origens.
 
-    # Para baselines, preciso recalcular por município — o reports/baselines.csv só tem agregado
-    # Vamos reconstruir do zero: re-treinar só pra ter previsões por muni? Custoso.
-    # Atalho: usamos o agregado disponível e marcamos como "média" para baselines.
-    # Para deep, agregamos diretamente do long.
+    Combina predições deep (deep_*.csv) e — quando disponível — baselines
+    (baselines_long.csv). Escreve:
+      - per_muni_<doenca>.csv      : tabela tidy com as 4 métricas (todos os modelos)
+      - per_muni_mae_<doenca>.csv  : matriz município × modelo (MAE)  [p/ heatmap]
+      - per_muni_rmse_<doenca>.csv : matriz município × modelo (RMSE)
+
+    Retorna {doença: matriz wide de MAE} para os heatmaps.
+    """
+    name_map = MUNICIPIOS_ALVO
+    cols = ["model", "disease", "cd_mun", "y_true", "y_pred"]
+
+    frames = []
+    if not deep_df.empty:
+        frames.append(deep_df[[c for c in cols if c in deep_df.columns]])
+    if baselines_long is not None and not baselines_long.empty:
+        frames.append(baselines_long[[c for c in cols if c in baselines_long.columns]])
+    if not frames:
+        return {}
+    allpred = pd.concat(frames, ignore_index=True)
+    allpred["cd_mun"] = allpred["cd_mun"].astype(str).str.zfill(7)
 
     out: dict[str, pd.DataFrame] = {}
     for d in DISEASES:
-        rows = []
-        # deep models por muni
-        sub = deep_df[deep_df["disease"] == d]
-        for (m, cd), g in sub.groupby(["model", "cd_mun"]):
-            cd_str = str(cd).zfill(7) if not isinstance(cd, str) else cd.zfill(7)
-            ev = evaluate(g["y_true"].values, g["y_pred"].values, name=m, disease=d)
-            rows.append({"model": m, "cd_mun": cd_str, "nm_mun": name_map.get(cd_str, cd_str),
-                         "mae": ev["mae"], "rmse": ev["rmse"], "n": ev["n"]})
-        df = pd.DataFrame(rows)
-        if df.empty:
+        sub = allpred[allpred["disease"] == d]
+        if sub.empty:
             continue
+        rows = []
+        for (m, cd), g in sub.groupby(["model", "cd_mun"]):
+            ev = evaluate(g["y_true"].values, g["y_pred"].values, name=m, disease=d)
+            rows.append({
+                "disease": d, "cd_mun": cd, "nm_mun": name_map.get(cd, cd), "model": m,
+                "mae": round(ev["mae"], 3), "rmse": round(ev["rmse"], 3),
+                "r2": round(ev["r2"], 3), "smape": round(ev["smape"], 2), "n": ev["n"],
+            })
+        df = pd.DataFrame(rows).sort_values(["nm_mun", "model"]).reset_index(drop=True)
+
+        # tabela tidy completa (o que o artigo precisa: MAE/RMSE/R²/SMAPE por muni)
+        df.to_csv(TABLES / f"per_muni_{d}.csv", index=False)
+
+        # matrizes wide para os heatmaps / leitura rápida
         wide_mae = df.pivot_table(index="nm_mun", columns="model", values="mae").round(2)
         wide_rmse = df.pivot_table(index="nm_mun", columns="model", values="rmse").round(2)
-        # ordena por MAE médio crescente
         wide_mae["__mean"] = wide_mae.mean(axis=1)
         wide_mae = wide_mae.sort_values("__mean").drop(columns="__mean")
-        out[d] = wide_mae
         wide_mae.to_csv(TABLES / f"per_muni_mae_{d}.csv")
         wide_rmse.to_csv(TABLES / f"per_muni_rmse_{d}.csv")
+        out[d] = wide_mae
     return out
 
 
@@ -215,7 +249,9 @@ def write_synthesis(summary: pd.DataFrame, ranking: pd.DataFrame, per_muni: dict
     md.extend(["",
                "## Tabelas por município",
                "",
-               "Uma tabela por doença em [`tables/per_muni_mae_<doenca>.csv`](tables/) — MAE de cada modelo deep para cada um dos 23 municípios. Heatmaps em [`figures/comparison/`](figures/comparison/).",
+               "Uma tabela por doença em [`tables/per_muni_<doenca>.csv`](tables/) — **MAE, RMSE, R² e SMAPE** de cada modelo (deep + baselines) para cada um dos 23 municípios. Matrizes wide de MAE/RMSE em `tables/per_muni_mae_<doenca>.csv` / `per_muni_rmse_<doenca>.csv`; heatmaps em [`figures/comparison/`](figures/comparison/).",
+               "",
+               "> R² é NaN para séries de alvo constante (municípios com quase-tudo-zero, ex. hanseníase) — esperado, não é erro.",
                "",
                "## Figuras",
                "",
@@ -229,6 +265,7 @@ def write_synthesis(summary: pd.DataFrame, ranking: pd.DataFrame, per_muni: dict
 def main():
     deep_df, others = load_all_results()
     bl = others["baselines"]
+    bl_long = others.get("baselines_long", pd.DataFrame())
     panel = pd.read_parquet(PROCESSED / "panel_23munis.parquet")
     panel["cd_mun"] = panel["cd_mun"].astype(str).str.zfill(7)
 
@@ -242,7 +279,7 @@ def main():
     ranking.to_csv(TABLES / "ranking.csv", index=False)
     print(f"[write] {TABLES/'ranking.csv'}")
 
-    per_muni = per_muni_table(deep_df, bl, panel)
+    per_muni = per_muni_table(deep_df, bl_long, panel)
     print(f"[write] per_muni tables ({len(per_muni)} doenças)")
 
     copy_eda_figures()

@@ -13,6 +13,18 @@ def rmse(y, yhat):
     return float(np.sqrt(np.mean((np.asarray(y) - np.asarray(yhat)) ** 2)))
 
 
+def r2(y, yhat):
+    """Coeficiente de determinação. NaN quando o alvo é constante (var=0),
+    caso comum em municípios com quase-tudo-zero (ex.: hanseníase)."""
+    y = np.asarray(y, dtype=float)
+    yhat = np.asarray(yhat, dtype=float)
+    ss_res = float(np.sum((y - yhat) ** 2))
+    ss_tot = float(np.sum((y - np.mean(y)) ** 2))
+    if ss_tot <= 0:
+        return float("nan")
+    return 1.0 - ss_res / ss_tot
+
+
 def smape(y, yhat):
     y = np.asarray(y, dtype=float)
     yhat = np.asarray(yhat, dtype=float)
@@ -47,6 +59,12 @@ def evaluate(y_true, y_pred, name: str = "model", disease: str | None = None, ho
     yh = np.asarray(y_pred, dtype=float)
     mask = ~(np.isnan(y) | np.isnan(yh))
     y, yh = y[mask], yh[mask]
+    if len(y) == 0:
+        return {
+            "model": name, "disease": disease, "horizon": horizon, "n": 0,
+            "mae": float("nan"), "rmse": float("nan"), "r2": float("nan"),
+            "smape": float("nan"), "mape": float("nan"),
+        }
     return {
         "model": name,
         "disease": disease,
@@ -54,6 +72,7 @@ def evaluate(y_true, y_pred, name: str = "model", disease: str | None = None, ho
         "n": int(len(y)),
         "mae": mae(y, yh),
         "rmse": rmse(y, yh),
+        "r2": r2(y, yh),
         "smape": smape(y, yh),
         "mape": mape(y, yh),
     }

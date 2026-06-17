@@ -6,13 +6,24 @@
 Taxas/
 
 # Cache e artefatos gerados (results/ é versionado, reports/ é working dir)
-reports/
+# reports/* (não 'reports/') para que !reports/.gitkeep consiga re-incluir o
+# placeholder — com 'reports/' o git ignora o diretório inteiro e a negação
+# não tem efeito.
+reports/*
 !reports/.gitkeep
 data/processed/
 lightning_logs/
 *.ckpt
 *.parquet
-# results/ NÃO está aqui — é versionado de propósito
+# results/ NÃO está aqui — é versionado de propósito.
+# IMPORTANTE: as regras *.csv/*.ods/*.xlsx acima também ignorariam as tabelas
+# geradas em results/. Re-incluímos explicitamente os artefatos de results/
+# (tabelas .csv e .md) para que sejam versionados — esta era a causa do
+# "results vazio": as figuras .png subiam, mas as tabelas .csv eram ignoradas.
+!results/
+!results/**/
+!results/**/*.csv
+!results/**/*.md
 
 # Python
 __pycache__/
