@@ -204,9 +204,12 @@ plt.show()
 
 # %%
 BASELINE_CSV = REPORTS / "baselines.csv"
+BASELINE_LONG_CSV = REPORTS / "baselines_long.csv"
 if not BASELINE_CSV.exists():
     from src.models.baselines import run_all_baselines
-    baselines = run_all_baselines(panel)
+    # save_long_path => predições por município, necessárias para as tabelas
+    # por município (per_muni_*) também dos baselines, não só dos deep models.
+    baselines = run_all_baselines(panel, save_long_path=str(BASELINE_LONG_CSV))
     baselines.to_csv(BASELINE_CSV, index=False)
 else:
     baselines = pd.read_csv(BASELINE_CSV)

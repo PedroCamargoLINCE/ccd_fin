@@ -1,10 +1,22 @@
+import os
+import tempfile
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 RAW = PROJECT_ROOT
 TAXAS = RAW / "Taxas"
 
-CACHE = Path("C:/temp/ccd_cache")
+# Diretório de cache (parquet, checkpoints, lightning_logs).
+# Prioridade: variável de ambiente CCD_CACHE_DIR > caminho nativo do SO.
+# Antes era fixo em "C:/temp/ccd_cache" (Windows), o que numa workstation
+# Linux criava um diretório-lixo "C:/" dentro do repo. Agora é portável.
+_env_cache = os.environ.get("CCD_CACHE_DIR")
+if _env_cache:
+    CACHE = Path(_env_cache).expanduser()
+elif os.name == "nt":
+    CACHE = Path("C:/temp/ccd_cache")
+else:
+    CACHE = Path(tempfile.gettempdir()) / "ccd_cache"
 PROCESSED = CACHE / "processed"
 CHECKPOINTS = CACHE / "checkpoints"
 LIGHTNING_LOGS = CACHE / "lightning_logs"
