@@ -21,7 +21,6 @@ fi
 # 3. Clear existing caches to force a full re-run
 echo "=> Cleaning up old reports and caches..."
 rm -rf reports/*.csv
-rm -rf reports/deep_*.csv
 rm -rf /C/temp/ccd_cache/processed/panel_23munis.parquet 2>/dev/null || true
 rm -rf C:/temp/ccd_cache/processed/panel_23munis.parquet 2>/dev/null || true
 
