@@ -81,3 +81,63 @@ def evaluate(y_true, y_pred, name: str = "model", disease: str | None = None, ho
 def aggregate_results(records: list[dict]) -> pd.DataFrame:
     df = pd.DataFrame(records)
     return df
+
+
+# ============================================================================
+# MÉTRICAS ADICIONAIS (revisão): DTW e recall/precisão de eventos não-zero.
+# ============================================================================
+def recall_nonzero(y_true, y_pred, thr: float = 0.5) -> dict:
+    """Detecção de eventos (caso > 0) numa série zero-inflada.
+
+    evento_real  = y_true > 0
+    evento_previsto = round(y_pred) >= 1  <=>  y_pred >= thr (thr=0.5)
+
+    Retorna recall, precisão, F1 e contagens. Recall é a métrica-chave: dos
+    meses-município com casos reais, quantos o modelo sinalizou.
+    """
+    y = np.asarray(y_true, dtype=float)
+    yh = np.asarray(y_pred, dtype=float)
+    mask = ~(np.isnan(y) | np.isnan(yh))
+    y, yh = y[mask], yh[mask]
+    ev_t = y > 0
+    ev_p = yh >= thr
+    tp = int(np.sum(ev_t & ev_p))
+    fn = int(np.sum(ev_t & ~ev_p))
+    fp = int(np.sum(~ev_t & ev_p))
+    rec = tp / (tp + fn) if (tp + fn) > 0 else float("nan")
+    prec = tp / (tp + fp) if (tp + fp) > 0 else float("nan")
+    f1 = (2 * prec * rec / (prec + rec)) if (prec and rec and (prec + rec) > 0) else float("nan")
+    return {"n_events": tp + fn, "recall_nz": rec, "precision_nz": prec, "f1_nz": f1}
+
+
+def dtw_distance(y_true_seq, y_pred_seq, normalize: bool = True) -> float:
+    """DTW (fastdtw) entre a trajetória observada e a prevista de UMA série.
+
+    Mede aderência de FORMA da curva, complementando o erro pontual (MAE).
+    normalize=True divide pela quantidade de passos, tornando comparável entre
+    séries de comprimentos diferentes. Requer `fastdtw` (pip install fastdtw).
+    """
+    from fastdtw import fastdtw
+
+    a = np.asarray(y_true_seq, dtype=float)
+    b = np.asarray(y_pred_seq, dtype=float)
+    m = ~(np.isnan(a) | np.isnan(b))
+    a, b = a[m], b[m]
+    if len(a) < 2:
+        return float("nan")
+    dist, _ = fastdtw(a, b, dist=lambda x, y: abs(x - y))
+    return dist / len(a) if normalize else dist
+
+
+def dtw_by_group(df, group_col: str = "cd_mun", time_col: str = "time_idx",
+                 y_true_col: str = "y_true", y_pred_col: str = "y_pred",
+                 normalize: bool = True) -> float:
+    """DTW médio entre grupos (ex.: municípios). Ordena cada série por tempo,
+    calcula o DTW normalizado e retorna a média entre grupos."""
+    vals = []
+    for _, g in df.groupby(group_col):
+        g = g.sort_values(time_col)
+        d = dtw_distance(g[y_true_col].values, g[y_pred_col].values, normalize=normalize)
+        if not np.isnan(d):
+            vals.append(d)
+    return float(np.mean(vals)) if vals else float("nan")
