@@ -55,7 +55,7 @@ ENS_DIR.mkdir(parents=True, exist_ok=True)
 
 VAL_ORIGINS = ["origin_201912", "origin_202012"]
 TEST_ORIGINS = ["origin_202112", "origin_202212"]
-DEEP_MODELS = ["tft", "nhits", "deepar"]
+DEEP_MODELS = ["tft", "nhits", "deepar", "lstm", "gru"]
 
 # %% [markdown]
 # ## 1. Garantir que as predições existem (deep + baselines long)

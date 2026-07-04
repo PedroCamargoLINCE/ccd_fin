@@ -239,7 +239,7 @@ plt.show()
 DEEP_EPOCHS = 200           # teto — EarlyStopping (patience=15) corta antes
 DEEP_BATCH  = 128
 DEEP_HIDDEN = 32
-DEEP_MODELS = ["tft", "nhits", "deepar"]
+DEEP_MODELS = ["tft", "nhits", "deepar", "lstm", "gru"]
 
 def run_deep_all(panel, models=DEEP_MODELS, diseases=None, epochs=DEEP_EPOCHS):
     diseases = diseases or DISEASES

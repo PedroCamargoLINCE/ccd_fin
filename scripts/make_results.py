@@ -31,7 +31,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-from src.eval.metrics import evaluate
+from src.eval.metrics import evaluate, recall_nonzero, dtw_by_group
 from src.utils.paths import DISEASES, MUNICIPIOS_ALVO, PROCESSED, PROJECT_ROOT
 
 REPORTS = PROJECT_ROOT / "reports"
@@ -48,7 +48,7 @@ plt.rcParams["figure.dpi"] = 110
 
 COVID_START = pd.Timestamp("2020-03-01")
 COVID_END = pd.Timestamp("2021-12-01")
-DEEP_MODELS = ("tft", "nhits", "deepar")
+DEEP_MODELS = ("tft", "nhits", "deepar", "lstm", "gru")
 
 
 def load_all_results() -> tuple[pd.DataFrame, dict]:
@@ -76,24 +76,81 @@ def load_all_results() -> tuple[pd.DataFrame, dict]:
     return deep_df, {"baselines": bl, "baselines_long": bl_long}
 
 
-def per_horizon_summary(deep_df: pd.DataFrame, baselines: pd.DataFrame) -> pd.DataFrame:
+def _pooled_pointwise(deep_df: pd.DataFrame, baselines_long: pd.DataFrame) -> pd.DataFrame:
+    """Frame long unificado (deep + baselines) para recall e DTW."""
+    cols = ["model", "disease", "horizon", "origin", "cd_mun", "time_idx", "y_true", "y_pred"]
+    frames = []
+    if deep_df is not None and not deep_df.empty:
+        frames.append(deep_df[[c for c in cols if c in deep_df.columns]])
+    if baselines_long is not None and not baselines_long.empty:
+        frames.append(baselines_long[[c for c in cols if c in baselines_long.columns]])
+    if not frames:
+        return pd.DataFrame(columns=cols)
+    out = pd.concat(frames, ignore_index=True)
+    out["cd_mun"] = out["cd_mun"].astype(str).str.zfill(7)
+    return out
+
+
+def per_horizon_summary(deep_df: pd.DataFrame, baselines: pd.DataFrame,
+                        baselines_long: pd.DataFrame = None) -> pd.DataFrame:
+    """MAE/RMSE/R²/SMAPE + recall_nz/precision_nz (eventos não-zero) +
+    desvio-padrão do MAE entre origens e (se houver multi-seed) entre sementes."""
+    pooled = _pooled_pointwise(deep_df, baselines_long)
+
+    def _recall(m, d, h):
+        if pooled.empty:
+            return (np.nan, np.nan)
+        sub = pooled[(pooled.model == m) & (pooled.disease == d) & (pooled.horizon == h)]
+        if sub.empty:
+            return (np.nan, np.nan)
+        r = recall_nonzero(sub["y_true"].values, sub["y_pred"].values)
+        return (r["recall_nz"], r["precision_nz"])
+
+    # std do MAE entre origens: baselines.csv já tem 1 linha por origem
+    bl_std = baselines.groupby(["model", "disease", "horizon"])["mae"].std()
+    has_seed = (deep_df is not None and not deep_df.empty
+                and "seed" in deep_df.columns and deep_df["seed"].nunique() > 1)
+
     rows = []
-    # baselines: já tem mae/rmse/r2/smape pré-calculados (média entre origens)
     for (m, d, h), g in baselines.groupby(["model", "disease", "horizon"]):
+        rec, prec = _recall(m, d, h)
         rows.append({
             "model": m, "disease": d, "horizon": h,
             "mae": g["mae"].mean(), "rmse": g["rmse"].mean(),
             "r2": g["r2"].mean() if "r2" in g.columns else np.nan,
-            "smape": g["smape"].mean(),
+            "smape": g["smape"].mean(), "recall_nz": rec, "precision_nz": prec,
+            "mae_std_origin": float(bl_std.get((m, d, h), np.nan)), "mae_std_seed": np.nan,
         })
-    # deep: agrega por origem + cd_mun
-    if not deep_df.empty:
+
+    if deep_df is not None and not deep_df.empty:
         for (m, d, h), g in deep_df.groupby(["model", "disease", "horizon"]):
             ev = evaluate(g["y_true"].values, g["y_pred"].values, name=m, disease=d, horizon=h)
+            rec, prec = _recall(m, d, h)
+            per_origin = [evaluate(go["y_true"].values, go["y_pred"].values)["mae"]
+                          for _, go in g.groupby("origin")]
+            std_origin = float(np.std(per_origin, ddof=1)) if len(per_origin) > 1 else np.nan
+            std_seed = np.nan
+            if has_seed:
+                per_seed = [evaluate(gs["y_true"].values, gs["y_pred"].values)["mae"]
+                            for _, gs in g.groupby("seed")]
+                std_seed = float(np.std(per_seed, ddof=1)) if len(per_seed) > 1 else np.nan
             rows.append({
                 "model": m, "disease": d, "horizon": h,
                 "mae": ev["mae"], "rmse": ev["rmse"], "r2": ev["r2"], "smape": ev["smape"],
+                "recall_nz": rec, "precision_nz": prec,
+                "mae_std_origin": std_origin, "mae_std_seed": std_seed,
             })
+    return pd.DataFrame(rows)
+
+
+def dtw_table(deep_df: pd.DataFrame, baselines_long: pd.DataFrame) -> pd.DataFrame:
+    """DTW (fastdtw, normalizado) por (modelo × doença), média entre municípios."""
+    pooled = _pooled_pointwise(deep_df, baselines_long)
+    if pooled.empty:
+        return pd.DataFrame(columns=["model", "disease", "dtw_norm"])
+    rows = []
+    for (m, d), g in pooled.groupby(["model", "disease"]):
+        rows.append({"model": m, "disease": d, "dtw_norm": round(dtw_by_group(g), 4)})
     return pd.DataFrame(rows)
 
 
@@ -228,7 +285,13 @@ def plot_per_muni_heatmap(per_muni: dict[str, pd.DataFrame]):
 def write_synthesis(summary: pd.DataFrame, ranking: pd.DataFrame, per_muni: dict):
     md = ["# Resultados — predição multi-doença em 23 municípios de SP",
           "",
-          "Síntese consolidada do pipeline: baselines (SeasonalNaive, SeasonalMA3, SARIMA, LightGBM, CatBoost) + deep panel (TFT, N-HiTS, DeepAR).",
+          "Síntese consolidada do pipeline: baselines (SeasonalNaive, SeasonalMA3, SARIMA, "
+          "LightGBM, CatBoost, XGBoost, Prophet) + deep panel (TFT, N-HiTS, DeepAR, LSTM, GRU).",
+          "",
+          "`final_summary.csv` traz, por modelo × doença × horizonte: MAE, RMSE, R², SMAPE, "
+          "recall/precisão de eventos não-zero, e desvio-padrão do MAE entre origens "
+          "(`mae_std_origin`) e entre sementes (`mae_std_seed`, preenchido só em runs multi-seed). "
+          "DTW por modelo × doença em `dtw_by_model.csv`.",
           "",
           "## Resumo agregado (MAE médio entre origens)",
           ""]
@@ -271,9 +334,13 @@ def main():
 
     print(f"[load] deep records: {len(deep_df):,} | baselines records: {len(bl):,}")
 
-    summary = per_horizon_summary(deep_df, bl)
+    summary = per_horizon_summary(deep_df, bl, bl_long)
     summary.to_csv(TABLES / "final_summary.csv", index=False)
     print(f"[write] {TABLES/'final_summary.csv'}")
+
+    dtw = dtw_table(deep_df, bl_long)
+    dtw.to_csv(TABLES / "dtw_by_model.csv", index=False)
+    print(f"[write] {TABLES/'dtw_by_model.csv'}")
 
     ranking = ranking_per_disease(summary)
     ranking.to_csv(TABLES / "ranking.csv", index=False)

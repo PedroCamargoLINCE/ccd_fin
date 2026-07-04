@@ -27,6 +27,14 @@ echo "============================================================"
 PY="${PYTHON:-python3}"
 echo "=> Python: $($PY --version 2>&1)"
 
+# 0b. Dependências novas (xgboost, prophet, fastdtw). Checa e instala se faltar.
+echo "=> Verificando deps novas (xgboost, prophet, fastdtw)..."
+if ! $PY -c "import xgboost, prophet, fastdtw" 2>/dev/null; then
+    echo "   faltando — instalando via pip..."
+    $PY -m pip install xgboost prophet fastdtw
+fi
+echo "=> Deps: OK"
+
 # 1. Checagem dos dados brutos (raiz + Taxas/)
 missing=0
 for f in hanseniase_00_23.xlsx hepatite_00_23.xlsx hiv_aids_00_23.xlsx \
