@@ -186,7 +186,7 @@ def _trainer(cfg: DeepConfig, log_name: str) -> L.Trainer:
         enable_progress_bar=False,
         log_every_n_steps=20,
         enable_model_summary=False,
-        deterministic=True,  # [NOVO] reprodutibilidade (com seed_everything)
+        deterministic="warn",  # [NOVO] reprodutibilidade (com seed_everything)
     )
 
 
