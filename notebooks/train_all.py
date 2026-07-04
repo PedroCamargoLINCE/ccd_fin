@@ -254,10 +254,14 @@ def run_deep_all(panel, models=DEEP_MODELS, diseases=None, epochs=DEEP_EPOCHS):
                 print(f"[cached] {out_csv.name} ({len(df)} rows)")
             else:
                 print(f"\n===== {mdl.upper()} / {d} =====")
-                df = run_deep_single(panel, disease=d, model_name=mdl,
-                                     cfg_overrides={"max_epochs": epochs, "patience": 7,
-                                                    "batch_size": DEEP_BATCH, "hidden_size": DEEP_HIDDEN})
-                df.to_csv(out_csv, index=False)
+                try:
+                    df = run_deep_single(panel, disease=d, model_name=mdl,
+                                         cfg_overrides={"max_epochs": epochs, "patience": 7,
+                                                        "batch_size": DEEP_BATCH, "hidden_size": DEEP_HIDDEN})
+                    df.to_csv(out_csv, index=False)
+                except Exception as _e:
+                    print(f"[SKIP] {mdl}/{d}: {type(_e).__name__}: {_e}")
+                    continue
             df["model"] = mdl
             df["disease"] = d
             all_out.append(df)

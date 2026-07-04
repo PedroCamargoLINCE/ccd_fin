@@ -1,58 +1,65 @@
 # Resultados — predição multi-doença em 23 municípios de SP
 
-Síntese consolidada do pipeline: baselines (SeasonalNaive, SeasonalMA3, SARIMA, LightGBM, CatBoost) + deep panel (TFT, N-HiTS, DeepAR).
+Síntese consolidada do pipeline: baselines (SeasonalNaive, SeasonalMA3, SARIMA, LightGBM, CatBoost, XGBoost, Prophet) + deep panel (TFT, N-HiTS, DeepAR, LSTM, GRU).
+
+`final_summary.csv` traz, por modelo × doença × horizonte: MAE, RMSE, R², SMAPE, recall/precisão de eventos não-zero, e desvio-padrão do MAE entre origens (`mae_std_origin`) e entre sementes (`mae_std_seed`, preenchido só em runs multi-seed). DTW por modelo × doença em `dtw_by_model.csv`.
 
 ## Resumo agregado (MAE médio entre origens)
 
 | model          |    1 |    3 |    6 |   12 |
 |:---------------|-----:|-----:|-----:|-----:|
-| catboost       | 1.82 | 1.82 | 1.98 | 1.87 |
-| deepar         | 2.04 | 2.3  | 1.97 | 2.04 |
-| lgbm           | 1.81 | 1.74 | 1.79 | 1.86 |
-| nhits          | 2.48 | 2.32 | 2.03 | 2.5  |
-| sarima         | 1.8  | 1.76 | 1.78 | 2.05 |
+| catboost       | 1.9  | 1.76 | 1.66 | 1.8  |
+| gru            | 1.86 | 1.89 | 2.27 | 2.26 |
+| lgbm           | 1.79 | 1.76 | 1.69 | 1.92 |
+| lstm           | 2.03 | 1.92 | 2.23 | 2.02 |
+| nhits          | 2.25 | 2.16 | 2.06 | 2.47 |
+| prophet        | 1.95 | 1.79 | 1.91 | 1.95 |
+| sarima         | 1.8  | 1.76 | 1.79 | 2.05 |
 | seasonal_ma3   | 1.81 | 1.88 | 2.08 | 1.94 |
 | seasonal_naive | 1.99 | 2.22 | 2.14 | 2.26 |
-| tft            | 1.83 | 2.03 | 1.96 | 1.87 |
+| tft            | 1.82 | 1.9  | 2.15 | 2.14 |
+| xgboost        | 1.73 | 1.68 | 1.62 | 1.95 |
 
 ## Ranking por (doença × horizonte)
 
-| disease     |   horizon | 1st                 | 2nd                   | 3rd                 |
-|:------------|----------:|:--------------------|:----------------------|:--------------------|
-| hanseniase  |         1 | nhits (0.17)        | tft (0.24)            | lgbm (0.35)         |
-| hanseniase  |         3 | nhits (0.18)        | lgbm (0.37)           | catboost (0.41)     |
-| hanseniase  |         6 | nhits (0.36)        | tft (0.41)            | lgbm (0.52)         |
-| hanseniase  |        12 | nhits (0.21)        | lgbm (0.35)           | catboost (0.39)     |
-| hepatite    |         1 | tft (0.10)          | nhits (0.10)          | catboost (0.21)     |
-| hepatite    |         3 | tft (0.18)          | nhits (0.22)          | catboost (0.26)     |
-| hepatite    |         6 | lgbm (0.24)         | sarima (0.26)         | catboost (0.27)     |
-| hepatite    |        12 | tft (0.23)          | seasonal_naive (0.23) | nhits (0.24)        |
-| hiv_aids    |         1 | tft (2.21)          | deepar (2.45)         | sarima (2.52)       |
-| hiv_aids    |         3 | sarima (2.16)       | catboost (2.29)       | tft (2.35)          |
-| hiv_aids    |         6 | deepar (2.29)       | nhits (2.53)          | sarima (2.92)       |
-| hiv_aids    |        12 | deepar (2.16)       | catboost (2.48)       | lgbm (2.63)         |
-| sifilis     |         1 | sarima (2.59)       | lgbm (3.02)           | seasonal_ma3 (3.03) |
-| sifilis     |         3 | sarima (2.80)       | seasonal_ma3 (2.84)   | lgbm (2.90)         |
-| sifilis     |         6 | sarima (2.31)       | tft (2.49)            | lgbm (2.62)         |
-| sifilis     |        12 | lgbm (3.24)         | sarima (3.29)         | seasonal_ma3 (3.41) |
-| tuberculose |         1 | seasonal_ma3 (2.42) | catboost (2.66)       | lgbm (2.85)         |
-| tuberculose |         3 | lgbm (2.69)         | sarima (2.93)         | seasonal_ma3 (2.99) |
-| tuberculose |         6 | catboost (2.61)     | lgbm (2.65)           | sarima (2.69)       |
-| tuberculose |        12 | tft (2.40)          | seasonal_ma3 (2.67)   | deepar (2.70)       |
+| disease     |   horizon | 1st                 | 2nd                 | 3rd                   |
+|:------------|----------:|:--------------------|:--------------------|:----------------------|
+| hanseniase  |         1 | gru (0.18)          | lstm (0.20)         | nhits (0.25)          |
+| hanseniase  |         3 | nhits (0.31)        | lstm (0.36)         | gru (0.38)            |
+| hanseniase  |         6 | xgboost (0.48)      | nhits (0.48)        | lstm (0.50)           |
+| hanseniase  |        12 | gru (0.37)          | lstm (0.38)         | nhits (0.39)          |
+| hepatite    |         1 | lstm (0.14)         | prophet (0.15)      | nhits (0.17)          |
+| hepatite    |         3 | lstm (0.17)         | gru (0.19)          | prophet (0.21)        |
+| hepatite    |         6 | nhits (0.20)        | tft (0.24)          | lstm (0.24)           |
+| hepatite    |        12 | lstm (0.20)         | prophet (0.22)      | seasonal_naive (0.23) |
+| hiv_aids    |         1 | tft (2.50)          | sarima (2.52)       | xgboost (2.75)        |
+| hiv_aids    |         3 | sarima (2.16)       | xgboost (2.16)      | catboost (2.21)       |
+| hiv_aids    |         6 | catboost (2.23)     | lgbm (2.33)         | xgboost (2.33)        |
+| hiv_aids    |        12 | catboost (2.50)     | seasonal_ma3 (2.93) | xgboost (3.00)        |
+| sifilis     |         1 | xgboost (2.47)      | sarima (2.58)       | lgbm (2.69)           |
+| sifilis     |         3 | prophet (2.42)      | lgbm (2.66)         | xgboost (2.68)        |
+| sifilis     |         6 | xgboost (2.32)      | sarima (2.33)       | catboost (2.48)       |
+| sifilis     |        12 | lgbm (2.93)         | catboost (2.97)     | xgboost (3.13)        |
+| tuberculose |         1 | seasonal_ma3 (2.42) | gru (2.47)          | prophet (2.53)        |
+| tuberculose |         3 | prophet (2.79)      | xgboost (2.85)      | catboost (2.92)       |
+| tuberculose |         6 | sarima (2.69)       | xgboost (2.70)      | catboost (2.73)       |
+| tuberculose |        12 | tft (2.63)          | gru (2.67)          | seasonal_ma3 (2.67)   |
 
 ## Vencedor por doença (MAE médio entre horizontes)
 
-| disease     | model   |   mae |
-|:------------|:--------|------:|
-| hanseniase  | nhits   |  0.23 |
-| hepatite    | tft     |  0.22 |
-| hiv_aids    | deepar  |  2.46 |
-| sifilis     | sarima  |  2.75 |
-| tuberculose | lgbm    |  2.75 |
+| disease     | model        |   mae |
+|:------------|:-------------|------:|
+| hanseniase  | nhits        |  0.36 |
+| hepatite    | lstm         |  0.19 |
+| hiv_aids    | catboost     |  2.5  |
+| sifilis     | xgboost      |  2.65 |
+| tuberculose | seasonal_ma3 |  2.77 |
 
 ## Tabelas por município
 
-Uma tabela por doença em [`tables/per_muni_mae_<doenca>.csv`](tables/) — MAE de cada modelo deep para cada um dos 23 municípios. Heatmaps em [`figures/comparison/`](figures/comparison/).
+Uma tabela por doença em [`tables/per_muni_<doenca>.csv`](tables/) — **MAE, RMSE, R² e SMAPE** de cada modelo (deep + baselines) para cada um dos 23 municípios. Matrizes wide de MAE/RMSE em `tables/per_muni_mae_<doenca>.csv` / `per_muni_rmse_<doenca>.csv`; heatmaps em [`figures/comparison/`](figures/comparison/).
+
+> R² é NaN para séries de alvo constante (municípios com quase-tudo-zero, ex. hanseníase) — esperado, não é erro.
 
 ## Figuras
 
