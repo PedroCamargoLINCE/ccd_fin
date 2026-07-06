@@ -1,254 +1,277 @@
 disease,cd_mun,nm_mun,model,mae,rmse,r2,smape,n
-sifilis,3505708,Barueri,catboost,1.567,1.896,-0.307,61.64,16
-sifilis,3505708,Barueri,gru,2.52,3.06,-2.406,136.31,16
-sifilis,3505708,Barueri,lgbm,1.684,2.06,-0.543,64.3,16
-sifilis,3505708,Barueri,lstm,2.707,3.151,-2.61,152.43,16
-sifilis,3505708,Barueri,nhits,2.501,2.883,-2.022,89.09,16
-sifilis,3505708,Barueri,prophet,1.802,2.204,-0.767,72.94,16
-sifilis,3505708,Barueri,sarima,1.602,2.005,-0.461,63.85,16
-sifilis,3505708,Barueri,seasonal_ma3,1.646,2.116,-0.629,63.62,16
-sifilis,3505708,Barueri,seasonal_naive,1.375,1.969,-0.409,55.05,16
-sifilis,3505708,Barueri,tft,1.971,2.401,-1.097,85.93,16
-sifilis,3505708,Barueri,xgboost,1.586,1.98,-0.425,62.77,16
-sifilis,3506003,Bauru,catboost,1.373,1.892,0.169,67.34,16
-sifilis,3506003,Bauru,gru,2.455,3.123,-1.264,152.83,16
-sifilis,3506003,Bauru,lgbm,1.32,1.705,0.325,65.35,16
-sifilis,3506003,Bauru,lstm,3.062,3.7,-2.177,200.0,16
-sifilis,3506003,Bauru,nhits,2.243,2.861,-0.899,128.38,16
-sifilis,3506003,Bauru,prophet,1.593,2.15,-0.072,82.58,16
-sifilis,3506003,Bauru,sarima,1.57,1.907,0.156,78.71,16
-sifilis,3506003,Bauru,seasonal_ma3,1.812,2.562,-0.523,89.57,16
-sifilis,3506003,Bauru,seasonal_naive,2.5,3.082,-1.205,110.55,16
-sifilis,3506003,Bauru,tft,2.495,3.048,-1.156,144.0,16
-sifilis,3506003,Bauru,xgboost,1.491,1.841,0.213,70.45,16
-sifilis,3509502,Campinas,catboost,1.612,2.221,-0.042,53.0,16
-sifilis,3509502,Campinas,gru,3.496,3.854,-2.137,106.68,16
-sifilis,3509502,Campinas,lgbm,1.722,2.292,-0.109,56.29,16
-sifilis,3509502,Campinas,lstm,2.349,2.773,-0.624,65.0,16
-sifilis,3509502,Campinas,nhits,2.935,3.481,-1.559,97.79,16
-sifilis,3509502,Campinas,prophet,1.687,2.13,0.041,51.21,16
-sifilis,3509502,Campinas,sarima,1.742,2.219,-0.04,56.61,16
-sifilis,3509502,Campinas,seasonal_ma3,1.833,2.511,-0.332,53.99,16
-sifilis,3509502,Campinas,seasonal_naive,2.438,2.773,-0.624,77.37,16
-sifilis,3509502,Campinas,tft,1.923,2.471,-0.29,55.58,16
-sifilis,3509502,Campinas,xgboost,1.78,2.346,-0.162,55.9,16
-sifilis,3510609,Carapicuíba,catboost,2.192,3.683,-0.087,114.55,16
-sifilis,3510609,Carapicuíba,gru,3.36,4.366,-0.527,136.69,16
-sifilis,3510609,Carapicuíba,lgbm,2.329,3.763,-0.134,118.29,16
-sifilis,3510609,Carapicuíba,lstm,2.555,3.348,0.102,125.93,16
-sifilis,3510609,Carapicuíba,nhits,5.244,7.403,-3.39,136.88,16
-sifilis,3510609,Carapicuíba,prophet,2.457,3.504,0.017,123.87,16
-sifilis,3510609,Carapicuíba,sarima,2.574,3.797,-0.155,122.82,16
-sifilis,3510609,Carapicuíba,seasonal_ma3,2.667,3.855,-0.19,127.74,16
-sifilis,3510609,Carapicuíba,seasonal_naive,2.812,4.465,-0.597,126.9,16
-sifilis,3510609,Carapicuíba,tft,2.114,3.768,-0.137,127.66,16
-sifilis,3510609,Carapicuíba,xgboost,2.377,3.735,-0.117,122.76,16
-sifilis,3513801,Diadema,catboost,3.22,4.137,-0.131,70.97,16
-sifilis,3513801,Diadema,gru,3.705,4.897,-0.586,94.25,16
-sifilis,3513801,Diadema,lgbm,3.131,4.049,-0.084,68.6,16
-sifilis,3513801,Diadema,lstm,4.027,4.703,-0.463,73.19,16
-sifilis,3513801,Diadema,nhits,3.534,4.474,-0.323,70.67,16
-sifilis,3513801,Diadema,prophet,3.019,3.973,-0.044,64.05,16
-sifilis,3513801,Diadema,sarima,3.222,3.884,0.003,68.75,16
-sifilis,3513801,Diadema,seasonal_ma3,3.958,4.907,-0.592,75.24,16
-sifilis,3513801,Diadema,seasonal_naive,4.812,5.89,-1.293,98.43,16
-sifilis,3513801,Diadema,tft,3.14,3.838,0.026,67.56,16
-sifilis,3513801,Diadema,xgboost,3.128,3.932,-0.022,67.14,16
-sifilis,3518701,Guarujá,catboost,2.329,3.556,-0.461,93.46,16
-sifilis,3518701,Guarujá,gru,3.812,4.815,-1.68,200.0,16
-sifilis,3518701,Guarujá,lgbm,2.395,3.62,-0.514,99.0,16
-sifilis,3518701,Guarujá,lstm,3.812,4.815,-1.68,200.0,16
-sifilis,3518701,Guarujá,nhits,2.614,3.719,-0.598,121.63,16
-sifilis,3518701,Guarujá,prophet,2.346,3.562,-0.467,101.03,16
-sifilis,3518701,Guarujá,sarima,2.97,3.966,-0.818,107.03,16
-sifilis,3518701,Guarujá,seasonal_ma3,2.604,3.781,-0.653,105.66,16
-sifilis,3518701,Guarujá,seasonal_naive,2.562,3.865,-0.726,83.21,16
-sifilis,3518701,Guarujá,tft,3.179,4.224,-1.062,155.87,16
-sifilis,3518701,Guarujá,xgboost,2.279,3.553,-0.459,98.73,16
-sifilis,3518800,Guarulhos,catboost,4.09,5.511,-0.303,29.23,16
-sifilis,3518800,Guarulhos,gru,5.168,7.05,-1.133,37.75,16
-sifilis,3518800,Guarulhos,lgbm,4.423,5.568,-0.33,31.24,16
-sifilis,3518800,Guarulhos,lstm,4.262,5.71,-0.399,29.77,16
-sifilis,3518800,Guarulhos,nhits,6.078,7.306,-1.29,41.25,16
-sifilis,3518800,Guarulhos,prophet,3.915,4.579,0.1,27.6,16
-sifilis,3518800,Guarulhos,sarima,4.26,5.314,-0.212,29.47,16
-sifilis,3518800,Guarulhos,seasonal_ma3,4.667,5.631,-0.36,33.21,16
-sifilis,3518800,Guarulhos,seasonal_naive,5.938,6.924,-1.057,41.84,16
-sifilis,3518800,Guarulhos,tft,4.447,5.972,-0.53,31.2,16
-sifilis,3518800,Guarulhos,xgboost,4.184,5.425,-0.263,28.97,16
-sifilis,3522208,Itapevi,catboost,0.593,0.746,-0.149,181.26,16
-sifilis,3522208,Itapevi,gru,0.375,0.791,-0.29,200.0,16
-sifilis,3522208,Itapevi,lgbm,0.609,0.767,-0.214,181.59,16
-sifilis,3522208,Itapevi,lstm,0.375,0.791,-0.29,200.0,16
-sifilis,3522208,Itapevi,nhits,0.377,0.791,-0.29,200.0,16
-sifilis,3522208,Itapevi,prophet,0.609,0.734,-0.113,177.35,16
-sifilis,3522208,Itapevi,sarima,0.64,0.753,-0.171,177.67,16
-sifilis,3522208,Itapevi,seasonal_ma3,0.833,0.979,-0.978,195.92,16
-sifilis,3522208,Itapevi,seasonal_naive,0.75,1.173,-1.839,200.0,16
-sifilis,3522208,Itapevi,tft,0.413,0.765,-0.208,197.08,16
-sifilis,3522208,Itapevi,xgboost,0.614,0.755,-0.176,178.61,16
-sifilis,3525904,Jundiaí,catboost,1.846,2.427,-0.352,65.9,16
-sifilis,3525904,Jundiaí,gru,2.413,3.401,-1.653,105.22,16
-sifilis,3525904,Jundiaí,lgbm,1.845,2.418,-0.341,64.95,16
-sifilis,3525904,Jundiaí,lstm,3.169,3.804,-2.32,180.43,16
-sifilis,3525904,Jundiaí,nhits,2.776,3.477,-1.773,120.89,16
-sifilis,3525904,Jundiaí,prophet,1.754,2.274,-0.186,59.99,16
-sifilis,3525904,Jundiaí,sarima,1.83,2.298,-0.211,63.36,16
-sifilis,3525904,Jundiaí,seasonal_ma3,1.875,2.541,-0.481,62.47,16
-sifilis,3525904,Jundiaí,seasonal_naive,2.875,3.588,-1.953,88.75,16
-sifilis,3525904,Jundiaí,tft,2.239,2.832,-0.839,86.55,16
-sifilis,3525904,Jundiaí,xgboost,1.855,2.34,-0.256,65.48,16
-sifilis,3529401,Mauá,catboost,0.816,1.268,-0.03,153.41,16
-sifilis,3529401,Mauá,gru,0.75,1.458,-0.36,200.0,16
-sifilis,3529401,Mauá,lgbm,0.796,1.316,-0.108,157.57,16
-sifilis,3529401,Mauá,lstm,0.75,1.458,-0.36,200.0,16
-sifilis,3529401,Mauá,nhits,0.75,1.458,-0.36,200.0,16
-sifilis,3529401,Mauá,prophet,0.813,1.28,-0.048,149.61,16
-sifilis,3529401,Mauá,sarima,0.849,1.308,-0.094,151.87,16
-sifilis,3529401,Mauá,seasonal_ma3,0.854,1.431,-0.311,141.09,16
-sifilis,3529401,Mauá,seasonal_naive,0.812,1.479,-0.4,133.33,16
-sifilis,3529401,Mauá,tft,0.753,1.445,-0.336,196.42,16
-sifilis,3529401,Mauá,xgboost,0.818,1.328,-0.128,161.54,16
-sifilis,3534401,Osasco,catboost,6.16,7.344,-0.269,57.01,16
-sifilis,3534401,Osasco,gru,7.149,8.667,-0.767,80.99,16
-sifilis,3534401,Osasco,lgbm,5.57,6.528,-0.003,52.11,16
-sifilis,3534401,Osasco,lstm,6.963,8.298,-0.62,74.99,16
-sifilis,3534401,Osasco,nhits,5.543,6.818,-0.094,51.96,16
-sifilis,3534401,Osasco,prophet,5.684,6.768,-0.078,51.33,16
-sifilis,3534401,Osasco,sarima,5.456,6.497,0.007,50.46,16
-sifilis,3534401,Osasco,seasonal_ma3,5.937,6.802,-0.089,58.25,16
-sifilis,3534401,Osasco,seasonal_naive,7.562,8.577,-0.731,73.26,16
-sifilis,3534401,Osasco,tft,5.968,7.107,-0.188,57.76,16
-sifilis,3534401,Osasco,xgboost,5.613,6.673,-0.048,52.64,16
-sifilis,3536505,Paulínia,catboost,0.224,0.268,-0.227,195.6,16
-sifilis,3536505,Paulínia,gru,0.063,0.25,-0.067,200.0,16
-sifilis,3536505,Paulínia,lgbm,0.169,0.257,-0.125,197.89,16
-sifilis,3536505,Paulínia,lstm,0.063,0.25,-0.067,200.0,16
-sifilis,3536505,Paulínia,nhits,0.063,0.25,-0.067,200.0,16
-sifilis,3536505,Paulínia,prophet,0.216,0.306,-0.595,197.01,16
-sifilis,3536505,Paulínia,sarima,0.172,0.255,-0.107,197.69,16
-sifilis,3536505,Paulínia,seasonal_ma3,0.167,0.312,-0.659,200.0,16
-sifilis,3536505,Paulínia,seasonal_naive,0.125,0.354,-1.133,200.0,16
-sifilis,3536505,Paulínia,tft,0.063,0.25,-0.067,200.0,16
-sifilis,3536505,Paulínia,xgboost,0.16,0.255,-0.108,197.93,16
-sifilis,3541000,Praia Grande,catboost,4.268,5.712,-0.407,42.15,16
-sifilis,3541000,Praia Grande,gru,6.304,7.565,-1.468,66.41,16
-sifilis,3541000,Praia Grande,lgbm,4.443,5.605,-0.355,43.72,16
-sifilis,3541000,Praia Grande,lstm,5.853,7.022,-1.127,58.29,16
-sifilis,3541000,Praia Grande,nhits,4.348,5.363,-0.241,35.31,16
-sifilis,3541000,Praia Grande,prophet,4.041,5.212,-0.172,38.42,16
-sifilis,3541000,Praia Grande,sarima,3.481,4.541,0.11,31.54,16
-sifilis,3541000,Praia Grande,seasonal_ma3,4.979,6.358,-0.744,48.95,16
-sifilis,3541000,Praia Grande,seasonal_naive,5.125,6.031,-0.569,49.04,16
-sifilis,3541000,Praia Grande,tft,5.459,6.527,-0.837,57.26,16
-sifilis,3541000,Praia Grande,xgboost,4.242,5.326,-0.224,43.3,16
-sifilis,3543402,Ribeirão Preto,catboost,1.831,2.88,-0.006,51.01,16
-sifilis,3543402,Ribeirão Preto,gru,3.635,4.712,-1.693,92.84,16
-sifilis,3543402,Ribeirão Preto,lgbm,1.827,2.948,-0.054,48.69,16
-sifilis,3543402,Ribeirão Preto,lstm,2.426,3.18,-0.227,59.39,16
-sifilis,3543402,Ribeirão Preto,nhits,3.69,4.64,-1.611,101.72,16
-sifilis,3543402,Ribeirão Preto,prophet,2.031,2.869,0.002,53.28,16
-sifilis,3543402,Ribeirão Preto,sarima,1.676,2.611,0.173,46.19,16
-sifilis,3543402,Ribeirão Preto,seasonal_ma3,2.5,3.385,-0.39,65.84,16
-sifilis,3543402,Ribeirão Preto,seasonal_naive,2.688,3.614,-0.584,73.99,16
-sifilis,3543402,Ribeirão Preto,tft,2.545,3.268,-0.295,63.32,16
-sifilis,3543402,Ribeirão Preto,xgboost,1.906,2.939,-0.048,50.66,16
-sifilis,3547809,Santo André,catboost,2.747,3.347,-0.363,55.94,16
-sifilis,3547809,Santo André,gru,2.288,2.896,-0.021,47.92,16
-sifilis,3547809,Santo André,lgbm,2.715,3.317,-0.339,56.53,16
-sifilis,3547809,Santo André,lstm,2.357,2.922,-0.04,49.28,16
-sifilis,3547809,Santo André,nhits,3.054,3.53,-0.517,79.29,16
-sifilis,3547809,Santo André,prophet,2.848,3.431,-0.433,55.66,16
-sifilis,3547809,Santo André,sarima,2.813,3.46,-0.457,55.02,16
-sifilis,3547809,Santo André,seasonal_ma3,3.083,3.875,-0.828,62.95,16
-sifilis,3547809,Santo André,seasonal_naive,3.062,3.666,-0.636,66.56,16
-sifilis,3547809,Santo André,tft,2.667,3.115,-0.181,56.03,16
-sifilis,3547809,Santo André,xgboost,2.678,3.462,-0.459,55.23,16
-sifilis,3548500,Santos,catboost,1.611,2.029,-0.167,40.64,16
-sifilis,3548500,Santos,gru,2.427,2.858,-1.316,68.64,16
-sifilis,3548500,Santos,lgbm,1.709,2.027,-0.165,42.7,16
-sifilis,3548500,Santos,lstm,3.096,4.432,-4.569,55.66,16
-sifilis,3548500,Santos,nhits,3.7,4.546,-4.858,62.76,16
-sifilis,3548500,Santos,prophet,2.065,2.477,-0.74,47.26,16
-sifilis,3548500,Santos,sarima,1.634,1.934,-0.06,40.15,16
-sifilis,3548500,Santos,seasonal_ma3,2.354,2.732,-1.116,53.69,16
-sifilis,3548500,Santos,seasonal_naive,2.625,3.021,-1.587,59.7,16
-sifilis,3548500,Santos,tft,1.736,2.221,-0.399,42.27,16
-sifilis,3548500,Santos,xgboost,1.702,1.985,-0.116,42.46,16
-sifilis,3552205,Sorocaba,catboost,2.819,3.574,-0.081,121.15,16
-sifilis,3552205,Sorocaba,gru,3.472,4.332,-0.589,134.54,16
-sifilis,3552205,Sorocaba,lgbm,2.946,3.666,-0.138,123.65,16
-sifilis,3552205,Sorocaba,lstm,4.331,5.637,-1.691,130.86,16
-sifilis,3552205,Sorocaba,nhits,3.93,5.035,-1.147,136.45,16
-sifilis,3552205,Sorocaba,prophet,2.697,3.528,-0.054,112.12,16
-sifilis,3552205,Sorocaba,sarima,2.918,3.717,-0.17,119.94,16
-sifilis,3552205,Sorocaba,seasonal_ma3,2.729,3.711,-0.166,113.79,16
-sifilis,3552205,Sorocaba,seasonal_naive,3.688,4.789,-0.942,137.93,16
-sifilis,3552205,Sorocaba,tft,3.073,4.059,-0.396,126.23,16
-sifilis,3552205,Sorocaba,xgboost,2.767,3.451,-0.008,119.51,16
-sifilis,3548708,São Bernardo do Campo,catboost,1.17,1.59,-0.018,60.88,16
-sifilis,3548708,São Bernardo do Campo,gru,1.265,1.792,-0.293,72.99,16
-sifilis,3548708,São Bernardo do Campo,lgbm,1.227,1.617,-0.052,64.02,16
-sifilis,3548708,São Bernardo do Campo,lstm,1.328,1.635,-0.076,66.19,16
-sifilis,3548708,São Bernardo do Campo,nhits,2.099,2.621,-1.765,104.31,16
-sifilis,3548708,São Bernardo do Campo,prophet,1.113,1.569,0.009,63.35,16
-sifilis,3548708,São Bernardo do Campo,sarima,1.156,1.556,0.026,63.67,16
-sifilis,3548708,São Bernardo do Campo,seasonal_ma3,1.333,1.55,0.033,76.29,16
-sifilis,3548708,São Bernardo do Campo,seasonal_naive,1.562,2.077,-0.736,88.64,16
-sifilis,3548708,São Bernardo do Campo,tft,1.358,1.846,-0.372,66.79,16
-sifilis,3548708,São Bernardo do Campo,xgboost,1.161,1.605,-0.038,62.4,16
-sifilis,3549805,São José do Rio Preto,catboost,0.745,0.879,-0.186,76.21,16
-sifilis,3549805,São José do Rio Preto,gru,1.438,1.679,-3.322,113.82,16
-sifilis,3549805,São José do Rio Preto,lgbm,0.913,1.059,-0.718,82.41,16
-sifilis,3549805,São José do Rio Preto,lstm,1.742,2.116,-5.866,104.12,16
-sifilis,3549805,São José do Rio Preto,nhits,1.627,1.969,-4.943,144.83,16
-sifilis,3549805,São José do Rio Preto,prophet,1.365,1.685,-3.352,85.33,16
-sifilis,3549805,São José do Rio Preto,sarima,0.782,0.917,-0.29,80.06,16
-sifilis,3549805,São José do Rio Preto,seasonal_ma3,1.187,1.325,-1.693,96.73,16
-sifilis,3549805,São José do Rio Preto,seasonal_naive,1.188,1.436,-2.162,120.83,16
-sifilis,3549805,São José do Rio Preto,tft,1.377,1.692,-3.388,113.88,16
-sifilis,3549805,São José do Rio Preto,xgboost,0.899,1.037,-0.649,81.69,16
-sifilis,3549904,São José dos Campos,catboost,2.209,2.638,0.169,41.1,16
-sifilis,3549904,São José dos Campos,gru,2.859,3.32,-0.317,66.06,16
-sifilis,3549904,São José dos Campos,lgbm,2.423,2.871,0.015,45.19,16
-sifilis,3549904,São José dos Campos,lstm,3.265,3.912,-0.828,53.94,16
-sifilis,3549904,São José dos Campos,nhits,3.849,4.366,-1.277,88.18,16
-sifilis,3549904,São José dos Campos,prophet,2.584,2.924,-0.021,47.58,16
-sifilis,3549904,São José dos Campos,sarima,2.778,3.157,-0.191,50.21,16
-sifilis,3549904,São José dos Campos,seasonal_ma3,3.104,3.668,-0.607,57.86,16
-sifilis,3549904,São José dos Campos,seasonal_naive,3.188,3.945,-0.859,60.0,16
-sifilis,3549904,São José dos Campos,tft,2.474,2.995,-0.072,46.12,16
-sifilis,3549904,São José dos Campos,xgboost,2.442,2.852,0.028,45.3,16
-sifilis,3550308,São Paulo,catboost,17.364,21.981,-1.209,24.05,16
-sifilis,3550308,São Paulo,gru,19.143,22.355,-1.285,27.11,16
-sifilis,3550308,São Paulo,lgbm,14.324,18.32,-0.534,19.48,16
-sifilis,3550308,São Paulo,lstm,20.959,25.022,-1.863,30.5,16
-sifilis,3550308,São Paulo,nhits,13.82,17.308,-0.37,18.68,16
-sifilis,3550308,São Paulo,prophet,13.305,17.998,-0.481,18.14,16
-sifilis,3550308,São Paulo,sarima,14.744,19.963,-0.822,19.95,16
-sifilis,3550308,São Paulo,seasonal_ma3,14.313,19.462,-0.732,19.79,16
-sifilis,3550308,São Paulo,seasonal_naive,18.688,22.315,-1.277,25.34,16
-sifilis,3550308,São Paulo,tft,16.705,20.248,-0.874,23.34,16
-sifilis,3550308,São Paulo,xgboost,13.797,18.189,-0.513,19.12,16
-sifilis,3551009,São Vicente,catboost,3.289,4.134,-0.26,58.98,16
-sifilis,3551009,São Vicente,gru,4.045,4.898,-0.769,106.85,16
-sifilis,3551009,São Vicente,lgbm,3.065,4.183,-0.291,55.83,16
-sifilis,3551009,São Vicente,lstm,4.917,5.939,-1.601,127.81,16
-sifilis,3551009,São Vicente,nhits,3.883,4.506,-0.497,64.31,16
-sifilis,3551009,São Vicente,prophet,3.738,4.832,-0.722,66.83,16
-sifilis,3551009,São Vicente,sarima,3.853,4.974,-0.824,60.63,16
-sifilis,3551009,São Vicente,seasonal_ma3,3.667,4.683,-0.617,75.47,16
-sifilis,3551009,São Vicente,seasonal_naive,4.688,5.847,-1.521,91.63,16
-sifilis,3551009,São Vicente,tft,5.096,6.059,-1.707,97.03,16
-sifilis,3551009,São Vicente,xgboost,3.023,4.037,-0.202,57.69,16
-sifilis,3554102,Taboão da Serra,catboost,0.481,0.615,-0.114,182.03,16
-sifilis,3554102,Taboão da Serra,gru,0.313,0.661,-0.287,200.0,16
-sifilis,3554102,Taboão da Serra,lgbm,0.449,0.599,-0.055,184.23,16
-sifilis,3554102,Taboão da Serra,lstm,0.313,0.661,-0.287,200.0,16
-sifilis,3554102,Taboão da Serra,nhits,0.377,0.663,-0.295,190.77,16
-sifilis,3554102,Taboão da Serra,prophet,0.525,0.609,-0.093,177.65,16
-sifilis,3554102,Taboão da Serra,sarima,0.553,0.617,-0.121,173.85,16
-sifilis,3554102,Taboão da Serra,seasonal_ma3,0.521,0.741,-0.614,200.0,16
-sifilis,3554102,Taboão da Serra,seasonal_naive,0.562,0.901,-1.391,200.0,16
-sifilis,3554102,Taboão da Serra,tft,0.324,0.657,-0.272,199.41,16
-sifilis,3554102,Taboão da Serra,xgboost,0.46,0.618,-0.123,186.56,16
+sifilis,3505708,Barueri,catboost,1.567,1.896,-0.307,61.64,16.0
+sifilis,3505708,Barueri,deepar,2.0218750089406967,2.341672766391115,-0.9939750344937515,87.8745855155772,
+sifilis,3505708,Barueri,gru,2.52,3.06,-2.406,136.31,16.0
+sifilis,3505708,Barueri,lgbm,1.684,2.06,-0.543,64.3,16.0
+sifilis,3505708,Barueri,lstm,2.707,3.151,-2.61,152.43,16.0
+sifilis,3505708,Barueri,nhits,2.501,2.883,-2.022,89.09,16.0
+sifilis,3505708,Barueri,prophet,1.802,2.204,-0.767,72.94,16.0
+sifilis,3505708,Barueri,sarima,1.602,2.005,-0.461,63.85,16.0
+sifilis,3505708,Barueri,seasonal_ma3,1.646,2.116,-0.629,63.62,16.0
+sifilis,3505708,Barueri,seasonal_naive,1.375,1.969,-0.409,55.05,16.0
+sifilis,3505708,Barueri,tft,1.971,2.401,-1.097,85.93,16.0
+sifilis,3505708,Barueri,xgboost,1.586,1.98,-0.425,62.77,16.0
+sifilis,3506003,Bauru,catboost,1.373,1.892,0.169,67.34,16.0
+sifilis,3506003,Bauru,deepar,1.8168750330805779,2.3347256609480267,-0.2651329478183455,93.74190651867092,
+sifilis,3506003,Bauru,gru,2.455,3.123,-1.264,152.83,16.0
+sifilis,3506003,Bauru,lgbm,1.32,1.705,0.325,65.35,16.0
+sifilis,3506003,Bauru,lstm,3.062,3.7,-2.177,200.0,16.0
+sifilis,3506003,Bauru,nhits,2.243,2.861,-0.899,128.38,16.0
+sifilis,3506003,Bauru,prophet,1.593,2.15,-0.072,82.58,16.0
+sifilis,3506003,Bauru,sarima,1.57,1.907,0.156,78.71,16.0
+sifilis,3506003,Bauru,seasonal_ma3,1.812,2.562,-0.523,89.57,16.0
+sifilis,3506003,Bauru,seasonal_naive,2.5,3.082,-1.205,110.55,16.0
+sifilis,3506003,Bauru,tft,2.495,3.048,-1.156,144.0,16.0
+sifilis,3506003,Bauru,xgboost,1.491,1.841,0.213,70.45,16.0
+sifilis,3509502,Campinas,catboost,1.612,2.221,-0.042,53.0,16.0
+sifilis,3509502,Campinas,deepar,2.594999965513125,3.191308503575438,-1.1511709497014708,95.20749399344119,
+sifilis,3509502,Campinas,gru,3.496,3.854,-2.137,106.68,16.0
+sifilis,3509502,Campinas,lgbm,1.722,2.292,-0.109,56.29,16.0
+sifilis,3509502,Campinas,lstm,2.349,2.773,-0.624,65.0,16.0
+sifilis,3509502,Campinas,nhits,2.935,3.481,-1.559,97.79,16.0
+sifilis,3509502,Campinas,prophet,1.687,2.13,0.041,51.21,16.0
+sifilis,3509502,Campinas,sarima,1.742,2.219,-0.04,56.61,16.0
+sifilis,3509502,Campinas,seasonal_ma3,1.833,2.511,-0.332,53.99,16.0
+sifilis,3509502,Campinas,seasonal_naive,2.438,2.773,-0.624,77.37,16.0
+sifilis,3509502,Campinas,tft,1.923,2.471,-0.29,55.58,16.0
+sifilis,3509502,Campinas,xgboost,1.78,2.346,-0.162,55.9,16.0
+sifilis,3510609,Carapicuíba,catboost,2.192,3.683,-0.087,114.55,16.0
+sifilis,3510609,Carapicuíba,deepar,2.7206249706214294,4.2216384402437575,-0.4275629432906132,133.2570561233281,
+sifilis,3510609,Carapicuíba,gru,3.36,4.366,-0.527,136.69,16.0
+sifilis,3510609,Carapicuíba,lgbm,2.329,3.763,-0.134,118.29,16.0
+sifilis,3510609,Carapicuíba,lstm,2.555,3.348,0.102,125.93,16.0
+sifilis,3510609,Carapicuíba,nhits,5.244,7.403,-3.39,136.88,16.0
+sifilis,3510609,Carapicuíba,prophet,2.457,3.504,0.017,123.87,16.0
+sifilis,3510609,Carapicuíba,sarima,2.574,3.797,-0.155,122.82,16.0
+sifilis,3510609,Carapicuíba,seasonal_ma3,2.667,3.855,-0.19,127.74,16.0
+sifilis,3510609,Carapicuíba,seasonal_naive,2.812,4.465,-0.597,126.9,16.0
+sifilis,3510609,Carapicuíba,tft,2.114,3.768,-0.137,127.66,16.0
+sifilis,3510609,Carapicuíba,xgboost,2.377,3.735,-0.117,122.76,16.0
+sifilis,3513801,Diadema,catboost,3.22,4.137,-0.131,70.97,16.0
+sifilis,3513801,Diadema,deepar,3.984374951571226,4.84514119370287,-0.5520921115316675,92.15015060331656,
+sifilis,3513801,Diadema,gru,3.705,4.897,-0.586,94.25,16.0
+sifilis,3513801,Diadema,lgbm,3.131,4.049,-0.084,68.6,16.0
+sifilis,3513801,Diadema,lstm,4.027,4.703,-0.463,73.19,16.0
+sifilis,3513801,Diadema,nhits,3.534,4.474,-0.323,70.67,16.0
+sifilis,3513801,Diadema,prophet,3.019,3.973,-0.044,64.05,16.0
+sifilis,3513801,Diadema,sarima,3.222,3.884,0.003,68.75,16.0
+sifilis,3513801,Diadema,seasonal_ma3,3.958,4.907,-0.592,75.24,16.0
+sifilis,3513801,Diadema,seasonal_naive,4.812,5.89,-1.293,98.43,16.0
+sifilis,3513801,Diadema,tft,3.14,3.838,0.026,67.56,16.0
+sifilis,3513801,Diadema,xgboost,3.128,3.932,-0.022,67.14,16.0
+sifilis,3518701,Guarujá,catboost,2.329,3.556,-0.461,93.46,16.0
+sifilis,3518701,Guarujá,deepar,2.8900000043213367,3.8578216135207852,-0.7200874158228068,119.33762185139982,
+sifilis,3518701,Guarujá,gru,3.812,4.815,-1.68,200.0,16.0
+sifilis,3518701,Guarujá,lgbm,2.395,3.62,-0.514,99.0,16.0
+sifilis,3518701,Guarujá,lstm,3.812,4.815,-1.68,200.0,16.0
+sifilis,3518701,Guarujá,nhits,2.614,3.719,-0.598,121.63,16.0
+sifilis,3518701,Guarujá,prophet,2.346,3.562,-0.467,101.03,16.0
+sifilis,3518701,Guarujá,sarima,2.97,3.966,-0.818,107.03,16.0
+sifilis,3518701,Guarujá,seasonal_ma3,2.604,3.781,-0.653,105.66,16.0
+sifilis,3518701,Guarujá,seasonal_naive,2.562,3.865,-0.726,83.21,16.0
+sifilis,3518701,Guarujá,tft,3.179,4.224,-1.062,155.87,16.0
+sifilis,3518701,Guarujá,xgboost,2.279,3.553,-0.459,98.73,16.0
+sifilis,3518800,Guarulhos,catboost,4.09,5.511,-0.303,29.23,16.0
+sifilis,3518800,Guarulhos,deepar,4.470624864101411,5.847103391463132,-0.4667816701923364,30.99750949293841,
+sifilis,3518800,Guarulhos,gru,5.168,7.05,-1.133,37.75,16.0
+sifilis,3518800,Guarulhos,lgbm,4.423,5.568,-0.33,31.24,16.0
+sifilis,3518800,Guarulhos,lstm,4.262,5.71,-0.399,29.77,16.0
+sifilis,3518800,Guarulhos,nhits,6.078,7.306,-1.29,41.25,16.0
+sifilis,3518800,Guarulhos,prophet,3.915,4.579,0.1,27.6,16.0
+sifilis,3518800,Guarulhos,sarima,4.26,5.314,-0.212,29.47,16.0
+sifilis,3518800,Guarulhos,seasonal_ma3,4.667,5.631,-0.36,33.21,16.0
+sifilis,3518800,Guarulhos,seasonal_naive,5.938,6.924,-1.057,41.84,16.0
+sifilis,3518800,Guarulhos,tft,4.447,5.972,-0.53,31.2,16.0
+sifilis,3518800,Guarulhos,xgboost,4.184,5.425,-0.263,28.97,16.0
+sifilis,3522208,Itapevi,catboost,0.593,0.746,-0.149,181.26,16.0
+sifilis,3522208,Itapevi,deepar,0.5493750004097819,0.6860074766278119,0.028425789957661207,163.182006437392,
+sifilis,3522208,Itapevi,gru,0.375,0.791,-0.29,200.0,16.0
+sifilis,3522208,Itapevi,lgbm,0.609,0.767,-0.214,181.59,16.0
+sifilis,3522208,Itapevi,lstm,0.375,0.791,-0.29,200.0,16.0
+sifilis,3522208,Itapevi,nhits,0.377,0.791,-0.29,200.0,16.0
+sifilis,3522208,Itapevi,prophet,0.609,0.734,-0.113,177.35,16.0
+sifilis,3522208,Itapevi,sarima,0.64,0.753,-0.171,177.67,16.0
+sifilis,3522208,Itapevi,seasonal_ma3,0.833,0.979,-0.978,195.92,16.0
+sifilis,3522208,Itapevi,seasonal_naive,0.75,1.173,-1.839,200.0,16.0
+sifilis,3522208,Itapevi,tft,0.413,0.765,-0.208,197.08,16.0
+sifilis,3522208,Itapevi,xgboost,0.614,0.755,-0.176,178.61,16.0
+sifilis,3525904,Jundiaí,catboost,1.846,2.427,-0.352,65.9,16.0
+sifilis,3525904,Jundiaí,deepar,1.7287500128149986,2.3110468530348838,-0.2251613033800579,62.781873516961596,
+sifilis,3525904,Jundiaí,gru,2.413,3.401,-1.653,105.22,16.0
+sifilis,3525904,Jundiaí,lgbm,1.845,2.418,-0.341,64.95,16.0
+sifilis,3525904,Jundiaí,lstm,3.169,3.804,-2.32,180.43,16.0
+sifilis,3525904,Jundiaí,nhits,2.776,3.477,-1.773,120.89,16.0
+sifilis,3525904,Jundiaí,prophet,1.754,2.274,-0.186,59.99,16.0
+sifilis,3525904,Jundiaí,sarima,1.83,2.298,-0.211,63.36,16.0
+sifilis,3525904,Jundiaí,seasonal_ma3,1.875,2.541,-0.481,62.47,16.0
+sifilis,3525904,Jundiaí,seasonal_naive,2.875,3.588,-1.953,88.75,16.0
+sifilis,3525904,Jundiaí,tft,2.239,2.832,-0.839,86.55,16.0
+sifilis,3525904,Jundiaí,xgboost,1.855,2.34,-0.256,65.48,16.0
+sifilis,3529401,Mauá,catboost,0.816,1.268,-0.03,153.41,16.0
+sifilis,3529401,Mauá,deepar,0.9299999931827188,1.4072313242430008,-0.2673919999556542,156.6352046520174,
+sifilis,3529401,Mauá,gru,0.75,1.458,-0.36,200.0,16.0
+sifilis,3529401,Mauá,lgbm,0.796,1.316,-0.108,157.57,16.0
+sifilis,3529401,Mauá,lstm,0.75,1.458,-0.36,200.0,16.0
+sifilis,3529401,Mauá,nhits,0.75,1.458,-0.36,200.0,16.0
+sifilis,3529401,Mauá,prophet,0.813,1.28,-0.048,149.61,16.0
+sifilis,3529401,Mauá,sarima,0.849,1.308,-0.094,151.87,16.0
+sifilis,3529401,Mauá,seasonal_ma3,0.854,1.431,-0.311,141.09,16.0
+sifilis,3529401,Mauá,seasonal_naive,0.812,1.479,-0.4,133.33,16.0
+sifilis,3529401,Mauá,tft,0.753,1.445,-0.336,196.42,16.0
+sifilis,3529401,Mauá,xgboost,0.818,1.328,-0.128,161.54,16.0
+sifilis,3534401,Osasco,catboost,6.16,7.344,-0.269,57.01,16.0
+sifilis,3534401,Osasco,deepar,6.093125075101852,7.161243423770851,-0.2066684088117945,58.63884413484426,
+sifilis,3534401,Osasco,gru,7.149,8.667,-0.767,80.99,16.0
+sifilis,3534401,Osasco,lgbm,5.57,6.528,-0.003,52.11,16.0
+sifilis,3534401,Osasco,lstm,6.963,8.298,-0.62,74.99,16.0
+sifilis,3534401,Osasco,nhits,5.543,6.818,-0.094,51.96,16.0
+sifilis,3534401,Osasco,prophet,5.684,6.768,-0.078,51.33,16.0
+sifilis,3534401,Osasco,sarima,5.456,6.497,0.007,50.46,16.0
+sifilis,3534401,Osasco,seasonal_ma3,5.937,6.802,-0.089,58.25,16.0
+sifilis,3534401,Osasco,seasonal_naive,7.562,8.577,-0.731,73.26,16.0
+sifilis,3534401,Osasco,tft,5.968,7.107,-0.188,57.76,16.0
+sifilis,3534401,Osasco,xgboost,5.613,6.673,-0.048,52.64,16.0
+sifilis,3536505,Paulínia,catboost,0.224,0.268,-0.227,195.6,16.0
+sifilis,3536505,Paulínia,deepar,0.5774999912828207,0.6582742468071832,-6.395413060429897,188.09523823039603,
+sifilis,3536505,Paulínia,gru,0.063,0.25,-0.067,200.0,16.0
+sifilis,3536505,Paulínia,lgbm,0.169,0.257,-0.125,197.89,16.0
+sifilis,3536505,Paulínia,lstm,0.063,0.25,-0.067,200.0,16.0
+sifilis,3536505,Paulínia,nhits,0.063,0.25,-0.067,200.0,16.0
+sifilis,3536505,Paulínia,prophet,0.216,0.306,-0.595,197.01,16.0
+sifilis,3536505,Paulínia,sarima,0.172,0.255,-0.107,197.69,16.0
+sifilis,3536505,Paulínia,seasonal_ma3,0.167,0.312,-0.659,200.0,16.0
+sifilis,3536505,Paulínia,seasonal_naive,0.125,0.354,-1.133,200.0,16.0
+sifilis,3536505,Paulínia,tft,0.063,0.25,-0.067,200.0,16.0
+sifilis,3536505,Paulínia,xgboost,0.16,0.255,-0.108,197.93,16.0
+sifilis,3541000,Praia Grande,catboost,4.268,5.712,-0.407,42.15,16.0
+sifilis,3541000,Praia Grande,deepar,6.043125092983246,7.524806105252749,-1.4423610736212562,61.222392510047285,
+sifilis,3541000,Praia Grande,gru,6.304,7.565,-1.468,66.41,16.0
+sifilis,3541000,Praia Grande,lgbm,4.443,5.605,-0.355,43.72,16.0
+sifilis,3541000,Praia Grande,lstm,5.853,7.022,-1.127,58.29,16.0
+sifilis,3541000,Praia Grande,nhits,4.348,5.363,-0.241,35.31,16.0
+sifilis,3541000,Praia Grande,prophet,4.041,5.212,-0.172,38.42,16.0
+sifilis,3541000,Praia Grande,sarima,3.481,4.541,0.11,31.54,16.0
+sifilis,3541000,Praia Grande,seasonal_ma3,4.979,6.358,-0.744,48.95,16.0
+sifilis,3541000,Praia Grande,seasonal_naive,5.125,6.031,-0.569,49.04,16.0
+sifilis,3541000,Praia Grande,tft,5.459,6.527,-0.837,57.26,16.0
+sifilis,3541000,Praia Grande,xgboost,4.242,5.326,-0.224,43.3,16.0
+sifilis,3543402,Ribeirão Preto,catboost,1.831,2.88,-0.006,51.01,16.0
+sifilis,3543402,Ribeirão Preto,deepar,2.9237500093877316,4.133275030906758,-1.0717642800407479,78.89113086488886,
+sifilis,3543402,Ribeirão Preto,gru,3.635,4.712,-1.693,92.84,16.0
+sifilis,3543402,Ribeirão Preto,lgbm,1.827,2.948,-0.054,48.69,16.0
+sifilis,3543402,Ribeirão Preto,lstm,2.426,3.18,-0.227,59.39,16.0
+sifilis,3543402,Ribeirão Preto,nhits,3.69,4.64,-1.611,101.72,16.0
+sifilis,3543402,Ribeirão Preto,prophet,2.031,2.869,0.002,53.28,16.0
+sifilis,3543402,Ribeirão Preto,sarima,1.676,2.611,0.173,46.19,16.0
+sifilis,3543402,Ribeirão Preto,seasonal_ma3,2.5,3.385,-0.39,65.84,16.0
+sifilis,3543402,Ribeirão Preto,seasonal_naive,2.688,3.614,-0.584,73.99,16.0
+sifilis,3543402,Ribeirão Preto,tft,2.545,3.268,-0.295,63.32,16.0
+sifilis,3543402,Ribeirão Preto,xgboost,1.906,2.939,-0.048,50.66,16.0
+sifilis,3547809,Santo André,catboost,2.747,3.347,-0.363,55.94,16.0
+sifilis,3547809,Santo André,deepar,2.2881249487400055,3.0330811381494636,-0.11987293618311923,47.12189830232857,
+sifilis,3547809,Santo André,gru,2.288,2.896,-0.021,47.92,16.0
+sifilis,3547809,Santo André,lgbm,2.715,3.317,-0.339,56.53,16.0
+sifilis,3547809,Santo André,lstm,2.357,2.922,-0.04,49.28,16.0
+sifilis,3547809,Santo André,nhits,3.054,3.53,-0.517,79.29,16.0
+sifilis,3547809,Santo André,prophet,2.848,3.431,-0.433,55.66,16.0
+sifilis,3547809,Santo André,sarima,2.813,3.46,-0.457,55.02,16.0
+sifilis,3547809,Santo André,seasonal_ma3,3.083,3.875,-0.828,62.95,16.0
+sifilis,3547809,Santo André,seasonal_naive,3.062,3.666,-0.636,66.56,16.0
+sifilis,3547809,Santo André,tft,2.667,3.115,-0.181,56.03,16.0
+sifilis,3547809,Santo André,xgboost,2.678,3.462,-0.459,55.23,16.0
+sifilis,3548500,Santos,catboost,1.611,2.029,-0.167,40.64,16.0
+sifilis,3548500,Santos,deepar,2.69312497228384,3.7809414741632454,-3.052771559632581,73.61677610249077,
+sifilis,3548500,Santos,gru,2.427,2.858,-1.316,68.64,16.0
+sifilis,3548500,Santos,lgbm,1.709,2.027,-0.165,42.7,16.0
+sifilis,3548500,Santos,lstm,3.096,4.432,-4.569,55.66,16.0
+sifilis,3548500,Santos,nhits,3.7,4.546,-4.858,62.76,16.0
+sifilis,3548500,Santos,prophet,2.065,2.477,-0.74,47.26,16.0
+sifilis,3548500,Santos,sarima,1.634,1.934,-0.06,40.15,16.0
+sifilis,3548500,Santos,seasonal_ma3,2.354,2.732,-1.116,53.69,16.0
+sifilis,3548500,Santos,seasonal_naive,2.625,3.021,-1.587,59.7,16.0
+sifilis,3548500,Santos,tft,1.736,2.221,-0.399,42.27,16.0
+sifilis,3548500,Santos,xgboost,1.702,1.985,-0.116,42.46,16.0
+sifilis,3548708,São Bernardo do Campo,catboost,1.17,1.59,-0.018,60.88,16.0
+sifilis,3548708,São Bernardo do Campo,deepar,1.1268749833106995,1.6904677552748202,-0.15026162782345232,66.84729334037269,
+sifilis,3548708,São Bernardo do Campo,gru,1.265,1.792,-0.293,72.99,16.0
+sifilis,3548708,São Bernardo do Campo,lgbm,1.227,1.617,-0.052,64.02,16.0
+sifilis,3548708,São Bernardo do Campo,lstm,1.328,1.635,-0.076,66.19,16.0
+sifilis,3548708,São Bernardo do Campo,nhits,2.099,2.621,-1.765,104.31,16.0
+sifilis,3548708,São Bernardo do Campo,prophet,1.113,1.569,0.009,63.35,16.0
+sifilis,3548708,São Bernardo do Campo,sarima,1.156,1.556,0.026,63.67,16.0
+sifilis,3548708,São Bernardo do Campo,seasonal_ma3,1.333,1.55,0.033,76.29,16.0
+sifilis,3548708,São Bernardo do Campo,seasonal_naive,1.562,2.077,-0.736,88.64,16.0
+sifilis,3548708,São Bernardo do Campo,tft,1.358,1.846,-0.372,66.79,16.0
+sifilis,3548708,São Bernardo do Campo,xgboost,1.161,1.605,-0.038,62.4,16.0
+sifilis,3549805,São José do Rio Preto,catboost,0.745,0.879,-0.186,76.21,16.0
+sifilis,3549805,São José do Rio Preto,deepar,1.4087499771267176,1.6298427461665046,-3.072066877672351,118.84243957312437,
+sifilis,3549805,São José do Rio Preto,gru,1.438,1.679,-3.322,113.82,16.0
+sifilis,3549805,São José do Rio Preto,lgbm,0.913,1.059,-0.718,82.41,16.0
+sifilis,3549805,São José do Rio Preto,lstm,1.742,2.116,-5.866,104.12,16.0
+sifilis,3549805,São José do Rio Preto,nhits,1.627,1.969,-4.943,144.83,16.0
+sifilis,3549805,São José do Rio Preto,prophet,1.365,1.685,-3.352,85.33,16.0
+sifilis,3549805,São José do Rio Preto,sarima,0.782,0.917,-0.29,80.06,16.0
+sifilis,3549805,São José do Rio Preto,seasonal_ma3,1.187,1.325,-1.693,96.73,16.0
+sifilis,3549805,São José do Rio Preto,seasonal_naive,1.188,1.436,-2.162,120.83,16.0
+sifilis,3549805,São José do Rio Preto,tft,1.377,1.692,-3.388,113.88,16.0
+sifilis,3549805,São José do Rio Preto,xgboost,0.899,1.037,-0.649,81.69,16.0
+sifilis,3549904,São José dos Campos,catboost,2.209,2.638,0.169,41.1,16.0
+sifilis,3549904,São José dos Campos,deepar,2.783125013113022,3.5737087178956513,-0.5256541596327695,49.838486152377435,
+sifilis,3549904,São José dos Campos,gru,2.859,3.32,-0.317,66.06,16.0
+sifilis,3549904,São José dos Campos,lgbm,2.423,2.871,0.015,45.19,16.0
+sifilis,3549904,São José dos Campos,lstm,3.265,3.912,-0.828,53.94,16.0
+sifilis,3549904,São José dos Campos,nhits,3.849,4.366,-1.277,88.18,16.0
+sifilis,3549904,São José dos Campos,prophet,2.584,2.924,-0.021,47.58,16.0
+sifilis,3549904,São José dos Campos,sarima,2.778,3.157,-0.191,50.21,16.0
+sifilis,3549904,São José dos Campos,seasonal_ma3,3.104,3.668,-0.607,57.86,16.0
+sifilis,3549904,São José dos Campos,seasonal_naive,3.188,3.945,-0.859,60.0,16.0
+sifilis,3549904,São José dos Campos,tft,2.474,2.995,-0.072,46.12,16.0
+sifilis,3549904,São José dos Campos,xgboost,2.442,2.852,0.028,45.3,16.0
+sifilis,3550308,São Paulo,catboost,17.364,21.981,-1.209,24.05,16.0
+sifilis,3550308,São Paulo,deepar,11.135624885559082,15.675283094743053,-0.12344684012941998,15.094098556064564,
+sifilis,3550308,São Paulo,gru,19.143,22.355,-1.285,27.11,16.0
+sifilis,3550308,São Paulo,lgbm,14.324,18.32,-0.534,19.48,16.0
+sifilis,3550308,São Paulo,lstm,20.959,25.022,-1.863,30.5,16.0
+sifilis,3550308,São Paulo,nhits,13.82,17.308,-0.37,18.68,16.0
+sifilis,3550308,São Paulo,prophet,13.305,17.998,-0.481,18.14,16.0
+sifilis,3550308,São Paulo,sarima,14.744,19.963,-0.822,19.95,16.0
+sifilis,3550308,São Paulo,seasonal_ma3,14.313,19.462,-0.732,19.79,16.0
+sifilis,3550308,São Paulo,seasonal_naive,18.688,22.315,-1.277,25.34,16.0
+sifilis,3550308,São Paulo,tft,16.705,20.248,-0.874,23.34,16.0
+sifilis,3550308,São Paulo,xgboost,13.797,18.189,-0.513,19.12,16.0
+sifilis,3551009,São Vicente,catboost,3.289,4.134,-0.26,58.98,16.0
+sifilis,3551009,São Vicente,deepar,3.888125032186508,4.999135575141641,-0.8432115423951505,75.1236364127444,
+sifilis,3551009,São Vicente,gru,4.045,4.898,-0.769,106.85,16.0
+sifilis,3551009,São Vicente,lgbm,3.065,4.183,-0.291,55.83,16.0
+sifilis,3551009,São Vicente,lstm,4.917,5.939,-1.601,127.81,16.0
+sifilis,3551009,São Vicente,nhits,3.883,4.506,-0.497,64.31,16.0
+sifilis,3551009,São Vicente,prophet,3.738,4.832,-0.722,66.83,16.0
+sifilis,3551009,São Vicente,sarima,3.853,4.974,-0.824,60.63,16.0
+sifilis,3551009,São Vicente,seasonal_ma3,3.667,4.683,-0.617,75.47,16.0
+sifilis,3551009,São Vicente,seasonal_naive,4.688,5.847,-1.521,91.63,16.0
+sifilis,3551009,São Vicente,tft,5.096,6.059,-1.707,97.03,16.0
+sifilis,3551009,São Vicente,xgboost,3.023,4.037,-0.202,57.69,16.0
+sifilis,3552205,Sorocaba,catboost,2.819,3.574,-0.081,121.15,16.0
+sifilis,3552205,Sorocaba,deepar,3.4531249436549842,4.330586663586333,-0.5881637769807946,133.5626374594112,
+sifilis,3552205,Sorocaba,gru,3.472,4.332,-0.589,134.54,16.0
+sifilis,3552205,Sorocaba,lgbm,2.946,3.666,-0.138,123.65,16.0
+sifilis,3552205,Sorocaba,lstm,4.331,5.637,-1.691,130.86,16.0
+sifilis,3552205,Sorocaba,nhits,3.93,5.035,-1.147,136.45,16.0
+sifilis,3552205,Sorocaba,prophet,2.697,3.528,-0.054,112.12,16.0
+sifilis,3552205,Sorocaba,sarima,2.918,3.717,-0.17,119.94,16.0
+sifilis,3552205,Sorocaba,seasonal_ma3,2.729,3.711,-0.166,113.79,16.0
+sifilis,3552205,Sorocaba,seasonal_naive,3.688,4.789,-0.942,137.93,16.0
+sifilis,3552205,Sorocaba,tft,3.073,4.059,-0.396,126.23,16.0
+sifilis,3552205,Sorocaba,xgboost,2.767,3.451,-0.008,119.51,16.0
+sifilis,3554102,Taboão da Serra,catboost,0.481,0.615,-0.114,182.03,16.0
+sifilis,3554102,Taboão da Serra,deepar,0.856249975040555,1.0049750931047157,-1.971880276629574,165.77003671003104,
+sifilis,3554102,Taboão da Serra,gru,0.313,0.661,-0.287,200.0,16.0
+sifilis,3554102,Taboão da Serra,lgbm,0.449,0.599,-0.055,184.23,16.0
+sifilis,3554102,Taboão da Serra,lstm,0.313,0.661,-0.287,200.0,16.0
+sifilis,3554102,Taboão da Serra,nhits,0.377,0.663,-0.295,190.77,16.0
+sifilis,3554102,Taboão da Serra,prophet,0.525,0.609,-0.093,177.65,16.0
+sifilis,3554102,Taboão da Serra,sarima,0.553,0.617,-0.121,173.85,16.0
+sifilis,3554102,Taboão da Serra,seasonal_ma3,0.521,0.741,-0.614,200.0,16.0
+sifilis,3554102,Taboão da Serra,seasonal_naive,0.562,0.901,-1.391,200.0,16.0
+sifilis,3554102,Taboão da Serra,tft,0.324,0.657,-0.272,199.41,16.0
+sifilis,3554102,Taboão da Serra,xgboost,0.46,0.618,-0.123,186.56,16.0

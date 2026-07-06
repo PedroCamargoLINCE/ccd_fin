@@ -1,254 +1,277 @@
 disease,cd_mun,nm_mun,model,mae,rmse,r2,smape,n
-hepatite,3505708,Barueri,catboost,0.54,0.664,-0.297,180.32,16
-hepatite,3505708,Barueri,gru,0.638,1.042,-2.192,189.53,16
-hepatite,3505708,Barueri,lgbm,0.545,0.682,-0.367,181.98,16
-hepatite,3505708,Barueri,lstm,0.344,0.567,0.055,190.31,16
-hepatite,3505708,Barueri,nhits,0.313,0.661,-0.285,199.85,16
-hepatite,3505708,Barueri,prophet,0.404,0.61,-0.096,176.69,16
-hepatite,3505708,Barueri,sarima,0.569,0.661,-0.285,171.09,16
-hepatite,3505708,Barueri,seasonal_ma3,0.583,0.697,-0.43,182.86,16
-hepatite,3505708,Barueri,seasonal_naive,0.562,0.901,-1.391,200.0,16
-hepatite,3505708,Barueri,tft,0.319,0.648,-0.236,198.48,16
-hepatite,3505708,Barueri,xgboost,0.546,0.675,-0.34,181.01,16
-hepatite,3506003,Bauru,catboost,0.964,1.224,-0.234,145.95,16
-hepatite,3506003,Bauru,gru,0.648,1.142,-0.074,170.26,16
-hepatite,3506003,Bauru,lgbm,1.0,1.264,-0.315,152.38,16
-hepatite,3506003,Bauru,lstm,0.637,1.146,-0.082,174.44,16
-hepatite,3506003,Bauru,nhits,0.687,1.294,-0.379,199.39,16
-hepatite,3506003,Bauru,prophet,0.669,1.198,-0.182,171.53,16
-hepatite,3506003,Bauru,sarima,0.839,1.053,0.088,151.7,16
-hepatite,3506003,Bauru,seasonal_ma3,1.083,1.349,-0.498,154.74,16
-hepatite,3506003,Bauru,seasonal_naive,1.062,1.561,-1.006,165.33,16
-hepatite,3506003,Bauru,tft,1.116,1.448,-0.726,181.62,16
-hepatite,3506003,Bauru,xgboost,0.957,1.2,-0.185,152.86,16
-hepatite,3509502,Campinas,catboost,2.017,2.888,-0.39,88.26,16
-hepatite,3509502,Campinas,gru,2.036,3.004,-0.504,100.86,16
-hepatite,3509502,Campinas,lgbm,2.02,3.066,-0.567,77.88,16
-hepatite,3509502,Campinas,lstm,1.758,2.729,-0.241,82.3,16
-hepatite,3509502,Campinas,nhits,2.408,3.332,-0.85,145.25,16
-hepatite,3509502,Campinas,prophet,1.854,2.791,-0.299,87.21,16
-hepatite,3509502,Campinas,sarima,2.028,3.072,-0.573,82.58,16
-hepatite,3509502,Campinas,seasonal_ma3,1.792,2.687,-0.204,79.76,16
-hepatite,3509502,Campinas,seasonal_naive,2.188,3.231,-0.74,100.38,16
-hepatite,3509502,Campinas,tft,1.938,2.922,-0.423,99.24,16
-hepatite,3509502,Campinas,xgboost,1.922,2.93,-0.431,76.66,16
-hepatite,3510609,Carapicuíba,catboost,0.465,0.511,-0.113,168.21,16
-hepatite,3510609,Carapicuíba,gru,0.662,0.92,-2.61,188.33,16
-hepatite,3510609,Carapicuíba,lgbm,0.46,0.505,-0.088,167.3,16
-hepatite,3510609,Carapicuíba,lstm,0.371,0.565,-0.362,185.6,16
-hepatite,3510609,Carapicuíba,nhits,0.375,0.612,-0.6,200.0,16
-hepatite,3510609,Carapicuíba,prophet,0.43,0.603,-0.551,187.57,16
-hepatite,3510609,Carapicuíba,sarima,0.576,0.647,-0.788,175.27,16
-hepatite,3510609,Carapicuíba,seasonal_ma3,0.5,0.601,-0.541,176.92,16
-hepatite,3510609,Carapicuíba,seasonal_naive,0.625,0.791,-1.667,200.0,16
-hepatite,3510609,Carapicuíba,tft,0.399,0.584,-0.453,192.57,16
-hepatite,3510609,Carapicuíba,xgboost,0.48,0.517,-0.138,165.48,16
-hepatite,3513801,Diadema,catboost,0.031,0.032,,200.0,16
-hepatite,3513801,Diadema,gru,0.331,0.748,,200.0,16
-hepatite,3513801,Diadema,lgbm,0.011,0.011,,200.0,16
-hepatite,3513801,Diadema,lstm,0.0,0.0,,200.0,16
-hepatite,3513801,Diadema,nhits,0.0,0.0,,200.0,16
-hepatite,3513801,Diadema,prophet,0.0,0.0,,0.0,16
-hepatite,3513801,Diadema,sarima,0.154,0.159,,200.0,16
-hepatite,3513801,Diadema,seasonal_ma3,0.0,0.0,,0.0,16
-hepatite,3513801,Diadema,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3513801,Diadema,tft,0.0,0.0,,200.0,16
-hepatite,3513801,Diadema,xgboost,0.007,0.008,,200.0,16
-hepatite,3518701,Guarujá,catboost,0.028,0.029,,200.0,16
-hepatite,3518701,Guarujá,gru,0.217,0.526,,200.0,16
-hepatite,3518701,Guarujá,lgbm,0.013,0.014,,200.0,16
-hepatite,3518701,Guarujá,lstm,0.0,0.0,,200.0,16
-hepatite,3518701,Guarujá,nhits,0.0,0.0,,200.0,16
-hepatite,3518701,Guarujá,prophet,0.017,0.05,,200.0,16
-hepatite,3518701,Guarujá,sarima,0.0,0.0,,200.0,16
-hepatite,3518701,Guarujá,seasonal_ma3,0.0,0.0,,0.0,16
-hepatite,3518701,Guarujá,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3518701,Guarujá,tft,0.0,0.0,,200.0,16
-hepatite,3518701,Guarujá,xgboost,0.014,0.014,,200.0,16
-hepatite,3518800,Guarulhos,catboost,0.035,0.036,,200.0,16
-hepatite,3518800,Guarulhos,gru,0.024,0.053,,200.0,16
-hepatite,3518800,Guarulhos,lgbm,0.021,0.022,,200.0,16
-hepatite,3518800,Guarulhos,lstm,0.0,0.0,,200.0,16
-hepatite,3518800,Guarulhos,nhits,0.0,0.0,,200.0,16
-hepatite,3518800,Guarulhos,prophet,0.0,0.0,,0.0,16
-hepatite,3518800,Guarulhos,sarima,0.0,0.0,,200.0,16
-hepatite,3518800,Guarulhos,seasonal_ma3,0.021,0.083,,200.0,16
-hepatite,3518800,Guarulhos,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3518800,Guarulhos,tft,0.0,0.0,,200.0,16
-hepatite,3518800,Guarulhos,xgboost,0.024,0.025,,200.0,16
-hepatite,3522208,Itapevi,catboost,0.056,0.059,,200.0,16
-hepatite,3522208,Itapevi,gru,0.0,0.0,,200.0,16
-hepatite,3522208,Itapevi,lgbm,0.038,0.041,,200.0,16
-hepatite,3522208,Itapevi,lstm,0.0,0.0,,200.0,16
-hepatite,3522208,Itapevi,nhits,0.0,0.0,,200.0,16
-hepatite,3522208,Itapevi,prophet,0.018,0.037,,200.0,16
-hepatite,3522208,Itapevi,sarima,0.031,0.043,,200.0,16
-hepatite,3522208,Itapevi,seasonal_ma3,0.0,0.0,,0.0,16
-hepatite,3522208,Itapevi,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3522208,Itapevi,tft,0.0,0.0,,200.0,16
-hepatite,3522208,Itapevi,xgboost,0.037,0.04,,200.0,16
-hepatite,3525904,Jundiaí,catboost,0.059,0.062,,200.0,16
-hepatite,3525904,Jundiaí,gru,0.296,0.759,,200.0,16
-hepatite,3525904,Jundiaí,lgbm,0.033,0.039,,200.0,16
-hepatite,3525904,Jundiaí,lstm,0.0,0.0,,200.0,16
-hepatite,3525904,Jundiaí,nhits,0.0,0.0,,200.0,16
-hepatite,3525904,Jundiaí,prophet,0.01,0.035,,200.0,16
-hepatite,3525904,Jundiaí,sarima,0.035,0.058,,200.0,16
-hepatite,3525904,Jundiaí,seasonal_ma3,0.0,0.0,,0.0,16
-hepatite,3525904,Jundiaí,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3525904,Jundiaí,tft,0.0,0.0,,200.0,16
-hepatite,3525904,Jundiaí,xgboost,0.034,0.038,,200.0,16
-hepatite,3529401,Mauá,catboost,0.039,0.04,,200.0,16
-hepatite,3529401,Mauá,gru,0.239,0.509,,200.0,16
-hepatite,3529401,Mauá,lgbm,0.013,0.014,,200.0,16
-hepatite,3529401,Mauá,lstm,0.0,0.0,,200.0,16
-hepatite,3529401,Mauá,nhits,0.0,0.0,,200.0,16
-hepatite,3529401,Mauá,prophet,0.0,0.0,,0.0,16
-hepatite,3529401,Mauá,sarima,0.011,0.023,,200.0,16
-hepatite,3529401,Mauá,seasonal_ma3,0.0,0.0,,0.0,16
-hepatite,3529401,Mauá,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3529401,Mauá,tft,0.0,0.0,,200.0,16
-hepatite,3529401,Mauá,xgboost,0.014,0.014,,200.0,16
-hepatite,3534401,Osasco,catboost,0.233,0.306,0.144,184.34,16
-hepatite,3534401,Osasco,gru,0.11,0.307,0.137,194.42,16
-hepatite,3534401,Osasco,lgbm,0.276,0.325,0.034,183.54,16
-hepatite,3534401,Osasco,lstm,0.127,0.353,-0.14,199.94,16
-hepatite,3534401,Osasco,nhits,0.125,0.353,-0.141,199.97,16
-hepatite,3534401,Osasco,prophet,0.286,0.417,-0.592,195.11,16
-hepatite,3534401,Osasco,sarima,0.251,0.356,-0.157,190.58,16
-hepatite,3534401,Osasco,seasonal_ma3,0.417,0.486,-1.159,181.43,16
-hepatite,3534401,Osasco,seasonal_naive,0.312,0.559,-1.857,166.67,16
-hepatite,3534401,Osasco,tft,0.136,0.335,-0.027,197.44,16
-hepatite,3534401,Osasco,xgboost,0.285,0.355,-0.149,184.77,16
-hepatite,3536505,Paulínia,catboost,0.096,0.242,0.004,198.9,16
-hepatite,3536505,Paulínia,gru,0.063,0.25,-0.067,200.0,16
-hepatite,3536505,Paulínia,lgbm,0.085,0.244,-0.013,199.22,16
-hepatite,3536505,Paulínia,lstm,0.063,0.25,-0.067,200.0,16
-hepatite,3536505,Paulínia,nhits,0.063,0.25,-0.067,200.0,16
-hepatite,3536505,Paulínia,prophet,0.065,0.25,-0.067,200.0,16
-hepatite,3536505,Paulínia,sarima,0.071,0.254,-0.103,200.0,16
-hepatite,3536505,Paulínia,seasonal_ma3,0.125,0.289,-0.422,200.0,16
-hepatite,3536505,Paulínia,seasonal_naive,0.125,0.354,-1.133,200.0,16
-hepatite,3536505,Paulínia,tft,0.063,0.25,-0.067,200.0,16
-hepatite,3536505,Paulínia,xgboost,0.082,0.243,-0.007,199.21,16
-hepatite,3541000,Praia Grande,catboost,0.028,0.028,,200.0,16
-hepatite,3541000,Praia Grande,gru,0.0,0.0,,200.0,16
-hepatite,3541000,Praia Grande,lgbm,0.012,0.012,,200.0,16
-hepatite,3541000,Praia Grande,lstm,0.0,0.0,,200.0,16
-hepatite,3541000,Praia Grande,nhits,0.0,0.0,,200.0,16
-hepatite,3541000,Praia Grande,prophet,0.0,0.0,,0.0,16
-hepatite,3541000,Praia Grande,sarima,0.004,0.006,,200.0,16
-hepatite,3541000,Praia Grande,seasonal_ma3,0.0,0.0,,0.0,16
-hepatite,3541000,Praia Grande,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3541000,Praia Grande,tft,0.0,0.0,,200.0,16
-hepatite,3541000,Praia Grande,xgboost,0.011,0.012,,200.0,16
-hepatite,3543402,Ribeirão Preto,catboost,0.03,0.031,,200.0,16
-hepatite,3543402,Ribeirão Preto,gru,0.319,0.669,,200.0,16
-hepatite,3543402,Ribeirão Preto,lgbm,0.016,0.017,,200.0,16
-hepatite,3543402,Ribeirão Preto,lstm,0.0,0.0,,200.0,16
-hepatite,3543402,Ribeirão Preto,nhits,0.0,0.0,,200.0,16
-hepatite,3543402,Ribeirão Preto,prophet,0.0,0.0,,0.0,16
-hepatite,3543402,Ribeirão Preto,sarima,0.004,0.005,,200.0,16
-hepatite,3543402,Ribeirão Preto,seasonal_ma3,0.0,0.0,,0.0,16
-hepatite,3543402,Ribeirão Preto,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3543402,Ribeirão Preto,tft,0.0,0.0,,200.0,16
-hepatite,3543402,Ribeirão Preto,xgboost,0.014,0.015,,200.0,16
-hepatite,3547809,Santo André,catboost,0.039,0.041,,200.0,16
-hepatite,3547809,Santo André,gru,0.125,0.278,,200.0,16
-hepatite,3547809,Santo André,lgbm,0.014,0.015,,200.0,16
-hepatite,3547809,Santo André,lstm,0.0,0.0,,200.0,16
-hepatite,3547809,Santo André,nhits,0.0,0.0,,200.0,16
-hepatite,3547809,Santo André,prophet,0.0,0.0,,0.0,16
-hepatite,3547809,Santo André,sarima,0.0,0.001,,200.0,16
-hepatite,3547809,Santo André,seasonal_ma3,0.0,0.0,,0.0,16
-hepatite,3547809,Santo André,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3547809,Santo André,tft,0.0,0.0,,200.0,16
-hepatite,3547809,Santo André,xgboost,0.015,0.016,,200.0,16
-hepatite,3548500,Santos,catboost,0.654,0.77,-0.194,140.56,16
-hepatite,3548500,Santos,gru,0.605,0.869,-0.521,164.78,16
-hepatite,3548500,Santos,lgbm,0.64,0.738,-0.098,141.72,16
-hepatite,3548500,Santos,lstm,0.554,0.813,-0.331,169.62,16
-hepatite,3548500,Santos,nhits,0.562,0.901,-0.637,199.89,16
-hepatite,3548500,Santos,prophet,0.611,0.847,-0.447,186.07,16
-hepatite,3548500,Santos,sarima,0.653,0.755,-0.149,141.6,16
-hepatite,3548500,Santos,seasonal_ma3,0.708,0.858,-0.484,142.5,16
-hepatite,3548500,Santos,seasonal_naive,0.562,0.901,-0.638,127.27,16
-hepatite,3548500,Santos,tft,0.579,0.844,-0.435,186.28,16
-hepatite,3548500,Santos,xgboost,0.667,0.777,-0.219,136.34,16
-hepatite,3552205,Sorocaba,catboost,0.133,0.163,,200.0,16
-hepatite,3552205,Sorocaba,gru,0.047,0.103,,200.0,16
-hepatite,3552205,Sorocaba,lgbm,0.139,0.163,,200.0,16
-hepatite,3552205,Sorocaba,lstm,0.002,0.005,,200.0,16
-hepatite,3552205,Sorocaba,nhits,0.0,0.0,,200.0,16
-hepatite,3552205,Sorocaba,prophet,0.008,0.031,,200.0,16
-hepatite,3552205,Sorocaba,sarima,0.111,0.144,,200.0,16
-hepatite,3552205,Sorocaba,seasonal_ma3,0.083,0.167,,200.0,16
-hepatite,3552205,Sorocaba,seasonal_naive,0.062,0.25,,200.0,16
-hepatite,3552205,Sorocaba,tft,0.003,0.004,,200.0,16
-hepatite,3552205,Sorocaba,xgboost,0.119,0.136,,200.0,16
-hepatite,3548708,São Bernardo do Campo,catboost,0.575,0.802,-0.035,165.23,16
-hepatite,3548708,São Bernardo do Campo,gru,0.467,0.893,-0.284,198.48,16
-hepatite,3548708,São Bernardo do Campo,lgbm,0.529,0.775,0.032,163.81,16
-hepatite,3548708,São Bernardo do Campo,lstm,0.438,0.901,-0.308,200.0,16
-hepatite,3548708,São Bernardo do Campo,nhits,0.438,0.901,-0.308,200.0,16
-hepatite,3548708,São Bernardo do Campo,prophet,0.442,0.869,-0.216,179.74,16
-hepatite,3548708,São Bernardo do Campo,sarima,0.598,0.804,-0.042,174.55,16
-hepatite,3548708,São Bernardo do Campo,seasonal_ma3,0.438,0.75,0.094,165.91,16
-hepatite,3548708,São Bernardo do Campo,seasonal_naive,0.375,0.866,-0.208,133.33,16
-hepatite,3548708,São Bernardo do Campo,tft,0.455,0.892,-0.28,196.93,16
-hepatite,3548708,São Bernardo do Campo,xgboost,0.544,0.76,0.07,165.11,16
-hepatite,3549805,São José do Rio Preto,catboost,0.022,0.023,,200.0,16
-hepatite,3549805,São José do Rio Preto,gru,0.684,1.19,,200.0,16
-hepatite,3549805,São José do Rio Preto,lgbm,0.01,0.01,,200.0,16
-hepatite,3549805,São José do Rio Preto,lstm,0.0,0.001,,200.0,16
-hepatite,3549805,São José do Rio Preto,nhits,0.0,0.0,,200.0,16
-hepatite,3549805,São José do Rio Preto,prophet,0.0,0.0,,0.0,16
-hepatite,3549805,São José do Rio Preto,sarima,0.0,0.0,,200.0,16
-hepatite,3549805,São José do Rio Preto,seasonal_ma3,0.0,0.0,,0.0,16
-hepatite,3549805,São José do Rio Preto,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3549805,São José do Rio Preto,tft,0.0,0.0,,200.0,16
-hepatite,3549805,São José do Rio Preto,xgboost,0.011,0.011,,200.0,16
-hepatite,3549904,São José dos Campos,catboost,0.066,0.08,,200.0,16
-hepatite,3549904,São José dos Campos,gru,0.786,1.497,,200.0,16
-hepatite,3549904,São José dos Campos,lgbm,0.038,0.055,,200.0,16
-hepatite,3549904,São José dos Campos,lstm,0.001,0.002,,200.0,16
-hepatite,3549904,São José dos Campos,nhits,0.0,0.0,,200.0,16
-hepatite,3549904,São José dos Campos,prophet,0.0,0.0,,0.0,16
-hepatite,3549904,São José dos Campos,sarima,0.003,0.006,,200.0,16
-hepatite,3549904,São José dos Campos,seasonal_ma3,0.188,0.323,,200.0,16
-hepatite,3549904,São José dos Campos,seasonal_naive,0.188,0.559,,200.0,16
-hepatite,3549904,São José dos Campos,tft,0.0,0.0,,200.0,16
-hepatite,3549904,São José dos Campos,xgboost,0.041,0.054,,200.0,16
-hepatite,3550308,São Paulo,catboost,0.027,0.028,,200.0,16
-hepatite,3550308,São Paulo,gru,1.437,3.99,,200.0,16
-hepatite,3550308,São Paulo,lgbm,0.015,0.015,,200.0,16
-hepatite,3550308,São Paulo,lstm,0.0,0.0,,200.0,16
-hepatite,3550308,São Paulo,nhits,0.0,0.0,,200.0,16
-hepatite,3550308,São Paulo,prophet,0.0,0.0,,0.0,16
-hepatite,3550308,São Paulo,sarima,0.0,0.0,,200.0,16
-hepatite,3550308,São Paulo,seasonal_ma3,0.0,0.0,,0.0,16
-hepatite,3550308,São Paulo,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3550308,São Paulo,tft,0.0,0.0,,200.0,16
-hepatite,3550308,São Paulo,xgboost,0.016,0.017,,200.0,16
-hepatite,3551009,São Vicente,catboost,0.092,0.246,-0.03,199.36,16
-hepatite,3551009,São Vicente,gru,0.309,0.567,-4.489,199.3,16
-hepatite,3551009,São Vicente,lgbm,0.078,0.248,-0.047,199.72,16
-hepatite,3551009,São Vicente,lstm,0.063,0.25,-0.067,200.0,16
-hepatite,3551009,São Vicente,nhits,0.062,0.25,-0.067,200.0,16
-hepatite,3551009,São Vicente,prophet,0.062,0.25,-0.067,200.0,16
-hepatite,3551009,São Vicente,sarima,0.08,0.253,-0.093,200.0,16
-hepatite,3551009,São Vicente,seasonal_ma3,0.083,0.264,-0.185,200.0,16
-hepatite,3551009,São Vicente,seasonal_naive,0.125,0.354,-1.133,200.0,16
-hepatite,3551009,São Vicente,tft,0.063,0.25,-0.067,200.0,16
-hepatite,3551009,São Vicente,xgboost,0.08,0.248,-0.052,199.75,16
-hepatite,3554102,Taboão da Serra,catboost,0.045,0.048,,200.0,16
-hepatite,3554102,Taboão da Serra,gru,0.0,0.0,,200.0,16
-hepatite,3554102,Taboão da Serra,lgbm,0.018,0.021,,200.0,16
-hepatite,3554102,Taboão da Serra,lstm,0.0,0.0,,200.0,16
-hepatite,3554102,Taboão da Serra,nhits,0.0,0.0,,200.0,16
-hepatite,3554102,Taboão da Serra,prophet,0.072,0.178,,200.0,16
-hepatite,3554102,Taboão da Serra,sarima,0.025,0.039,,200.0,16
-hepatite,3554102,Taboão da Serra,seasonal_ma3,0.0,0.0,,0.0,16
-hepatite,3554102,Taboão da Serra,seasonal_naive,0.0,0.0,,0.0,16
-hepatite,3554102,Taboão da Serra,tft,0.0,0.0,,200.0,16
-hepatite,3554102,Taboão da Serra,xgboost,0.02,0.022,,200.0,16
+hepatite,3505708,Barueri,catboost,0.54,0.664,-0.297,180.32,16.0
+hepatite,3505708,Barueri,deepar,0.5724999944213778,0.7149213195889711,-0.5039631983899533,180.65424731846232,
+hepatite,3505708,Barueri,gru,0.638,1.042,-2.192,189.53,16.0
+hepatite,3505708,Barueri,lgbm,0.545,0.682,-0.367,181.98,16.0
+hepatite,3505708,Barueri,lstm,0.344,0.567,0.055,190.31,16.0
+hepatite,3505708,Barueri,nhits,0.313,0.661,-0.285,199.85,16.0
+hepatite,3505708,Barueri,prophet,0.404,0.61,-0.096,176.69,16.0
+hepatite,3505708,Barueri,sarima,0.569,0.661,-0.285,171.09,16.0
+hepatite,3505708,Barueri,seasonal_ma3,0.583,0.697,-0.43,182.86,16.0
+hepatite,3505708,Barueri,seasonal_naive,0.562,0.901,-1.391,200.0,16.0
+hepatite,3505708,Barueri,tft,0.319,0.648,-0.236,198.48,16.0
+hepatite,3505708,Barueri,xgboost,0.546,0.675,-0.34,181.01,16.0
+hepatite,3506003,Bauru,catboost,0.964,1.224,-0.234,145.95,16.0
+hepatite,3506003,Bauru,deepar,1.2224999964237213,1.4692387452223388,-0.7769054583871484,168.02441694707954,
+hepatite,3506003,Bauru,gru,0.648,1.142,-0.074,170.26,16.0
+hepatite,3506003,Bauru,lgbm,1.0,1.264,-0.315,152.38,16.0
+hepatite,3506003,Bauru,lstm,0.637,1.146,-0.082,174.44,16.0
+hepatite,3506003,Bauru,nhits,0.687,1.294,-0.379,199.39,16.0
+hepatite,3506003,Bauru,prophet,0.669,1.198,-0.182,171.53,16.0
+hepatite,3506003,Bauru,sarima,0.839,1.053,0.088,151.7,16.0
+hepatite,3506003,Bauru,seasonal_ma3,1.083,1.349,-0.498,154.74,16.0
+hepatite,3506003,Bauru,seasonal_naive,1.062,1.561,-1.006,165.33,16.0
+hepatite,3506003,Bauru,tft,1.116,1.448,-0.726,181.62,16.0
+hepatite,3506003,Bauru,xgboost,0.957,1.2,-0.185,152.86,16.0
+hepatite,3509502,Campinas,catboost,2.017,2.888,-0.39,88.26,16.0
+hepatite,3509502,Campinas,deepar,1.8375000059604645,2.7205904787567317,-0.23360209218363015,91.70348270480225,
+hepatite,3509502,Campinas,gru,2.036,3.004,-0.504,100.86,16.0
+hepatite,3509502,Campinas,lgbm,2.02,3.066,-0.567,77.88,16.0
+hepatite,3509502,Campinas,lstm,1.758,2.729,-0.241,82.3,16.0
+hepatite,3509502,Campinas,nhits,2.408,3.332,-0.85,145.25,16.0
+hepatite,3509502,Campinas,prophet,1.854,2.791,-0.299,87.21,16.0
+hepatite,3509502,Campinas,sarima,2.028,3.072,-0.573,82.58,16.0
+hepatite,3509502,Campinas,seasonal_ma3,1.792,2.687,-0.204,79.76,16.0
+hepatite,3509502,Campinas,seasonal_naive,2.188,3.231,-0.74,100.38,16.0
+hepatite,3509502,Campinas,tft,1.938,2.922,-0.423,99.24,16.0
+hepatite,3509502,Campinas,xgboost,1.922,2.93,-0.431,76.66,16.0
+hepatite,3510609,Carapicuíba,catboost,0.465,0.511,-0.113,168.21,16.0
+hepatite,3510609,Carapicuíba,deepar,0.47062499797903,0.5703672061555555,-0.3880266660594942,181.82497573243273,
+hepatite,3510609,Carapicuíba,gru,0.662,0.92,-2.61,188.33,16.0
+hepatite,3510609,Carapicuíba,lgbm,0.46,0.505,-0.088,167.3,16.0
+hepatite,3510609,Carapicuíba,lstm,0.371,0.565,-0.362,185.6,16.0
+hepatite,3510609,Carapicuíba,nhits,0.375,0.612,-0.6,200.0,16.0
+hepatite,3510609,Carapicuíba,prophet,0.43,0.603,-0.551,187.57,16.0
+hepatite,3510609,Carapicuíba,sarima,0.576,0.647,-0.788,175.27,16.0
+hepatite,3510609,Carapicuíba,seasonal_ma3,0.5,0.601,-0.541,176.92,16.0
+hepatite,3510609,Carapicuíba,seasonal_naive,0.625,0.791,-1.667,200.0,16.0
+hepatite,3510609,Carapicuíba,tft,0.399,0.584,-0.453,192.57,16.0
+hepatite,3510609,Carapicuíba,xgboost,0.48,0.517,-0.138,165.48,16.0
+hepatite,3513801,Diadema,catboost,0.031,0.032,,200.0,16.0
+hepatite,3513801,Diadema,deepar,0.34749998908955604,0.4760251956681636,,200.0,
+hepatite,3513801,Diadema,gru,0.331,0.748,,200.0,16.0
+hepatite,3513801,Diadema,lgbm,0.011,0.011,,200.0,16.0
+hepatite,3513801,Diadema,lstm,0.0,0.0,,200.0,16.0
+hepatite,3513801,Diadema,nhits,0.0,0.0,,200.0,16.0
+hepatite,3513801,Diadema,prophet,0.0,0.0,,0.0,16.0
+hepatite,3513801,Diadema,sarima,0.154,0.159,,200.0,16.0
+hepatite,3513801,Diadema,seasonal_ma3,0.0,0.0,,0.0,16.0
+hepatite,3513801,Diadema,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3513801,Diadema,tft,0.0,0.0,,200.0,16.0
+hepatite,3513801,Diadema,xgboost,0.007,0.008,,200.0,16.0
+hepatite,3518701,Guarujá,catboost,0.028,0.029,,200.0,16.0
+hepatite,3518701,Guarujá,deepar,0.05124999897088852,0.07913595746740072,,200.0,
+hepatite,3518701,Guarujá,gru,0.217,0.526,,200.0,16.0
+hepatite,3518701,Guarujá,lgbm,0.013,0.014,,200.0,16.0
+hepatite,3518701,Guarujá,lstm,0.0,0.0,,200.0,16.0
+hepatite,3518701,Guarujá,nhits,0.0,0.0,,200.0,16.0
+hepatite,3518701,Guarujá,prophet,0.017,0.05,,200.0,16.0
+hepatite,3518701,Guarujá,sarima,0.0,0.0,,200.0,16.0
+hepatite,3518701,Guarujá,seasonal_ma3,0.0,0.0,,0.0,16.0
+hepatite,3518701,Guarujá,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3518701,Guarujá,tft,0.0,0.0,,200.0,16.0
+hepatite,3518701,Guarujá,xgboost,0.014,0.014,,200.0,16.0
+hepatite,3518800,Guarulhos,catboost,0.035,0.036,,200.0,16.0
+hepatite,3518800,Guarulhos,deepar,0.02874999959021802,0.042866069920785094,,200.0,
+hepatite,3518800,Guarulhos,gru,0.024,0.053,,200.0,16.0
+hepatite,3518800,Guarulhos,lgbm,0.021,0.022,,200.0,16.0
+hepatite,3518800,Guarulhos,lstm,0.0,0.0,,200.0,16.0
+hepatite,3518800,Guarulhos,nhits,0.0,0.0,,200.0,16.0
+hepatite,3518800,Guarulhos,prophet,0.0,0.0,,0.0,16.0
+hepatite,3518800,Guarulhos,sarima,0.0,0.0,,200.0,16.0
+hepatite,3518800,Guarulhos,seasonal_ma3,0.021,0.083,,200.0,16.0
+hepatite,3518800,Guarulhos,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3518800,Guarulhos,tft,0.0,0.0,,200.0,16.0
+hepatite,3518800,Guarulhos,xgboost,0.024,0.025,,200.0,16.0
+hepatite,3522208,Itapevi,catboost,0.056,0.059,,200.0,16.0
+hepatite,3522208,Itapevi,deepar,0.06624999758787449,0.09740379474787601,,200.0,
+hepatite,3522208,Itapevi,gru,0.0,0.0,,200.0,16.0
+hepatite,3522208,Itapevi,lgbm,0.038,0.041,,200.0,16.0
+hepatite,3522208,Itapevi,lstm,0.0,0.0,,200.0,16.0
+hepatite,3522208,Itapevi,nhits,0.0,0.0,,200.0,16.0
+hepatite,3522208,Itapevi,prophet,0.018,0.037,,200.0,16.0
+hepatite,3522208,Itapevi,sarima,0.031,0.043,,200.0,16.0
+hepatite,3522208,Itapevi,seasonal_ma3,0.0,0.0,,0.0,16.0
+hepatite,3522208,Itapevi,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3522208,Itapevi,tft,0.0,0.0,,200.0,16.0
+hepatite,3522208,Itapevi,xgboost,0.037,0.04,,200.0,16.0
+hepatite,3525904,Jundiaí,catboost,0.059,0.062,,200.0,16.0
+hepatite,3525904,Jundiaí,deepar,0.3224999934900552,0.46238511241097713,,200.0,
+hepatite,3525904,Jundiaí,gru,0.296,0.759,,200.0,16.0
+hepatite,3525904,Jundiaí,lgbm,0.033,0.039,,200.0,16.0
+hepatite,3525904,Jundiaí,lstm,0.0,0.0,,200.0,16.0
+hepatite,3525904,Jundiaí,nhits,0.0,0.0,,200.0,16.0
+hepatite,3525904,Jundiaí,prophet,0.01,0.035,,200.0,16.0
+hepatite,3525904,Jundiaí,sarima,0.035,0.058,,200.0,16.0
+hepatite,3525904,Jundiaí,seasonal_ma3,0.0,0.0,,0.0,16.0
+hepatite,3525904,Jundiaí,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3525904,Jundiaí,tft,0.0,0.0,,200.0,16.0
+hepatite,3525904,Jundiaí,xgboost,0.034,0.038,,200.0,16.0
+hepatite,3529401,Mauá,catboost,0.039,0.04,,200.0,16.0
+hepatite,3529401,Mauá,deepar,0.003749999916180944,0.0070710676538147535,,200.0,
+hepatite,3529401,Mauá,gru,0.239,0.509,,200.0,16.0
+hepatite,3529401,Mauá,lgbm,0.013,0.014,,200.0,16.0
+hepatite,3529401,Mauá,lstm,0.0,0.0,,200.0,16.0
+hepatite,3529401,Mauá,nhits,0.0,0.0,,200.0,16.0
+hepatite,3529401,Mauá,prophet,0.0,0.0,,0.0,16.0
+hepatite,3529401,Mauá,sarima,0.011,0.023,,200.0,16.0
+hepatite,3529401,Mauá,seasonal_ma3,0.0,0.0,,0.0,16.0
+hepatite,3529401,Mauá,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3529401,Mauá,tft,0.0,0.0,,200.0,16.0
+hepatite,3529401,Mauá,xgboost,0.014,0.014,,200.0,16.0
+hepatite,3534401,Osasco,catboost,0.233,0.306,0.144,184.34,16.0
+hepatite,3534401,Osasco,deepar,0.4131249887868762,0.48615197074982824,-1.160857039213183,182.92480017645795,
+hepatite,3534401,Osasco,gru,0.11,0.307,0.137,194.42,16.0
+hepatite,3534401,Osasco,lgbm,0.276,0.325,0.034,183.54,16.0
+hepatite,3534401,Osasco,lstm,0.127,0.353,-0.14,199.94,16.0
+hepatite,3534401,Osasco,nhits,0.125,0.353,-0.141,199.97,16.0
+hepatite,3534401,Osasco,prophet,0.286,0.417,-0.592,195.11,16.0
+hepatite,3534401,Osasco,sarima,0.251,0.356,-0.157,190.58,16.0
+hepatite,3534401,Osasco,seasonal_ma3,0.417,0.486,-1.159,181.43,16.0
+hepatite,3534401,Osasco,seasonal_naive,0.312,0.559,-1.857,166.67,16.0
+hepatite,3534401,Osasco,tft,0.136,0.335,-0.027,197.44,16.0
+hepatite,3534401,Osasco,xgboost,0.285,0.355,-0.149,184.77,16.0
+hepatite,3536505,Paulínia,catboost,0.096,0.242,0.004,198.9,16.0
+hepatite,3536505,Paulínia,deepar,0.7293749824166298,1.03813231472083,-17.393065862274184,188.4259259067629,
+hepatite,3536505,Paulínia,gru,0.063,0.25,-0.067,200.0,16.0
+hepatite,3536505,Paulínia,lgbm,0.085,0.244,-0.013,199.22,16.0
+hepatite,3536505,Paulínia,lstm,0.063,0.25,-0.067,200.0,16.0
+hepatite,3536505,Paulínia,nhits,0.063,0.25,-0.067,200.0,16.0
+hepatite,3536505,Paulínia,prophet,0.065,0.25,-0.067,200.0,16.0
+hepatite,3536505,Paulínia,sarima,0.071,0.254,-0.103,200.0,16.0
+hepatite,3536505,Paulínia,seasonal_ma3,0.125,0.289,-0.422,200.0,16.0
+hepatite,3536505,Paulínia,seasonal_naive,0.125,0.354,-1.133,200.0,16.0
+hepatite,3536505,Paulínia,tft,0.063,0.25,-0.067,200.0,16.0
+hepatite,3536505,Paulínia,xgboost,0.082,0.243,-0.007,199.21,16.0
+hepatite,3541000,Praia Grande,catboost,0.028,0.028,,200.0,16.0
+hepatite,3541000,Praia Grande,deepar,0.5156249877763912,0.74110135931075,,200.0,
+hepatite,3541000,Praia Grande,gru,0.0,0.0,,200.0,16.0
+hepatite,3541000,Praia Grande,lgbm,0.012,0.012,,200.0,16.0
+hepatite,3541000,Praia Grande,lstm,0.0,0.0,,200.0,16.0
+hepatite,3541000,Praia Grande,nhits,0.0,0.0,,200.0,16.0
+hepatite,3541000,Praia Grande,prophet,0.0,0.0,,0.0,16.0
+hepatite,3541000,Praia Grande,sarima,0.004,0.006,,200.0,16.0
+hepatite,3541000,Praia Grande,seasonal_ma3,0.0,0.0,,0.0,16.0
+hepatite,3541000,Praia Grande,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3541000,Praia Grande,tft,0.0,0.0,,200.0,16.0
+hepatite,3541000,Praia Grande,xgboost,0.011,0.012,,200.0,16.0
+hepatite,3543402,Ribeirão Preto,catboost,0.03,0.031,,200.0,16.0
+hepatite,3543402,Ribeirão Preto,deepar,0.002499999944120631,0.0061237242200820104,,200.0,
+hepatite,3543402,Ribeirão Preto,gru,0.319,0.669,,200.0,16.0
+hepatite,3543402,Ribeirão Preto,lgbm,0.016,0.017,,200.0,16.0
+hepatite,3543402,Ribeirão Preto,lstm,0.0,0.0,,200.0,16.0
+hepatite,3543402,Ribeirão Preto,nhits,0.0,0.0,,200.0,16.0
+hepatite,3543402,Ribeirão Preto,prophet,0.0,0.0,,0.0,16.0
+hepatite,3543402,Ribeirão Preto,sarima,0.004,0.005,,200.0,16.0
+hepatite,3543402,Ribeirão Preto,seasonal_ma3,0.0,0.0,,0.0,16.0
+hepatite,3543402,Ribeirão Preto,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3543402,Ribeirão Preto,tft,0.0,0.0,,200.0,16.0
+hepatite,3543402,Ribeirão Preto,xgboost,0.014,0.015,,200.0,16.0
+hepatite,3547809,Santo André,catboost,0.039,0.041,,200.0,16.0
+hepatite,3547809,Santo André,deepar,0.11812499724328515,0.18679868446261058,,200.0,
+hepatite,3547809,Santo André,gru,0.125,0.278,,200.0,16.0
+hepatite,3547809,Santo André,lgbm,0.014,0.015,,200.0,16.0
+hepatite,3547809,Santo André,lstm,0.0,0.0,,200.0,16.0
+hepatite,3547809,Santo André,nhits,0.0,0.0,,200.0,16.0
+hepatite,3547809,Santo André,prophet,0.0,0.0,,0.0,16.0
+hepatite,3547809,Santo André,sarima,0.0,0.001,,200.0,16.0
+hepatite,3547809,Santo André,seasonal_ma3,0.0,0.0,,0.0,16.0
+hepatite,3547809,Santo André,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3547809,Santo André,tft,0.0,0.0,,200.0,16.0
+hepatite,3547809,Santo André,xgboost,0.015,0.016,,200.0,16.0
+hepatite,3548500,Santos,catboost,0.654,0.77,-0.194,140.56,16.0
+hepatite,3548500,Santos,deepar,0.6068749977275729,0.7812930013333133,-0.23045040162754837,159.971572875604,
+hepatite,3548500,Santos,gru,0.605,0.869,-0.521,164.78,16.0
+hepatite,3548500,Santos,lgbm,0.64,0.738,-0.098,141.72,16.0
+hepatite,3548500,Santos,lstm,0.554,0.813,-0.331,169.62,16.0
+hepatite,3548500,Santos,nhits,0.562,0.901,-0.637,199.89,16.0
+hepatite,3548500,Santos,prophet,0.611,0.847,-0.447,186.07,16.0
+hepatite,3548500,Santos,sarima,0.653,0.755,-0.149,141.6,16.0
+hepatite,3548500,Santos,seasonal_ma3,0.708,0.858,-0.484,142.5,16.0
+hepatite,3548500,Santos,seasonal_naive,0.562,0.901,-0.638,127.27,16.0
+hepatite,3548500,Santos,tft,0.579,0.844,-0.435,186.28,16.0
+hepatite,3548500,Santos,xgboost,0.667,0.777,-0.219,136.34,16.0
+hepatite,3548708,São Bernardo do Campo,catboost,0.575,0.802,-0.035,165.23,16.0
+hepatite,3548708,São Bernardo do Campo,deepar,0.4581249998882413,0.8724283649252593,-0.22546918549117834,189.02617234187812,
+hepatite,3548708,São Bernardo do Campo,gru,0.467,0.893,-0.284,198.48,16.0
+hepatite,3548708,São Bernardo do Campo,lgbm,0.529,0.775,0.032,163.81,16.0
+hepatite,3548708,São Bernardo do Campo,lstm,0.438,0.901,-0.308,200.0,16.0
+hepatite,3548708,São Bernardo do Campo,nhits,0.438,0.901,-0.308,200.0,16.0
+hepatite,3548708,São Bernardo do Campo,prophet,0.442,0.869,-0.216,179.74,16.0
+hepatite,3548708,São Bernardo do Campo,sarima,0.598,0.804,-0.042,174.55,16.0
+hepatite,3548708,São Bernardo do Campo,seasonal_ma3,0.438,0.75,0.094,165.91,16.0
+hepatite,3548708,São Bernardo do Campo,seasonal_naive,0.375,0.866,-0.208,133.33,16.0
+hepatite,3548708,São Bernardo do Campo,tft,0.455,0.892,-0.28,196.93,16.0
+hepatite,3548708,São Bernardo do Campo,xgboost,0.544,0.76,0.07,165.11,16.0
+hepatite,3549805,São José do Rio Preto,catboost,0.022,0.023,,200.0,16.0
+hepatite,3549805,São José do Rio Preto,deepar,0.011249999748542875,0.01767766913453695,,200.0,
+hepatite,3549805,São José do Rio Preto,gru,0.684,1.19,,200.0,16.0
+hepatite,3549805,São José do Rio Preto,lgbm,0.01,0.01,,200.0,16.0
+hepatite,3549805,São José do Rio Preto,lstm,0.0,0.001,,200.0,16.0
+hepatite,3549805,São José do Rio Preto,nhits,0.0,0.0,,200.0,16.0
+hepatite,3549805,São José do Rio Preto,prophet,0.0,0.0,,0.0,16.0
+hepatite,3549805,São José do Rio Preto,sarima,0.0,0.0,,200.0,16.0
+hepatite,3549805,São José do Rio Preto,seasonal_ma3,0.0,0.0,,0.0,16.0
+hepatite,3549805,São José do Rio Preto,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3549805,São José do Rio Preto,tft,0.0,0.0,,200.0,16.0
+hepatite,3549805,São José do Rio Preto,xgboost,0.011,0.011,,200.0,16.0
+hepatite,3549904,São José dos Campos,catboost,0.066,0.08,,200.0,16.0
+hepatite,3549904,São José dos Campos,deepar,0.011874999850988357,0.021937410849610137,,200.0,
+hepatite,3549904,São José dos Campos,gru,0.786,1.497,,200.0,16.0
+hepatite,3549904,São José dos Campos,lgbm,0.038,0.055,,200.0,16.0
+hepatite,3549904,São José dos Campos,lstm,0.001,0.002,,200.0,16.0
+hepatite,3549904,São José dos Campos,nhits,0.0,0.0,,200.0,16.0
+hepatite,3549904,São José dos Campos,prophet,0.0,0.0,,0.0,16.0
+hepatite,3549904,São José dos Campos,sarima,0.003,0.006,,200.0,16.0
+hepatite,3549904,São José dos Campos,seasonal_ma3,0.188,0.323,,200.0,16.0
+hepatite,3549904,São José dos Campos,seasonal_naive,0.188,0.559,,200.0,16.0
+hepatite,3549904,São José dos Campos,tft,0.0,0.0,,200.0,16.0
+hepatite,3549904,São José dos Campos,xgboost,0.041,0.054,,200.0,16.0
+hepatite,3550308,São Paulo,catboost,0.027,0.028,,200.0,16.0
+hepatite,3550308,São Paulo,deepar,0.0,0.0,,0.0,
+hepatite,3550308,São Paulo,gru,1.437,3.99,,200.0,16.0
+hepatite,3550308,São Paulo,lgbm,0.015,0.015,,200.0,16.0
+hepatite,3550308,São Paulo,lstm,0.0,0.0,,200.0,16.0
+hepatite,3550308,São Paulo,nhits,0.0,0.0,,200.0,16.0
+hepatite,3550308,São Paulo,prophet,0.0,0.0,,0.0,16.0
+hepatite,3550308,São Paulo,sarima,0.0,0.0,,200.0,16.0
+hepatite,3550308,São Paulo,seasonal_ma3,0.0,0.0,,0.0,16.0
+hepatite,3550308,São Paulo,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3550308,São Paulo,tft,0.0,0.0,,200.0,16.0
+hepatite,3550308,São Paulo,xgboost,0.016,0.017,,200.0,16.0
+hepatite,3551009,São Vicente,catboost,0.092,0.246,-0.03,199.36,16.0
+hepatite,3551009,São Vicente,deepar,0.28562499443069095,0.4251837751238657,-2.085333207527799,193.6567163681182,
+hepatite,3551009,São Vicente,gru,0.309,0.567,-4.489,199.3,16.0
+hepatite,3551009,São Vicente,lgbm,0.078,0.248,-0.047,199.72,16.0
+hepatite,3551009,São Vicente,lstm,0.063,0.25,-0.067,200.0,16.0
+hepatite,3551009,São Vicente,nhits,0.062,0.25,-0.067,200.0,16.0
+hepatite,3551009,São Vicente,prophet,0.062,0.25,-0.067,200.0,16.0
+hepatite,3551009,São Vicente,sarima,0.08,0.253,-0.093,200.0,16.0
+hepatite,3551009,São Vicente,seasonal_ma3,0.083,0.264,-0.185,200.0,16.0
+hepatite,3551009,São Vicente,seasonal_naive,0.125,0.354,-1.133,200.0,16.0
+hepatite,3551009,São Vicente,tft,0.063,0.25,-0.067,200.0,16.0
+hepatite,3551009,São Vicente,xgboost,0.08,0.248,-0.052,199.75,16.0
+hepatite,3552205,Sorocaba,catboost,0.133,0.163,,200.0,16.0
+hepatite,3552205,Sorocaba,deepar,0.02374999923631542,0.030618620720199295,,200.0,
+hepatite,3552205,Sorocaba,gru,0.047,0.103,,200.0,16.0
+hepatite,3552205,Sorocaba,lgbm,0.139,0.163,,200.0,16.0
+hepatite,3552205,Sorocaba,lstm,0.002,0.005,,200.0,16.0
+hepatite,3552205,Sorocaba,nhits,0.0,0.0,,200.0,16.0
+hepatite,3552205,Sorocaba,prophet,0.008,0.031,,200.0,16.0
+hepatite,3552205,Sorocaba,sarima,0.111,0.144,,200.0,16.0
+hepatite,3552205,Sorocaba,seasonal_ma3,0.083,0.167,,200.0,16.0
+hepatite,3552205,Sorocaba,seasonal_naive,0.062,0.25,,200.0,16.0
+hepatite,3552205,Sorocaba,tft,0.003,0.004,,200.0,16.0
+hepatite,3552205,Sorocaba,xgboost,0.119,0.136,,200.0,16.0
+hepatite,3554102,Taboão da Serra,catboost,0.045,0.048,,200.0,16.0
+hepatite,3554102,Taboão da Serra,deepar,0.35062499332707375,0.5080046652734346,,200.0,
+hepatite,3554102,Taboão da Serra,gru,0.0,0.0,,200.0,16.0
+hepatite,3554102,Taboão da Serra,lgbm,0.018,0.021,,200.0,16.0
+hepatite,3554102,Taboão da Serra,lstm,0.0,0.0,,200.0,16.0
+hepatite,3554102,Taboão da Serra,nhits,0.0,0.0,,200.0,16.0
+hepatite,3554102,Taboão da Serra,prophet,0.072,0.178,,200.0,16.0
+hepatite,3554102,Taboão da Serra,sarima,0.025,0.039,,200.0,16.0
+hepatite,3554102,Taboão da Serra,seasonal_ma3,0.0,0.0,,0.0,16.0
+hepatite,3554102,Taboão da Serra,seasonal_naive,0.0,0.0,,0.0,16.0
+hepatite,3554102,Taboão da Serra,tft,0.0,0.0,,200.0,16.0
+hepatite,3554102,Taboão da Serra,xgboost,0.02,0.022,,200.0,16.0

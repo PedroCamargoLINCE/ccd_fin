@@ -1,254 +1,277 @@
 disease,cd_mun,nm_mun,model,mae,rmse,r2,smape,n
-hanseniase,3505708,Barueri,catboost,0.105,0.108,,200.0,16
-hanseniase,3505708,Barueri,gru,0.0,0.0,,200.0,16
-hanseniase,3505708,Barueri,lgbm,0.078,0.083,,200.0,16
-hanseniase,3505708,Barueri,lstm,0.0,0.0,,200.0,16
-hanseniase,3505708,Barueri,nhits,0.0,0.0,,200.0,16
-hanseniase,3505708,Barueri,prophet,0.023,0.045,,200.0,16
-hanseniase,3505708,Barueri,sarima,0.098,0.099,,200.0,16
-hanseniase,3505708,Barueri,seasonal_ma3,0.104,0.25,,200.0,16
-hanseniase,3505708,Barueri,seasonal_naive,0.0,0.0,,0.0,16
-hanseniase,3505708,Barueri,tft,0.0,0.0,,200.0,16
-hanseniase,3505708,Barueri,xgboost,0.105,0.115,,200.0,16
-hanseniase,3506003,Bauru,catboost,0.708,0.811,-0.114,150.87,16
-hanseniase,3506003,Bauru,gru,0.68,1.019,-0.759,195.6,16
-hanseniase,3506003,Bauru,lgbm,0.724,0.826,-0.158,147.07,16
-hanseniase,3506003,Bauru,lstm,0.706,1.015,-0.747,196.66,16
-hanseniase,3506003,Bauru,nhits,0.645,0.946,-0.517,170.75,16
-hanseniase,3506003,Bauru,prophet,0.688,1.031,-0.801,200.0,16
-hanseniase,3506003,Bauru,sarima,3.949,4.156,-28.281,200.0,16
-hanseniase,3506003,Bauru,seasonal_ma3,0.833,1.007,-0.719,151.25,16
-hanseniase,3506003,Bauru,seasonal_naive,0.938,1.199,-1.437,169.23,16
-hanseniase,3506003,Bauru,tft,0.699,1.03,-0.8,199.51,16
-hanseniase,3506003,Bauru,xgboost,0.699,0.798,-0.079,144.77,16
-hanseniase,3509502,Campinas,catboost,1.824,2.089,-0.357,118.75,16
-hanseniase,3509502,Campinas,gru,1.687,2.459,-0.881,199.72,16
-hanseniase,3509502,Campinas,lgbm,1.803,2.105,-0.379,118.79,16
-hanseniase,3509502,Campinas,lstm,1.688,2.462,-0.886,199.99,16
-hanseniase,3509502,Campinas,nhits,1.671,2.416,-0.816,193.52,16
-hanseniase,3509502,Campinas,prophet,1.696,2.018,-0.267,119.14,16
-hanseniase,3509502,Campinas,sarima,1.934,2.294,-0.638,121.11,16
-hanseniase,3509502,Campinas,seasonal_ma3,1.917,2.198,-0.503,124.79,16
-hanseniase,3509502,Campinas,seasonal_naive,1.438,2.107,-0.38,91.28,16
-hanseniase,3509502,Campinas,tft,2.93,3.584,-2.996,170.68,16
-hanseniase,3509502,Campinas,xgboost,1.649,1.931,-0.16,116.32,16
-hanseniase,3510609,Carapicuíba,catboost,0.151,0.257,-0.124,198.83,16
-hanseniase,3510609,Carapicuíba,gru,0.063,0.25,-0.067,200.0,16
-hanseniase,3510609,Carapicuíba,lgbm,0.144,0.255,-0.112,198.87,16
-hanseniase,3510609,Carapicuíba,lstm,0.063,0.25,-0.067,200.0,16
-hanseniase,3510609,Carapicuíba,nhits,0.063,0.25,-0.067,200.0,16
-hanseniase,3510609,Carapicuíba,prophet,0.168,0.266,-0.21,198.88,16
-hanseniase,3510609,Carapicuíba,sarima,0.173,0.251,-0.076,197.3,16
-hanseniase,3510609,Carapicuíba,seasonal_ma3,0.083,0.264,-0.185,200.0,16
-hanseniase,3510609,Carapicuíba,seasonal_naive,0.125,0.354,-1.133,200.0,16
-hanseniase,3510609,Carapicuíba,tft,0.063,0.25,-0.067,200.0,16
-hanseniase,3510609,Carapicuíba,xgboost,0.148,0.256,-0.12,198.68,16
-hanseniase,3513801,Diadema,catboost,0.189,0.336,-0.035,196.35,16
-hanseniase,3513801,Diadema,gru,0.125,0.354,-0.143,200.0,16
-hanseniase,3513801,Diadema,lgbm,0.235,0.351,-0.129,195.44,16
-hanseniase,3513801,Diadema,lstm,0.125,0.354,-0.143,200.0,16
-hanseniase,3513801,Diadema,nhits,0.125,0.354,-0.143,200.0,16
-hanseniase,3513801,Diadema,prophet,0.271,0.356,-0.161,194.48,16
-hanseniase,3513801,Diadema,sarima,0.22,0.34,-0.059,195.39,16
-hanseniase,3513801,Diadema,seasonal_ma3,0.229,0.417,-0.587,200.0,16
-hanseniase,3513801,Diadema,seasonal_naive,0.188,0.433,-0.714,200.0,16
-hanseniase,3513801,Diadema,tft,0.125,0.354,-0.143,200.0,16
-hanseniase,3513801,Diadema,xgboost,0.221,0.34,-0.056,195.05,16
-hanseniase,3518701,Guarujá,catboost,0.57,0.785,0.174,172.13,16
-hanseniase,3518701,Guarujá,gru,0.438,0.968,-0.257,200.0,16
-hanseniase,3518701,Guarujá,lgbm,0.412,0.515,0.645,162.41,16
-hanseniase,3518701,Guarujá,lstm,0.438,0.968,-0.257,200.0,16
-hanseniase,3518701,Guarujá,nhits,0.438,0.968,-0.257,200.0,16
-hanseniase,3518701,Guarujá,prophet,1.518,1.686,-2.811,159.24,16
-hanseniase,3518701,Guarujá,sarima,0.922,1.224,-1.008,166.23,16
-hanseniase,3518701,Guarujá,seasonal_ma3,1.208,1.814,-3.412,162.32,16
-hanseniase,3518701,Guarujá,seasonal_naive,0.75,1.225,-1.01,148.15,16
-hanseniase,3518701,Guarujá,tft,0.516,0.988,-0.308,191.38,16
-hanseniase,3518701,Guarujá,xgboost,0.496,0.627,0.473,164.71,16
-hanseniase,3518800,Guarulhos,catboost,0.646,0.754,0.091,154.07,16
-hanseniase,3518800,Guarulhos,gru,0.5,0.935,-0.4,200.0,16
-hanseniase,3518800,Guarulhos,lgbm,0.637,0.807,-0.041,151.5,16
-hanseniase,3518800,Guarulhos,lstm,0.5,0.935,-0.4,200.0,16
-hanseniase,3518800,Guarulhos,nhits,0.501,0.935,-0.4,199.96,16
-hanseniase,3518800,Guarulhos,prophet,0.505,0.867,-0.203,175.09,16
-hanseniase,3518800,Guarulhos,sarima,0.638,0.806,-0.038,163.21,16
-hanseniase,3518800,Guarulhos,seasonal_ma3,0.604,0.878,-0.233,147.27,16
-hanseniase,3518800,Guarulhos,seasonal_naive,0.5,1.0,-0.6,112.5,16
-hanseniase,3518800,Guarulhos,tft,1.784,2.777,-11.335,194.78,16
-hanseniase,3518800,Guarulhos,xgboost,0.656,0.765,0.064,147.27,16
-hanseniase,3522208,Itapevi,catboost,0.126,0.248,-0.052,198.87,16
-hanseniase,3522208,Itapevi,gru,0.063,0.25,-0.067,200.0,16
-hanseniase,3522208,Itapevi,lgbm,0.096,0.247,-0.038,199.35,16
-hanseniase,3522208,Itapevi,lstm,0.063,0.25,-0.067,200.0,16
-hanseniase,3522208,Itapevi,nhits,0.063,0.25,-0.067,200.0,16
-hanseniase,3522208,Itapevi,prophet,0.08,0.251,-0.073,199.92,16
-hanseniase,3522208,Itapevi,sarima,0.075,0.251,-0.073,200.0,16
-hanseniase,3522208,Itapevi,seasonal_ma3,0.083,0.264,-0.185,200.0,16
-hanseniase,3522208,Itapevi,seasonal_naive,0.125,0.354,-1.133,200.0,16
-hanseniase,3522208,Itapevi,tft,0.063,0.25,-0.067,200.0,16
-hanseniase,3522208,Itapevi,xgboost,0.088,0.247,-0.039,199.5,16
-hanseniase,3525904,Jundiaí,catboost,0.237,0.282,-0.359,195.81,16
-hanseniase,3525904,Jundiaí,gru,0.063,0.25,-0.067,200.0,16
-hanseniase,3525904,Jundiaí,lgbm,0.185,0.262,-0.168,197.21,16
-hanseniase,3525904,Jundiaí,lstm,0.063,0.25,-0.067,200.0,16
-hanseniase,3525904,Jundiaí,nhits,0.063,0.25,-0.067,200.0,16
-hanseniase,3525904,Jundiaí,prophet,0.38,0.536,-3.895,195.9,16
-hanseniase,3525904,Jundiaí,sarima,0.695,0.737,-8.262,188.66,16
-hanseniase,3525904,Jundiaí,seasonal_ma3,0.146,0.3,-0.541,200.0,16
-hanseniase,3525904,Jundiaí,seasonal_naive,0.188,0.433,-2.2,200.0,16
-hanseniase,3525904,Jundiaí,tft,0.065,0.25,-0.066,199.99,16
-hanseniase,3525904,Jundiaí,xgboost,0.198,0.265,-0.2,196.97,16
-hanseniase,3529401,Mauá,catboost,0.094,0.095,,200.0,16
-hanseniase,3529401,Mauá,gru,0.0,0.0,,200.0,16
-hanseniase,3529401,Mauá,lgbm,0.055,0.058,,200.0,16
-hanseniase,3529401,Mauá,lstm,0.0,0.0,,200.0,16
-hanseniase,3529401,Mauá,nhits,0.0,0.0,,200.0,16
-hanseniase,3529401,Mauá,prophet,0.048,0.058,,200.0,16
-hanseniase,3529401,Mauá,sarima,0.061,0.061,,200.0,16
-hanseniase,3529401,Mauá,seasonal_ma3,0.063,0.144,,200.0,16
-hanseniase,3529401,Mauá,seasonal_naive,0.062,0.25,,200.0,16
-hanseniase,3529401,Mauá,tft,0.0,0.0,,200.0,16
-hanseniase,3529401,Mauá,xgboost,0.055,0.059,,200.0,16
-hanseniase,3534401,Osasco,catboost,0.217,0.487,-0.011,198.83,16
-hanseniase,3534401,Osasco,gru,0.125,0.5,-0.067,200.0,16
-hanseniase,3534401,Osasco,lgbm,0.214,0.49,-0.025,198.97,16
-hanseniase,3534401,Osasco,lstm,0.125,0.5,-0.067,200.0,16
-hanseniase,3534401,Osasco,nhits,0.125,0.5,-0.067,200.0,16
-hanseniase,3534401,Osasco,prophet,0.196,0.462,0.09,197.13,16
-hanseniase,3534401,Osasco,sarima,0.287,0.486,-0.01,197.76,16
-hanseniase,3534401,Osasco,seasonal_ma3,0.167,0.527,-0.185,200.0,16
-hanseniase,3534401,Osasco,seasonal_naive,0.25,0.707,-1.133,200.0,16
-hanseniase,3534401,Osasco,tft,0.125,0.5,-0.067,200.0,16
-hanseniase,3534401,Osasco,xgboost,0.196,0.486,-0.008,198.99,16
-hanseniase,3536505,Paulínia,catboost,0.102,0.242,-0.0,198.83,16
-hanseniase,3536505,Paulínia,gru,0.063,0.25,-0.067,200.0,16
-hanseniase,3536505,Paulínia,lgbm,0.089,0.245,-0.025,199.33,16
-hanseniase,3536505,Paulínia,lstm,0.063,0.25,-0.067,200.0,16
-hanseniase,3536505,Paulínia,nhits,0.063,0.25,-0.067,200.0,16
-hanseniase,3536505,Paulínia,prophet,0.098,0.252,-0.083,199.53,16
-hanseniase,3536505,Paulínia,sarima,0.096,0.256,-0.119,200.0,16
-hanseniase,3536505,Paulínia,seasonal_ma3,0.083,0.264,-0.185,200.0,16
-hanseniase,3536505,Paulínia,seasonal_naive,0.125,0.354,-1.133,200.0,16
-hanseniase,3536505,Paulínia,tft,0.063,0.25,-0.067,200.0,16
-hanseniase,3536505,Paulínia,xgboost,0.086,0.247,-0.044,199.59,16
-hanseniase,3541000,Praia Grande,catboost,0.085,0.087,,200.0,16
-hanseniase,3541000,Praia Grande,gru,0.0,0.0,,200.0,16
-hanseniase,3541000,Praia Grande,lgbm,0.063,0.067,,200.0,16
-hanseniase,3541000,Praia Grande,lstm,0.0,0.0,,200.0,16
-hanseniase,3541000,Praia Grande,nhits,0.0,0.0,,200.0,16
-hanseniase,3541000,Praia Grande,prophet,0.085,0.102,,200.0,16
-hanseniase,3541000,Praia Grande,sarima,0.054,0.076,,200.0,16
-hanseniase,3541000,Praia Grande,seasonal_ma3,0.042,0.118,,200.0,16
-hanseniase,3541000,Praia Grande,seasonal_naive,0.0,0.0,,0.0,16
-hanseniase,3541000,Praia Grande,tft,0.0,0.0,,200.0,16
-hanseniase,3541000,Praia Grande,xgboost,0.072,0.08,,200.0,16
-hanseniase,3543402,Ribeirão Preto,catboost,0.859,1.08,-0.248,136.5,16
-hanseniase,3543402,Ribeirão Preto,gru,0.938,1.346,-0.941,200.0,16
-hanseniase,3543402,Ribeirão Preto,lgbm,0.853,1.079,-0.247,133.55,16
-hanseniase,3543402,Ribeirão Preto,lstm,0.937,1.346,-0.941,200.0,16
-hanseniase,3543402,Ribeirão Preto,nhits,0.991,1.35,-0.951,199.29,16
-hanseniase,3543402,Ribeirão Preto,prophet,0.918,1.033,-0.143,118.51,16
-hanseniase,3543402,Ribeirão Preto,sarima,0.846,1.068,-0.223,119.04,16
-hanseniase,3543402,Ribeirão Preto,seasonal_ma3,1.0,1.143,-0.398,133.3,16
-hanseniase,3543402,Ribeirão Preto,seasonal_naive,1.25,1.541,-1.544,156.41,16
-hanseniase,3543402,Ribeirão Preto,tft,2.588,3.589,-12.798,191.96,16
-hanseniase,3543402,Ribeirão Preto,xgboost,0.809,1.045,-0.17,127.62,16
-hanseniase,3547809,Santo André,catboost,0.178,0.261,-0.159,197.86,16
-hanseniase,3547809,Santo André,gru,0.063,0.25,-0.067,200.0,16
-hanseniase,3547809,Santo André,lgbm,0.154,0.256,-0.115,198.27,16
-hanseniase,3547809,Santo André,lstm,0.063,0.25,-0.067,200.0,16
-hanseniase,3547809,Santo André,nhits,0.063,0.25,-0.067,200.0,16
-hanseniase,3547809,Santo André,prophet,0.173,0.244,-0.019,195.83,16
-hanseniase,3547809,Santo André,sarima,0.166,0.251,-0.072,197.42,16
-hanseniase,3547809,Santo André,seasonal_ma3,0.167,0.312,-0.659,200.0,16
-hanseniase,3547809,Santo André,seasonal_naive,0.188,0.433,-2.2,200.0,16
-hanseniase,3547809,Santo André,tft,0.063,0.25,-0.067,200.0,16
-hanseniase,3547809,Santo André,xgboost,0.16,0.252,-0.086,197.75,16
-hanseniase,3548500,Santos,catboost,0.221,0.346,-0.094,196.26,16
-hanseniase,3548500,Santos,gru,0.125,0.354,-0.143,200.0,16
-hanseniase,3548500,Santos,lgbm,0.184,0.34,-0.056,197.0,16
-hanseniase,3548500,Santos,lstm,0.125,0.354,-0.143,200.0,16
-hanseniase,3548500,Santos,nhits,0.125,0.354,-0.143,200.0,16
-hanseniase,3548500,Santos,prophet,0.159,0.326,0.027,195.74,16
-hanseniase,3548500,Santos,sarima,0.19,0.333,-0.012,195.99,16
-hanseniase,3548500,Santos,seasonal_ma3,0.208,0.333,-0.016,171.43,16
-hanseniase,3548500,Santos,seasonal_naive,0.188,0.433,-0.714,150.0,16
-hanseniase,3548500,Santos,tft,0.125,0.354,-0.143,200.0,16
-hanseniase,3548500,Santos,xgboost,0.182,0.337,-0.035,196.58,16
-hanseniase,3552205,Sorocaba,catboost,0.162,0.251,-0.079,197.7,16
-hanseniase,3552205,Sorocaba,gru,0.063,0.25,-0.067,200.0,16
-hanseniase,3552205,Sorocaba,lgbm,0.139,0.248,-0.049,198.19,16
-hanseniase,3552205,Sorocaba,lstm,0.063,0.25,-0.067,200.0,16
-hanseniase,3552205,Sorocaba,nhits,0.063,0.25,-0.067,200.0,16
-hanseniase,3552205,Sorocaba,prophet,0.092,0.253,-0.091,200.0,16
-hanseniase,3552205,Sorocaba,sarima,0.172,0.252,-0.084,197.39,16
-hanseniase,3552205,Sorocaba,seasonal_ma3,0.062,0.25,-0.067,200.0,16
-hanseniase,3552205,Sorocaba,seasonal_naive,0.062,0.25,-0.067,200.0,16
-hanseniase,3552205,Sorocaba,tft,0.063,0.25,-0.067,200.0,16
-hanseniase,3552205,Sorocaba,xgboost,0.139,0.246,-0.031,198.05,16
-hanseniase,3548708,São Bernardo do Campo,catboost,0.223,0.336,-0.031,194.81,16
-hanseniase,3548708,São Bernardo do Campo,gru,0.125,0.354,-0.143,200.0,16
-hanseniase,3548708,São Bernardo do Campo,lgbm,0.189,0.336,-0.034,196.36,16
-hanseniase,3548708,São Bernardo do Campo,lstm,0.125,0.354,-0.143,200.0,16
-hanseniase,3548708,São Bernardo do Campo,nhits,0.125,0.354,-0.143,200.0,16
-hanseniase,3548708,São Bernardo do Campo,prophet,0.222,0.367,-0.232,196.51,16
-hanseniase,3548708,São Bernardo do Campo,sarima,0.212,0.333,-0.013,195.03,16
-hanseniase,3548708,São Bernardo do Campo,seasonal_ma3,0.271,0.417,-0.587,200.0,16
-hanseniase,3548708,São Bernardo do Campo,seasonal_naive,0.25,0.5,-1.286,200.0,16
-hanseniase,3548708,São Bernardo do Campo,tft,0.125,0.354,-0.143,200.0,16
-hanseniase,3548708,São Bernardo do Campo,xgboost,0.201,0.338,-0.046,196.09,16
-hanseniase,3549805,São José do Rio Preto,catboost,0.174,0.196,,200.0,16
-hanseniase,3549805,São José do Rio Preto,gru,0.0,0.0,,200.0,16
-hanseniase,3549805,São José do Rio Preto,lgbm,0.123,0.134,,200.0,16
-hanseniase,3549805,São José do Rio Preto,lstm,0.0,0.0,,200.0,16
-hanseniase,3549805,São José do Rio Preto,nhits,0.0,0.0,,200.0,16
-hanseniase,3549805,São José do Rio Preto,prophet,0.178,0.274,,200.0,16
-hanseniase,3549805,São José do Rio Preto,sarima,0.037,0.048,,200.0,16
-hanseniase,3549805,São José do Rio Preto,seasonal_ma3,0.021,0.083,,200.0,16
-hanseniase,3549805,São José do Rio Preto,seasonal_naive,0.0,0.0,,0.0,16
-hanseniase,3549805,São José do Rio Preto,tft,0.079,0.166,,200.0,16
-hanseniase,3549805,São José do Rio Preto,xgboost,0.133,0.147,,200.0,16
-hanseniase,3549904,São José dos Campos,catboost,0.276,0.531,-0.017,196.13,16
-hanseniase,3549904,São José dos Campos,gru,0.188,0.559,-0.127,200.0,16
-hanseniase,3549904,São José dos Campos,lgbm,0.259,0.531,-0.016,196.57,16
-hanseniase,3549904,São José dos Campos,lstm,0.188,0.559,-0.127,200.0,16
-hanseniase,3549904,São José dos Campos,nhits,0.188,0.559,-0.127,200.0,16
-hanseniase,3549904,São José dos Campos,prophet,0.259,0.526,0.002,195.55,16
-hanseniase,3549904,São José dos Campos,sarima,0.289,0.532,-0.019,195.7,16
-hanseniase,3549904,São José dos Campos,seasonal_ma3,0.25,0.612,-0.352,200.0,16
-hanseniase,3549904,São José dos Campos,seasonal_naive,0.188,0.559,-0.127,200.0,16
-hanseniase,3549904,São José dos Campos,tft,0.188,0.559,-0.127,200.0,16
-hanseniase,3549904,São José dos Campos,xgboost,0.271,0.537,-0.038,197.09,16
-hanseniase,3550308,São Paulo,catboost,2.19,4.647,0.047,65.91,16
-hanseniase,3550308,São Paulo,gru,2.53,4.596,0.068,73.81,16
-hanseniase,3550308,São Paulo,lgbm,2.542,4.566,0.079,73.96,16
-hanseniase,3550308,São Paulo,lstm,2.47,4.806,-0.019,76.33,16
-hanseniase,3550308,São Paulo,nhits,2.474,5.24,-0.212,108.93,16
-hanseniase,3550308,São Paulo,prophet,3.164,4.765,-0.002,87.0,16
-hanseniase,3550308,São Paulo,sarima,3.321,4.903,-0.061,89.58,16
-hanseniase,3550308,São Paulo,seasonal_ma3,3.396,4.924,-0.07,95.46,16
-hanseniase,3550308,São Paulo,seasonal_naive,4.625,7.441,-1.445,105.06,16
-hanseniase,3550308,São Paulo,tft,4.479,5.565,-0.367,106.17,16
-hanseniase,3550308,São Paulo,xgboost,2.428,4.486,0.112,71.62,16
-hanseniase,3551009,São Vicente,catboost,0.308,0.419,-0.151,191.52,16
-hanseniase,3551009,São Vicente,gru,0.188,0.433,-0.231,200.0,16
-hanseniase,3551009,São Vicente,lgbm,0.284,0.418,-0.146,193.35,16
-hanseniase,3551009,São Vicente,lstm,0.188,0.433,-0.231,200.0,16
-hanseniase,3551009,São Vicente,nhits,0.188,0.433,-0.231,200.0,16
-hanseniase,3551009,São Vicente,prophet,0.241,0.393,-0.014,191.13,16
-hanseniase,3551009,São Vicente,sarima,0.269,0.412,-0.112,193.28,16
-hanseniase,3551009,São Vicente,seasonal_ma3,0.271,0.449,-0.322,185.71,16
-hanseniase,3551009,São Vicente,seasonal_naive,0.25,0.5,-0.641,160.0,16
-hanseniase,3551009,São Vicente,tft,0.188,0.433,-0.231,200.0,16
-hanseniase,3551009,São Vicente,xgboost,0.303,0.425,-0.188,192.01,16
-hanseniase,3554102,Taboão da Serra,catboost,0.322,0.458,-0.118,188.71,16
-hanseniase,3554102,Taboão da Serra,gru,0.25,0.5,-0.333,200.0,16
-hanseniase,3554102,Taboão da Serra,lgbm,0.309,0.458,-0.117,189.54,16
-hanseniase,3554102,Taboão da Serra,lstm,0.25,0.5,-0.333,200.0,16
-hanseniase,3554102,Taboão da Serra,nhits,0.25,0.5,-0.332,199.96,16
-hanseniase,3554102,Taboão da Serra,prophet,0.295,0.45,-0.08,188.34,16
-hanseniase,3554102,Taboão da Serra,sarima,0.342,0.442,-0.042,183.44,16
-hanseniase,3554102,Taboão da Serra,seasonal_ma3,0.333,0.486,-0.259,171.11,16
-hanseniase,3554102,Taboão da Serra,seasonal_naive,0.5,0.791,-2.333,200.0,16
-hanseniase,3554102,Taboão da Serra,tft,0.25,0.5,-0.333,200.0,16
-hanseniase,3554102,Taboão da Serra,xgboost,0.338,0.467,-0.165,189.62,16
+hanseniase,3505708,Barueri,catboost,0.105,0.108,,200.0,16.0
+hanseniase,3505708,Barueri,deepar,0.6131249843165278,0.7592882949093326,,200.0,
+hanseniase,3505708,Barueri,gru,0.0,0.0,,200.0,16.0
+hanseniase,3505708,Barueri,lgbm,0.078,0.083,,200.0,16.0
+hanseniase,3505708,Barueri,lstm,0.0,0.0,,200.0,16.0
+hanseniase,3505708,Barueri,nhits,0.0,0.0,,200.0,16.0
+hanseniase,3505708,Barueri,prophet,0.023,0.045,,200.0,16.0
+hanseniase,3505708,Barueri,sarima,0.098,0.099,,200.0,16.0
+hanseniase,3505708,Barueri,seasonal_ma3,0.104,0.25,,200.0,16.0
+hanseniase,3505708,Barueri,seasonal_naive,0.0,0.0,,0.0,16.0
+hanseniase,3505708,Barueri,tft,0.0,0.0,,200.0,16.0
+hanseniase,3505708,Barueri,xgboost,0.105,0.115,,200.0,16.0
+hanseniase,3506003,Bauru,catboost,0.708,0.811,-0.114,150.87,16.0
+hanseniase,3506003,Bauru,deepar,0.7099999990314245,0.8653611996948835,-0.2695735199997762,160.34919784252617,
+hanseniase,3506003,Bauru,gru,0.68,1.019,-0.759,195.6,16.0
+hanseniase,3506003,Bauru,lgbm,0.724,0.826,-0.158,147.07,16.0
+hanseniase,3506003,Bauru,lstm,0.706,1.015,-0.747,196.66,16.0
+hanseniase,3506003,Bauru,nhits,0.645,0.946,-0.517,170.75,16.0
+hanseniase,3506003,Bauru,prophet,0.688,1.031,-0.801,200.0,16.0
+hanseniase,3506003,Bauru,sarima,3.949,4.156,-28.281,200.0,16.0
+hanseniase,3506003,Bauru,seasonal_ma3,0.833,1.007,-0.719,151.25,16.0
+hanseniase,3506003,Bauru,seasonal_naive,0.938,1.199,-1.437,169.23,16.0
+hanseniase,3506003,Bauru,tft,0.699,1.03,-0.8,199.51,16.0
+hanseniase,3506003,Bauru,xgboost,0.699,0.798,-0.079,144.77,16.0
+hanseniase,3509502,Campinas,catboost,1.824,2.089,-0.357,118.75,16.0
+hanseniase,3509502,Campinas,deepar,2.2987499870359898,2.696131465969175,-1.2611129644447239,128.61475500694027,
+hanseniase,3509502,Campinas,gru,1.687,2.459,-0.881,199.72,16.0
+hanseniase,3509502,Campinas,lgbm,1.803,2.105,-0.379,118.79,16.0
+hanseniase,3509502,Campinas,lstm,1.688,2.462,-0.886,199.99,16.0
+hanseniase,3509502,Campinas,nhits,1.671,2.416,-0.816,193.52,16.0
+hanseniase,3509502,Campinas,prophet,1.696,2.018,-0.267,119.14,16.0
+hanseniase,3509502,Campinas,sarima,1.934,2.294,-0.638,121.11,16.0
+hanseniase,3509502,Campinas,seasonal_ma3,1.917,2.198,-0.503,124.79,16.0
+hanseniase,3509502,Campinas,seasonal_naive,1.438,2.107,-0.38,91.28,16.0
+hanseniase,3509502,Campinas,tft,2.93,3.584,-2.996,170.68,16.0
+hanseniase,3509502,Campinas,xgboost,1.649,1.931,-0.16,116.32,16.0
+hanseniase,3510609,Carapicuíba,catboost,0.151,0.257,-0.124,198.83,16.0
+hanseniase,3510609,Carapicuíba,deepar,0.9793749745003879,1.276619032305497,-26.814505022201573,196.18644081708928,
+hanseniase,3510609,Carapicuíba,gru,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3510609,Carapicuíba,lgbm,0.144,0.255,-0.112,198.87,16.0
+hanseniase,3510609,Carapicuíba,lstm,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3510609,Carapicuíba,nhits,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3510609,Carapicuíba,prophet,0.168,0.266,-0.21,198.88,16.0
+hanseniase,3510609,Carapicuíba,sarima,0.173,0.251,-0.076,197.3,16.0
+hanseniase,3510609,Carapicuíba,seasonal_ma3,0.083,0.264,-0.185,200.0,16.0
+hanseniase,3510609,Carapicuíba,seasonal_naive,0.125,0.354,-1.133,200.0,16.0
+hanseniase,3510609,Carapicuíba,tft,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3510609,Carapicuíba,xgboost,0.148,0.256,-0.12,198.68,16.0
+hanseniase,3513801,Diadema,catboost,0.189,0.336,-0.035,196.35,16.0
+hanseniase,3513801,Diadema,deepar,0.7181249856948853,0.7656981940432291,-4.360399765586858,176.90116014228053,
+hanseniase,3513801,Diadema,gru,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3513801,Diadema,lgbm,0.235,0.351,-0.129,195.44,16.0
+hanseniase,3513801,Diadema,lstm,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3513801,Diadema,nhits,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3513801,Diadema,prophet,0.271,0.356,-0.161,194.48,16.0
+hanseniase,3513801,Diadema,sarima,0.22,0.34,-0.059,195.39,16.0
+hanseniase,3513801,Diadema,seasonal_ma3,0.229,0.417,-0.587,200.0,16.0
+hanseniase,3513801,Diadema,seasonal_naive,0.188,0.433,-0.714,200.0,16.0
+hanseniase,3513801,Diadema,tft,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3513801,Diadema,xgboost,0.221,0.34,-0.056,195.05,16.0
+hanseniase,3518701,Guarujá,catboost,0.57,0.785,0.174,172.13,16.0
+hanseniase,3518701,Guarujá,deepar,0.950624980032444,1.1530692486518217,-0.7820397130876335,162.18801415116965,
+hanseniase,3518701,Guarujá,gru,0.438,0.968,-0.257,200.0,16.0
+hanseniase,3518701,Guarujá,lgbm,0.412,0.515,0.645,162.41,16.0
+hanseniase,3518701,Guarujá,lstm,0.438,0.968,-0.257,200.0,16.0
+hanseniase,3518701,Guarujá,nhits,0.438,0.968,-0.257,200.0,16.0
+hanseniase,3518701,Guarujá,prophet,1.518,1.686,-2.811,159.24,16.0
+hanseniase,3518701,Guarujá,sarima,0.922,1.224,-1.008,166.23,16.0
+hanseniase,3518701,Guarujá,seasonal_ma3,1.208,1.814,-3.412,162.32,16.0
+hanseniase,3518701,Guarujá,seasonal_naive,0.75,1.225,-1.01,148.15,16.0
+hanseniase,3518701,Guarujá,tft,0.516,0.988,-0.308,191.38,16.0
+hanseniase,3518701,Guarujá,xgboost,0.496,0.627,0.473,164.71,16.0
+hanseniase,3518800,Guarulhos,catboost,0.646,0.754,0.091,154.07,16.0
+hanseniase,3518800,Guarulhos,deepar,0.6306249983608723,0.8801810876797882,-0.23954999537468002,162.32979882698416,
+hanseniase,3518800,Guarulhos,gru,0.5,0.935,-0.4,200.0,16.0
+hanseniase,3518800,Guarulhos,lgbm,0.637,0.807,-0.041,151.5,16.0
+hanseniase,3518800,Guarulhos,lstm,0.5,0.935,-0.4,200.0,16.0
+hanseniase,3518800,Guarulhos,nhits,0.501,0.935,-0.4,199.96,16.0
+hanseniase,3518800,Guarulhos,prophet,0.505,0.867,-0.203,175.09,16.0
+hanseniase,3518800,Guarulhos,sarima,0.638,0.806,-0.038,163.21,16.0
+hanseniase,3518800,Guarulhos,seasonal_ma3,0.604,0.878,-0.233,147.27,16.0
+hanseniase,3518800,Guarulhos,seasonal_naive,0.5,1.0,-0.6,112.5,16.0
+hanseniase,3518800,Guarulhos,tft,1.784,2.777,-11.335,194.78,16.0
+hanseniase,3518800,Guarulhos,xgboost,0.656,0.765,0.064,147.27,16.0
+hanseniase,3522208,Itapevi,catboost,0.126,0.248,-0.052,198.87,16.0
+hanseniase,3522208,Itapevi,deepar,0.31874998786952347,0.4430434336844592,-2.349973062500963,194.47004618263003,
+hanseniase,3522208,Itapevi,gru,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3522208,Itapevi,lgbm,0.096,0.247,-0.038,199.35,16.0
+hanseniase,3522208,Itapevi,lstm,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3522208,Itapevi,nhits,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3522208,Itapevi,prophet,0.08,0.251,-0.073,199.92,16.0
+hanseniase,3522208,Itapevi,sarima,0.075,0.251,-0.073,200.0,16.0
+hanseniase,3522208,Itapevi,seasonal_ma3,0.083,0.264,-0.185,200.0,16.0
+hanseniase,3522208,Itapevi,seasonal_naive,0.125,0.354,-1.133,200.0,16.0
+hanseniase,3522208,Itapevi,tft,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3522208,Itapevi,xgboost,0.088,0.247,-0.039,199.5,16.0
+hanseniase,3525904,Jundiaí,catboost,0.237,0.282,-0.359,195.81,16.0
+hanseniase,3525904,Jundiaí,deepar,0.2293749954551458,0.3104331581596855,-0.6446932596906032,186.66666666666666,
+hanseniase,3525904,Jundiaí,gru,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3525904,Jundiaí,lgbm,0.185,0.262,-0.168,197.21,16.0
+hanseniase,3525904,Jundiaí,lstm,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3525904,Jundiaí,nhits,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3525904,Jundiaí,prophet,0.38,0.536,-3.895,195.9,16.0
+hanseniase,3525904,Jundiaí,sarima,0.695,0.737,-8.262,188.66,16.0
+hanseniase,3525904,Jundiaí,seasonal_ma3,0.146,0.3,-0.541,200.0,16.0
+hanseniase,3525904,Jundiaí,seasonal_naive,0.188,0.433,-2.2,200.0,16.0
+hanseniase,3525904,Jundiaí,tft,0.065,0.25,-0.066,199.99,16.0
+hanseniase,3525904,Jundiaí,xgboost,0.198,0.265,-0.2,196.97,16.0
+hanseniase,3529401,Mauá,catboost,0.094,0.095,,200.0,16.0
+hanseniase,3529401,Mauá,deepar,0.5018749884329736,0.561832923725922,,200.0,
+hanseniase,3529401,Mauá,gru,0.0,0.0,,200.0,16.0
+hanseniase,3529401,Mauá,lgbm,0.055,0.058,,200.0,16.0
+hanseniase,3529401,Mauá,lstm,0.0,0.0,,200.0,16.0
+hanseniase,3529401,Mauá,nhits,0.0,0.0,,200.0,16.0
+hanseniase,3529401,Mauá,prophet,0.048,0.058,,200.0,16.0
+hanseniase,3529401,Mauá,sarima,0.061,0.061,,200.0,16.0
+hanseniase,3529401,Mauá,seasonal_ma3,0.063,0.144,,200.0,16.0
+hanseniase,3529401,Mauá,seasonal_naive,0.062,0.25,,200.0,16.0
+hanseniase,3529401,Mauá,tft,0.0,0.0,,200.0,16.0
+hanseniase,3529401,Mauá,xgboost,0.055,0.059,,200.0,16.0
+hanseniase,3534401,Osasco,catboost,0.217,0.487,-0.011,198.83,16.0
+hanseniase,3534401,Osasco,deepar,0.550624986179173,0.6541740808168663,-0.8258932395203926,187.91989662490778,
+hanseniase,3534401,Osasco,gru,0.125,0.5,-0.067,200.0,16.0
+hanseniase,3534401,Osasco,lgbm,0.214,0.49,-0.025,198.97,16.0
+hanseniase,3534401,Osasco,lstm,0.125,0.5,-0.067,200.0,16.0
+hanseniase,3534401,Osasco,nhits,0.125,0.5,-0.067,200.0,16.0
+hanseniase,3534401,Osasco,prophet,0.196,0.462,0.09,197.13,16.0
+hanseniase,3534401,Osasco,sarima,0.287,0.486,-0.01,197.76,16.0
+hanseniase,3534401,Osasco,seasonal_ma3,0.167,0.527,-0.185,200.0,16.0
+hanseniase,3534401,Osasco,seasonal_naive,0.25,0.707,-1.133,200.0,16.0
+hanseniase,3534401,Osasco,tft,0.125,0.5,-0.067,200.0,16.0
+hanseniase,3534401,Osasco,xgboost,0.196,0.486,-0.008,198.99,16.0
+hanseniase,3536505,Paulínia,catboost,0.102,0.242,-0.0,198.83,16.0
+hanseniase,3536505,Paulínia,deepar,0.8856249690288678,1.153118015638585,-21.693225096367243,190.1048220795701,
+hanseniase,3536505,Paulínia,gru,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3536505,Paulínia,lgbm,0.089,0.245,-0.025,199.33,16.0
+hanseniase,3536505,Paulínia,lstm,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3536505,Paulínia,nhits,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3536505,Paulínia,prophet,0.098,0.252,-0.083,199.53,16.0
+hanseniase,3536505,Paulínia,sarima,0.096,0.256,-0.119,200.0,16.0
+hanseniase,3536505,Paulínia,seasonal_ma3,0.083,0.264,-0.185,200.0,16.0
+hanseniase,3536505,Paulínia,seasonal_naive,0.125,0.354,-1.133,200.0,16.0
+hanseniase,3536505,Paulínia,tft,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3536505,Paulínia,xgboost,0.086,0.247,-0.044,199.59,16.0
+hanseniase,3541000,Praia Grande,catboost,0.085,0.087,,200.0,16.0
+hanseniase,3541000,Praia Grande,deepar,1.2087499967310578,1.61812778027975,,200.0,
+hanseniase,3541000,Praia Grande,gru,0.0,0.0,,200.0,16.0
+hanseniase,3541000,Praia Grande,lgbm,0.063,0.067,,200.0,16.0
+hanseniase,3541000,Praia Grande,lstm,0.0,0.0,,200.0,16.0
+hanseniase,3541000,Praia Grande,nhits,0.0,0.0,,200.0,16.0
+hanseniase,3541000,Praia Grande,prophet,0.085,0.102,,200.0,16.0
+hanseniase,3541000,Praia Grande,sarima,0.054,0.076,,200.0,16.0
+hanseniase,3541000,Praia Grande,seasonal_ma3,0.042,0.118,,200.0,16.0
+hanseniase,3541000,Praia Grande,seasonal_naive,0.0,0.0,,0.0,16.0
+hanseniase,3541000,Praia Grande,tft,0.0,0.0,,200.0,16.0
+hanseniase,3541000,Praia Grande,xgboost,0.072,0.08,,200.0,16.0
+hanseniase,3543402,Ribeirão Preto,catboost,0.859,1.08,-0.248,136.5,16.0
+hanseniase,3543402,Ribeirão Preto,deepar,1.2299999902024865,1.5445792078332843,-1.5554208447420477,132.49047686442208,
+hanseniase,3543402,Ribeirão Preto,gru,0.938,1.346,-0.941,200.0,16.0
+hanseniase,3543402,Ribeirão Preto,lgbm,0.853,1.079,-0.247,133.55,16.0
+hanseniase,3543402,Ribeirão Preto,lstm,0.937,1.346,-0.941,200.0,16.0
+hanseniase,3543402,Ribeirão Preto,nhits,0.991,1.35,-0.951,199.29,16.0
+hanseniase,3543402,Ribeirão Preto,prophet,0.918,1.033,-0.143,118.51,16.0
+hanseniase,3543402,Ribeirão Preto,sarima,0.846,1.068,-0.223,119.04,16.0
+hanseniase,3543402,Ribeirão Preto,seasonal_ma3,1.0,1.143,-0.398,133.3,16.0
+hanseniase,3543402,Ribeirão Preto,seasonal_naive,1.25,1.541,-1.544,156.41,16.0
+hanseniase,3543402,Ribeirão Preto,tft,2.588,3.589,-12.798,191.96,16.0
+hanseniase,3543402,Ribeirão Preto,xgboost,0.809,1.045,-0.17,127.62,16.0
+hanseniase,3547809,Santo André,catboost,0.178,0.261,-0.159,197.86,16.0
+hanseniase,3547809,Santo André,deepar,1.2699999662581831,1.7761721043533636,-52.841704009097484,193.3823531506435,
+hanseniase,3547809,Santo André,gru,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3547809,Santo André,lgbm,0.154,0.256,-0.115,198.27,16.0
+hanseniase,3547809,Santo André,lstm,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3547809,Santo André,nhits,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3547809,Santo André,prophet,0.173,0.244,-0.019,195.83,16.0
+hanseniase,3547809,Santo André,sarima,0.166,0.251,-0.072,197.42,16.0
+hanseniase,3547809,Santo André,seasonal_ma3,0.167,0.312,-0.659,200.0,16.0
+hanseniase,3547809,Santo André,seasonal_naive,0.188,0.433,-2.2,200.0,16.0
+hanseniase,3547809,Santo André,tft,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3547809,Santo André,xgboost,0.16,0.252,-0.086,197.75,16.0
+hanseniase,3548500,Santos,catboost,0.221,0.346,-0.094,196.26,16.0
+hanseniase,3548500,Santos,deepar,0.5087499916553497,0.5771048330859256,-2.0450284651075115,183.25964810897972,
+hanseniase,3548500,Santos,gru,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3548500,Santos,lgbm,0.184,0.34,-0.056,197.0,16.0
+hanseniase,3548500,Santos,lstm,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3548500,Santos,nhits,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3548500,Santos,prophet,0.159,0.326,0.027,195.74,16.0
+hanseniase,3548500,Santos,sarima,0.19,0.333,-0.012,195.99,16.0
+hanseniase,3548500,Santos,seasonal_ma3,0.208,0.333,-0.016,171.43,16.0
+hanseniase,3548500,Santos,seasonal_naive,0.188,0.433,-0.714,150.0,16.0
+hanseniase,3548500,Santos,tft,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3548500,Santos,xgboost,0.182,0.337,-0.035,196.58,16.0
+hanseniase,3548708,São Bernardo do Campo,catboost,0.223,0.336,-0.031,194.81,16.0
+hanseniase,3548708,São Bernardo do Campo,deepar,0.6449999837204814,0.7603699559442333,-4.286056867681237,177.40609371620351,
+hanseniase,3548708,São Bernardo do Campo,gru,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3548708,São Bernardo do Campo,lgbm,0.189,0.336,-0.034,196.36,16.0
+hanseniase,3548708,São Bernardo do Campo,lstm,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3548708,São Bernardo do Campo,nhits,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3548708,São Bernardo do Campo,prophet,0.222,0.367,-0.232,196.51,16.0
+hanseniase,3548708,São Bernardo do Campo,sarima,0.212,0.333,-0.013,195.03,16.0
+hanseniase,3548708,São Bernardo do Campo,seasonal_ma3,0.271,0.417,-0.587,200.0,16.0
+hanseniase,3548708,São Bernardo do Campo,seasonal_naive,0.25,0.5,-1.286,200.0,16.0
+hanseniase,3548708,São Bernardo do Campo,tft,0.125,0.354,-0.143,200.0,16.0
+hanseniase,3548708,São Bernardo do Campo,xgboost,0.201,0.338,-0.046,196.09,16.0
+hanseniase,3549805,São José do Rio Preto,catboost,0.174,0.196,,200.0,16.0
+hanseniase,3549805,São José do Rio Preto,deepar,0.21249999292194838,0.22488885345283366,,200.0,
+hanseniase,3549805,São José do Rio Preto,gru,0.0,0.0,,200.0,16.0
+hanseniase,3549805,São José do Rio Preto,lgbm,0.123,0.134,,200.0,16.0
+hanseniase,3549805,São José do Rio Preto,lstm,0.0,0.0,,200.0,16.0
+hanseniase,3549805,São José do Rio Preto,nhits,0.0,0.0,,200.0,16.0
+hanseniase,3549805,São José do Rio Preto,prophet,0.178,0.274,,200.0,16.0
+hanseniase,3549805,São José do Rio Preto,sarima,0.037,0.048,,200.0,16.0
+hanseniase,3549805,São José do Rio Preto,seasonal_ma3,0.021,0.083,,200.0,16.0
+hanseniase,3549805,São José do Rio Preto,seasonal_naive,0.0,0.0,,0.0,16.0
+hanseniase,3549805,São José do Rio Preto,tft,0.079,0.166,,200.0,16.0
+hanseniase,3549805,São José do Rio Preto,xgboost,0.133,0.147,,200.0,16.0
+hanseniase,3549904,São José dos Campos,catboost,0.276,0.531,-0.017,196.13,16.0
+hanseniase,3549904,São José dos Campos,deepar,0.5318749868310988,0.6267226118442178,-0.41622528792099356,186.814465929788,
+hanseniase,3549904,São José dos Campos,gru,0.188,0.559,-0.127,200.0,16.0
+hanseniase,3549904,São José dos Campos,lgbm,0.259,0.531,-0.016,196.57,16.0
+hanseniase,3549904,São José dos Campos,lstm,0.188,0.559,-0.127,200.0,16.0
+hanseniase,3549904,São José dos Campos,nhits,0.188,0.559,-0.127,200.0,16.0
+hanseniase,3549904,São José dos Campos,prophet,0.259,0.526,0.002,195.55,16.0
+hanseniase,3549904,São José dos Campos,sarima,0.289,0.532,-0.019,195.7,16.0
+hanseniase,3549904,São José dos Campos,seasonal_ma3,0.25,0.612,-0.352,200.0,16.0
+hanseniase,3549904,São José dos Campos,seasonal_naive,0.188,0.559,-0.127,200.0,16.0
+hanseniase,3549904,São José dos Campos,tft,0.188,0.559,-0.127,200.0,16.0
+hanseniase,3549904,São José dos Campos,xgboost,0.271,0.537,-0.038,197.09,16.0
+hanseniase,3550308,São Paulo,catboost,2.19,4.647,0.047,65.91,16.0
+hanseniase,3550308,São Paulo,deepar,4.385624907910824,6.666326182800049,-0.9618236976244663,101.35734499922708,
+hanseniase,3550308,São Paulo,gru,2.53,4.596,0.068,73.81,16.0
+hanseniase,3550308,São Paulo,lgbm,2.542,4.566,0.079,73.96,16.0
+hanseniase,3550308,São Paulo,lstm,2.47,4.806,-0.019,76.33,16.0
+hanseniase,3550308,São Paulo,nhits,2.474,5.24,-0.212,108.93,16.0
+hanseniase,3550308,São Paulo,prophet,3.164,4.765,-0.002,87.0,16.0
+hanseniase,3550308,São Paulo,sarima,3.321,4.903,-0.061,89.58,16.0
+hanseniase,3550308,São Paulo,seasonal_ma3,3.396,4.924,-0.07,95.46,16.0
+hanseniase,3550308,São Paulo,seasonal_naive,4.625,7.441,-1.445,105.06,16.0
+hanseniase,3550308,São Paulo,tft,4.479,5.565,-0.367,106.17,16.0
+hanseniase,3550308,São Paulo,xgboost,2.428,4.486,0.112,71.62,16.0
+hanseniase,3551009,São Vicente,catboost,0.308,0.419,-0.151,191.52,16.0
+hanseniase,3551009,São Vicente,deepar,0.7368749934248626,0.8963502390370895,-4.273887186194691,174.91009113096752,
+hanseniase,3551009,São Vicente,gru,0.188,0.433,-0.231,200.0,16.0
+hanseniase,3551009,São Vicente,lgbm,0.284,0.418,-0.146,193.35,16.0
+hanseniase,3551009,São Vicente,lstm,0.188,0.433,-0.231,200.0,16.0
+hanseniase,3551009,São Vicente,nhits,0.188,0.433,-0.231,200.0,16.0
+hanseniase,3551009,São Vicente,prophet,0.241,0.393,-0.014,191.13,16.0
+hanseniase,3551009,São Vicente,sarima,0.269,0.412,-0.112,193.28,16.0
+hanseniase,3551009,São Vicente,seasonal_ma3,0.271,0.449,-0.322,185.71,16.0
+hanseniase,3551009,São Vicente,seasonal_naive,0.25,0.5,-0.641,160.0,16.0
+hanseniase,3551009,São Vicente,tft,0.188,0.433,-0.231,200.0,16.0
+hanseniase,3551009,São Vicente,xgboost,0.303,0.425,-0.188,192.01,16.0
+hanseniase,3552205,Sorocaba,catboost,0.162,0.251,-0.079,197.7,16.0
+hanseniase,3552205,Sorocaba,deepar,0.4993749875575304,0.5167627483959494,-3.557546464080816,191.66666666666666,
+hanseniase,3552205,Sorocaba,gru,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3552205,Sorocaba,lgbm,0.139,0.248,-0.049,198.19,16.0
+hanseniase,3552205,Sorocaba,lstm,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3552205,Sorocaba,nhits,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3552205,Sorocaba,prophet,0.092,0.253,-0.091,200.0,16.0
+hanseniase,3552205,Sorocaba,sarima,0.172,0.252,-0.084,197.39,16.0
+hanseniase,3552205,Sorocaba,seasonal_ma3,0.062,0.25,-0.067,200.0,16.0
+hanseniase,3552205,Sorocaba,seasonal_naive,0.062,0.25,-0.067,200.0,16.0
+hanseniase,3552205,Sorocaba,tft,0.063,0.25,-0.067,200.0,16.0
+hanseniase,3552205,Sorocaba,xgboost,0.139,0.246,-0.031,198.05,16.0
+hanseniase,3554102,Taboão da Serra,catboost,0.322,0.458,-0.118,188.71,16.0
+hanseniase,3554102,Taboão da Serra,deepar,0.7493749908171594,0.9312927872205801,-3.625633362821742,169.3401838134365,
+hanseniase,3554102,Taboão da Serra,gru,0.25,0.5,-0.333,200.0,16.0
+hanseniase,3554102,Taboão da Serra,lgbm,0.309,0.458,-0.117,189.54,16.0
+hanseniase,3554102,Taboão da Serra,lstm,0.25,0.5,-0.333,200.0,16.0
+hanseniase,3554102,Taboão da Serra,nhits,0.25,0.5,-0.332,199.96,16.0
+hanseniase,3554102,Taboão da Serra,prophet,0.295,0.45,-0.08,188.34,16.0
+hanseniase,3554102,Taboão da Serra,sarima,0.342,0.442,-0.042,183.44,16.0
+hanseniase,3554102,Taboão da Serra,seasonal_ma3,0.333,0.486,-0.259,171.11,16.0
+hanseniase,3554102,Taboão da Serra,seasonal_naive,0.5,0.791,-2.333,200.0,16.0
+hanseniase,3554102,Taboão da Serra,tft,0.25,0.5,-0.333,200.0,16.0
+hanseniase,3554102,Taboão da Serra,xgboost,0.338,0.467,-0.165,189.62,16.0

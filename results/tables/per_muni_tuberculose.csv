@@ -1,254 +1,277 @@
 disease,cd_mun,nm_mun,model,mae,rmse,r2,smape,n
-tuberculose,3505708,Barueri,catboost,1.547,1.67,-0.192,70.91,16
-tuberculose,3505708,Barueri,gru,1.405,1.605,-0.101,67.07,16
-tuberculose,3505708,Barueri,lgbm,1.548,1.664,-0.183,70.82,16
-tuberculose,3505708,Barueri,lstm,1.249,1.436,0.118,58.19,16
-tuberculose,3505708,Barueri,nhits,1.877,2.165,-1.003,116.03,16
-tuberculose,3505708,Barueri,prophet,1.422,1.57,-0.054,65.55,16
-tuberculose,3505708,Barueri,sarima,1.367,1.507,0.029,61.12,16
-tuberculose,3505708,Barueri,seasonal_ma3,1.417,1.662,-0.181,67.65,16
-tuberculose,3505708,Barueri,seasonal_naive,1.5,1.871,-0.496,77.82,16
-tuberculose,3505708,Barueri,tft,1.561,1.808,-0.397,73.68,16
-tuberculose,3505708,Barueri,xgboost,1.545,1.684,-0.212,69.71,16
-tuberculose,3506003,Bauru,catboost,2.614,3.396,-0.282,55.78,16
-tuberculose,3506003,Bauru,gru,2.155,2.782,0.14,47.35,16
-tuberculose,3506003,Bauru,lgbm,2.388,3.266,-0.186,50.98,16
-tuberculose,3506003,Bauru,lstm,2.176,3.104,-0.071,47.22,16
-tuberculose,3506003,Bauru,nhits,2.259,3.111,-0.076,49.25,16
-tuberculose,3506003,Bauru,prophet,2.192,3.133,-0.091,47.08,16
-tuberculose,3506003,Bauru,sarima,2.684,3.485,-0.35,55.26,16
-tuberculose,3506003,Bauru,seasonal_ma3,2.354,3.396,-0.282,51.07,16
-tuberculose,3506003,Bauru,seasonal_naive,3.125,3.984,-0.765,70.49,16
-tuberculose,3506003,Bauru,tft,2.746,3.326,-0.23,57.77,16
-tuberculose,3506003,Bauru,xgboost,2.211,3.09,-0.061,47.54,16
-tuberculose,3509502,Campinas,catboost,3.931,4.8,-0.117,46.46,16
-tuberculose,3509502,Campinas,gru,3.249,4.406,0.059,38.32,16
-tuberculose,3509502,Campinas,lgbm,3.655,4.407,0.058,44.23,16
-tuberculose,3509502,Campinas,lstm,3.342,4.393,0.064,39.92,16
-tuberculose,3509502,Campinas,nhits,4.135,4.694,-0.068,48.06,16
-tuberculose,3509502,Campinas,prophet,3.872,5.185,-0.304,48.46,16
-tuberculose,3509502,Campinas,sarima,3.536,4.281,0.111,41.93,16
-tuberculose,3509502,Campinas,seasonal_ma3,3.792,5.372,-0.4,46.05,16
-tuberculose,3509502,Campinas,seasonal_naive,3.188,4.562,-0.009,36.75,16
-tuberculose,3509502,Campinas,tft,4.211,5.031,-0.228,51.59,16
-tuberculose,3509502,Campinas,xgboost,3.94,4.922,-0.175,45.6,16
-tuberculose,3510609,Carapicuíba,catboost,2.686,3.507,-0.245,64.51,16
-tuberculose,3510609,Carapicuíba,gru,2.898,3.428,-0.19,66.08,16
-tuberculose,3510609,Carapicuíba,lgbm,2.609,3.342,-0.131,64.97,16
-tuberculose,3510609,Carapicuíba,lstm,2.908,3.397,-0.169,67.88,16
-tuberculose,3510609,Carapicuíba,nhits,2.701,3.791,-0.455,70.58,16
-tuberculose,3510609,Carapicuíba,prophet,2.565,3.185,-0.027,62.77,16
-tuberculose,3510609,Carapicuíba,sarima,2.849,3.658,-0.355,69.27,16
-tuberculose,3510609,Carapicuíba,seasonal_ma3,2.479,3.556,-0.281,59.78,16
-tuberculose,3510609,Carapicuíba,seasonal_naive,3.5,4.637,-1.177,86.82,16
-tuberculose,3510609,Carapicuíba,tft,2.468,3.034,0.068,60.1,16
-tuberculose,3510609,Carapicuíba,xgboost,2.728,3.464,-0.215,67.45,16
-tuberculose,3513801,Diadema,catboost,2.761,3.678,-0.509,66.05,16
-tuberculose,3513801,Diadema,gru,2.359,3.355,-0.256,54.08,16
-tuberculose,3513801,Diadema,lgbm,2.61,3.538,-0.396,63.65,16
-tuberculose,3513801,Diadema,lstm,2.534,3.406,-0.294,56.3,16
-tuberculose,3513801,Diadema,nhits,3.515,4.355,-1.115,128.58,16
-tuberculose,3513801,Diadema,prophet,2.347,3.25,-0.178,55.19,16
-tuberculose,3513801,Diadema,sarima,2.64,3.541,-0.398,61.88,16
-tuberculose,3513801,Diadema,seasonal_ma3,2.354,3.031,-0.025,60.77,16
-tuberculose,3513801,Diadema,seasonal_naive,3.125,3.857,-0.659,85.41,16
-tuberculose,3513801,Diadema,tft,2.701,3.504,-0.37,58.66,16
-tuberculose,3513801,Diadema,xgboost,2.652,3.565,-0.418,64.25,16
-tuberculose,3518701,Guarujá,catboost,3.044,3.63,-0.314,38.97,16
-tuberculose,3518701,Guarujá,gru,2.526,3.222,-0.035,30.39,16
-tuberculose,3518701,Guarujá,lgbm,3.109,3.502,-0.223,39.6,16
-tuberculose,3518701,Guarujá,lstm,2.872,3.391,-0.147,34.49,16
-tuberculose,3518701,Guarujá,nhits,3.141,4.075,-0.656,40.36,16
-tuberculose,3518701,Guarujá,prophet,2.665,3.237,-0.045,31.58,16
-tuberculose,3518701,Guarujá,sarima,2.577,2.993,0.107,32.94,16
-tuberculose,3518701,Guarujá,seasonal_ma3,2.958,3.747,-0.4,36.43,16
-tuberculose,3518701,Guarujá,seasonal_naive,3.25,3.889,-0.508,40.33,16
-tuberculose,3518701,Guarujá,tft,2.599,3.202,-0.023,31.45,16
-tuberculose,3518701,Guarujá,xgboost,3.174,3.73,-0.388,40.52,16
-tuberculose,3518800,Guarulhos,catboost,1.991,2.336,-0.052,46.42,16
-tuberculose,3518800,Guarulhos,gru,2.741,3.432,-1.271,54.51,16
-tuberculose,3518800,Guarulhos,lgbm,1.899,2.375,-0.088,44.3,16
-tuberculose,3518800,Guarulhos,lstm,2.233,2.813,-0.525,48.59,16
-tuberculose,3518800,Guarulhos,nhits,2.576,3.162,-0.928,53.27,16
-tuberculose,3518800,Guarulhos,prophet,2.117,2.657,-0.361,47.19,16
-tuberculose,3518800,Guarulhos,sarima,1.816,2.425,-0.133,42.52,16
-tuberculose,3518800,Guarulhos,seasonal_ma3,2.875,3.325,-1.131,60.51,16
-tuberculose,3518800,Guarulhos,seasonal_naive,2.625,3.391,-1.217,60.27,16
-tuberculose,3518800,Guarulhos,tft,2.092,2.578,-0.281,47.26,16
-tuberculose,3518800,Guarulhos,xgboost,1.961,2.453,-0.16,45.25,16
-tuberculose,3522208,Itapevi,catboost,1.045,1.274,-0.039,112.0,16
-tuberculose,3522208,Itapevi,gru,1.083,1.382,-0.223,135.13,16
-tuberculose,3522208,Itapevi,lgbm,1.036,1.259,-0.015,112.2,16
-tuberculose,3522208,Itapevi,lstm,1.044,1.308,-0.095,121.2,16
-tuberculose,3522208,Itapevi,nhits,1.241,1.722,-0.899,191.07,16
-tuberculose,3522208,Itapevi,prophet,1.051,1.256,-0.009,113.69,16
-tuberculose,3522208,Itapevi,sarima,1.026,1.287,-0.059,121.33,16
-tuberculose,3522208,Itapevi,seasonal_ma3,1.146,1.431,-0.311,117.53,16
-tuberculose,3522208,Itapevi,seasonal_naive,1.125,1.696,-0.84,107.69,16
-tuberculose,3522208,Itapevi,tft,0.904,1.166,0.13,113.29,16
-tuberculose,3522208,Itapevi,xgboost,1.048,1.261,-0.018,114.75,16
-tuberculose,3525904,Jundiaí,catboost,1.115,1.335,-0.201,98.54,16
-tuberculose,3525904,Jundiaí,gru,1.424,1.707,-0.963,119.21,16
-tuberculose,3525904,Jundiaí,lgbm,1.127,1.346,-0.221,97.41,16
-tuberculose,3525904,Jundiaí,lstm,1.384,1.581,-0.685,99.79,16
-tuberculose,3525904,Jundiaí,nhits,1.359,1.653,-0.84,154.46,16
-tuberculose,3525904,Jundiaí,prophet,1.26,1.622,-0.771,152.16,16
-tuberculose,3525904,Jundiaí,sarima,1.012,1.299,-0.136,108.62,16
-tuberculose,3525904,Jundiaí,seasonal_ma3,1.271,1.407,-0.333,117.37,16
-tuberculose,3525904,Jundiaí,seasonal_naive,1.125,1.458,-0.432,114.29,16
-tuberculose,3525904,Jundiaí,tft,1.312,1.518,-0.551,106.81,16
-tuberculose,3525904,Jundiaí,xgboost,1.084,1.326,-0.185,93.56,16
-tuberculose,3529401,Mauá,catboost,1.017,1.424,-0.022,66.88,16
-tuberculose,3529401,Mauá,gru,1.434,1.795,-0.624,89.56,16
-tuberculose,3529401,Mauá,lgbm,0.981,1.452,-0.062,65.04,16
-tuberculose,3529401,Mauá,lstm,1.106,1.493,-0.123,78.74,16
-tuberculose,3529401,Mauá,nhits,1.473,1.985,-0.985,172.67,16
-tuberculose,3529401,Mauá,prophet,0.95,1.344,0.09,62.54,16
-tuberculose,3529401,Mauá,sarima,1.04,1.509,-0.147,64.49,16
-tuberculose,3529401,Mauá,seasonal_ma3,1.229,1.614,-0.312,77.72,16
-tuberculose,3529401,Mauá,seasonal_naive,1.188,1.785,-0.606,74.86,16
-tuberculose,3529401,Mauá,tft,1.113,1.562,-0.23,69.77,16
-tuberculose,3529401,Mauá,xgboost,0.991,1.424,-0.022,65.48,16
-tuberculose,3534401,Osasco,catboost,2.827,4.263,-0.145,45.74,16
-tuberculose,3534401,Osasco,gru,2.463,3.443,0.253,41.16,16
-tuberculose,3534401,Osasco,lgbm,2.727,4.255,-0.14,43.88,16
-tuberculose,3534401,Osasco,lstm,2.894,3.889,0.047,47.8,16
-tuberculose,3534401,Osasco,nhits,3.546,5.475,-0.888,62.63,16
-tuberculose,3534401,Osasco,prophet,2.767,4.018,-0.017,45.08,16
-tuberculose,3534401,Osasco,sarima,2.804,4.066,-0.042,46.64,16
-tuberculose,3534401,Osasco,seasonal_ma3,2.875,4.561,-0.311,46.37,16
-tuberculose,3534401,Osasco,seasonal_naive,3.812,5.517,-0.917,52.66,16
-tuberculose,3534401,Osasco,tft,2.881,4.272,-0.149,46.66,16
-tuberculose,3534401,Osasco,xgboost,2.85,4.208,-0.115,46.68,16
-tuberculose,3536505,Paulínia,catboost,1.259,1.548,-0.208,119.92,16
-tuberculose,3536505,Paulínia,gru,1.277,1.604,-0.297,134.67,16
-tuberculose,3536505,Paulínia,lgbm,1.243,1.526,-0.174,119.05,16
-tuberculose,3536505,Paulínia,lstm,1.107,1.494,-0.125,111.77,16
-tuberculose,3536505,Paulínia,nhits,1.384,1.91,-0.837,183.09,16
-tuberculose,3536505,Paulínia,prophet,1.282,1.52,-0.164,104.93,16
-tuberculose,3536505,Paulínia,sarima,1.219,1.493,-0.124,115.73,16
-tuberculose,3536505,Paulínia,seasonal_ma3,1.542,1.911,-0.841,122.92,16
-tuberculose,3536505,Paulínia,seasonal_naive,1.5,2.031,-1.079,130.95,16
-tuberculose,3536505,Paulínia,tft,1.323,1.691,-0.441,135.38,16
-tuberculose,3536505,Paulínia,xgboost,1.182,1.481,-0.106,113.75,16
-tuberculose,3541000,Praia Grande,catboost,2.234,2.649,-0.499,57.23,16
-tuberculose,3541000,Praia Grande,gru,2.24,2.489,-0.323,54.27,16
-tuberculose,3541000,Praia Grande,lgbm,2.023,2.54,-0.378,52.0,16
-tuberculose,3541000,Praia Grande,lstm,2.346,2.581,-0.422,56.85,16
-tuberculose,3541000,Praia Grande,nhits,3.349,3.935,-2.306,80.21,16
-tuberculose,3541000,Praia Grande,prophet,1.769,2.216,-0.048,43.57,16
-tuberculose,3541000,Praia Grande,sarima,2.242,2.619,-0.465,57.07,16
-tuberculose,3541000,Praia Grande,seasonal_ma3,1.812,2.268,-0.099,43.74,16
-tuberculose,3541000,Praia Grande,seasonal_naive,3.188,3.683,-1.896,74.62,16
-tuberculose,3541000,Praia Grande,tft,2.25,2.719,-0.579,53.89,16
-tuberculose,3541000,Praia Grande,xgboost,2.066,2.578,-0.419,52.66,16
-tuberculose,3543402,Ribeirão Preto,catboost,3.879,4.625,-0.181,49.27,16
-tuberculose,3543402,Ribeirão Preto,gru,3.791,4.258,-0.001,48.17,16
-tuberculose,3543402,Ribeirão Preto,lgbm,3.86,4.55,-0.143,49.46,16
-tuberculose,3543402,Ribeirão Preto,lstm,3.912,4.445,-0.091,49.41,16
-tuberculose,3543402,Ribeirão Preto,nhits,3.929,4.68,-0.21,47.05,16
-tuberculose,3543402,Ribeirão Preto,prophet,4.033,4.881,-0.315,52.5,16
-tuberculose,3543402,Ribeirão Preto,sarima,4.217,4.851,-0.299,52.5,16
-tuberculose,3543402,Ribeirão Preto,seasonal_ma3,4.313,4.746,-0.244,53.53,16
-tuberculose,3543402,Ribeirão Preto,seasonal_naive,5.125,6.364,-1.236,63.18,16
-tuberculose,3543402,Ribeirão Preto,tft,4.27,4.905,-0.328,51.14,16
-tuberculose,3543402,Ribeirão Preto,xgboost,3.916,4.658,-0.198,50.3,16
-tuberculose,3547809,Santo André,catboost,2.812,3.831,-0.202,43.63,16
-tuberculose,3547809,Santo André,gru,2.745,3.847,-0.211,42.68,16
-tuberculose,3547809,Santo André,lgbm,2.687,3.697,-0.119,42.2,16
-tuberculose,3547809,Santo André,lstm,2.832,3.804,-0.185,44.44,16
-tuberculose,3547809,Santo André,nhits,3.276,3.993,-0.306,49.48,16
-tuberculose,3547809,Santo André,prophet,2.566,3.398,0.055,40.59,16
-tuberculose,3547809,Santo André,sarima,2.776,3.802,-0.184,42.92,16
-tuberculose,3547809,Santo André,seasonal_ma3,2.812,3.587,-0.053,45.47,16
-tuberculose,3547809,Santo André,seasonal_naive,3.312,3.961,-0.284,53.14,16
-tuberculose,3547809,Santo André,tft,2.83,3.757,-0.155,42.32,16
-tuberculose,3547809,Santo André,xgboost,2.736,3.746,-0.149,42.54,16
-tuberculose,3548500,Santos,catboost,2.1,2.715,0.236,36.26,16
-tuberculose,3548500,Santos,gru,3.086,3.832,-0.521,45.93,16
-tuberculose,3548500,Santos,lgbm,2.344,2.887,0.137,38.96,16
-tuberculose,3548500,Santos,lstm,3.783,4.885,-1.472,50.16,16
-tuberculose,3548500,Santos,nhits,3.378,3.823,-0.515,48.31,16
-tuberculose,3548500,Santos,prophet,2.991,3.825,-0.516,44.78,16
-tuberculose,3548500,Santos,sarima,2.037,2.583,0.309,34.86,16
-tuberculose,3548500,Santos,seasonal_ma3,3.146,3.792,-0.49,51.55,16
-tuberculose,3548500,Santos,seasonal_naive,3.312,3.717,-0.431,59.68,16
-tuberculose,3548500,Santos,tft,2.702,3.477,-0.252,41.77,16
-tuberculose,3548500,Santos,xgboost,2.325,2.922,0.115,38.83,16
-tuberculose,3552205,Sorocaba,catboost,0.721,1.056,-0.053,87.76,16
-tuberculose,3552205,Sorocaba,gru,0.956,1.278,-0.543,142.55,16
-tuberculose,3552205,Sorocaba,lgbm,0.762,1.062,-0.066,100.03,16
-tuberculose,3552205,Sorocaba,lstm,1.236,1.558,-1.294,137.9,16
-tuberculose,3552205,Sorocaba,nhits,1.019,1.311,-0.622,151.09,16
-tuberculose,3552205,Sorocaba,prophet,0.876,1.332,-0.676,143.01,16
-tuberculose,3552205,Sorocaba,sarima,0.804,1.099,-0.141,113.56,16
-tuberculose,3552205,Sorocaba,seasonal_ma3,0.896,1.25,-0.476,125.85,16
-tuberculose,3552205,Sorocaba,seasonal_naive,1.0,1.414,-0.889,128.57,16
-tuberculose,3552205,Sorocaba,tft,0.959,1.191,-0.34,121.27,16
-tuberculose,3552205,Sorocaba,xgboost,0.735,1.062,-0.064,97.5,16
-tuberculose,3548708,São Bernardo do Campo,catboost,2.318,2.911,-0.081,42.01,16
-tuberculose,3548708,São Bernardo do Campo,gru,2.388,3.217,-0.32,44.15,16
-tuberculose,3548708,São Bernardo do Campo,lgbm,2.404,3.15,-0.265,43.72,16
-tuberculose,3548708,São Bernardo do Campo,lstm,2.096,2.94,-0.102,38.08,16
-tuberculose,3548708,São Bernardo do Campo,nhits,2.915,3.431,-0.501,66.85,16
-tuberculose,3548708,São Bernardo do Campo,prophet,2.114,2.776,0.017,38.3,16
-tuberculose,3548708,São Bernardo do Campo,sarima,2.437,3.042,-0.18,43.72,16
-tuberculose,3548708,São Bernardo do Campo,seasonal_ma3,2.396,3.278,-0.37,43.35,16
-tuberculose,3548708,São Bernardo do Campo,seasonal_naive,2.812,3.326,-0.411,53.18,16
-tuberculose,3548708,São Bernardo do Campo,tft,2.768,3.474,-0.54,49.7,16
-tuberculose,3548708,São Bernardo do Campo,xgboost,2.309,3.064,-0.198,41.65,16
-tuberculose,3549805,São José do Rio Preto,catboost,0.967,1.124,0.215,62.8,16
-tuberculose,3549805,São José do Rio Preto,gru,1.767,2.111,-1.768,149.45,16
-tuberculose,3549805,São José do Rio Preto,lgbm,1.109,1.353,-0.138,66.2,16
-tuberculose,3549805,São José do Rio Preto,lstm,1.553,1.836,-1.094,123.42,16
-tuberculose,3549805,São José do Rio Preto,nhits,1.58,1.996,-1.476,121.57,16
-tuberculose,3549805,São José do Rio Preto,prophet,1.227,1.419,-0.251,78.67,16
-tuberculose,3549805,São José do Rio Preto,sarima,1.176,1.451,-0.309,75.07,16
-tuberculose,3549805,São José do Rio Preto,seasonal_ma3,1.229,1.417,-0.247,77.19,16
-tuberculose,3549805,São José do Rio Preto,seasonal_naive,1.562,1.82,-1.058,94.82,16
-tuberculose,3549805,São José do Rio Preto,tft,1.82,2.157,-1.891,150.02,16
-tuberculose,3549805,São José do Rio Preto,xgboost,1.084,1.319,-0.081,68.59,16
-tuberculose,3549904,São José dos Campos,catboost,1.277,1.719,-0.589,80.63,16
-tuberculose,3549904,São José dos Campos,gru,1.557,1.958,-1.062,110.75,16
-tuberculose,3549904,São José dos Campos,lgbm,1.354,1.816,-0.773,86.22,16
-tuberculose,3549904,São José dos Campos,lstm,1.556,1.892,-0.926,110.72,16
-tuberculose,3549904,São José dos Campos,nhits,1.757,2.174,-1.541,165.53,16
-tuberculose,3549904,São José dos Campos,prophet,1.413,1.896,-0.933,130.68,16
-tuberculose,3549904,São José dos Campos,sarima,1.445,1.99,-1.13,82.07,16
-tuberculose,3549904,São José dos Campos,seasonal_ma3,1.188,1.609,-0.393,96.96,16
-tuberculose,3549904,São José dos Campos,seasonal_naive,1.312,1.785,-0.714,81.56,16
-tuberculose,3549904,São José dos Campos,tft,1.248,1.662,-0.486,98.76,16
-tuberculose,3549904,São José dos Campos,xgboost,1.331,1.749,-0.645,86.61,16
-tuberculose,3550308,São Paulo,catboost,18.572,20.868,-0.071,20.17,16
-tuberculose,3550308,São Paulo,gru,16.387,20.597,-0.043,17.64,16
-tuberculose,3550308,São Paulo,lgbm,18.714,22.269,-0.22,20.09,16
-tuberculose,3550308,São Paulo,lstm,17.018,19.951,0.021,18.28,16
-tuberculose,3550308,São Paulo,nhits,16.704,20.141,0.002,18.07,16
-tuberculose,3550308,São Paulo,prophet,17.537,23.215,-0.325,18.63,16
-tuberculose,3550308,São Paulo,sarima,17.502,20.142,0.002,18.92,16
-tuberculose,3550308,São Paulo,seasonal_ma3,15.0,18.616,0.148,16.67,16
-tuberculose,3550308,São Paulo,seasonal_naive,16.625,19.449,0.07,18.09,16
-tuberculose,3550308,São Paulo,tft,15.105,19.404,0.074,16.31,16
-tuberculose,3550308,São Paulo,xgboost,18.21,20.879,-0.072,19.76,16
-tuberculose,3551009,São Vicente,catboost,4.201,5.821,-1.195,37.62,16
-tuberculose,3551009,São Vicente,gru,2.942,4.539,-0.335,27.7,16
-tuberculose,3551009,São Vicente,lgbm,3.813,5.12,-0.699,34.61,16
-tuberculose,3551009,São Vicente,lstm,2.878,4.388,-0.247,26.87,16
-tuberculose,3551009,São Vicente,nhits,4.208,5.114,-0.694,36.8,16
-tuberculose,3551009,São Vicente,prophet,3.534,4.518,-0.322,31.72,16
-tuberculose,3551009,São Vicente,sarima,5.179,6.27,-1.547,42.62,16
-tuberculose,3551009,São Vicente,seasonal_ma3,3.208,4.813,-0.501,31.31,16
-tuberculose,3551009,São Vicente,seasonal_naive,4.125,5.362,-0.863,39.83,16
-tuberculose,3551009,São Vicente,tft,3.622,4.812,-0.5,32.16,16
-tuberculose,3551009,São Vicente,xgboost,3.629,5.252,-0.787,32.44,16
-tuberculose,3554102,Taboão da Serra,catboost,1.515,1.784,-0.425,69.45,16
-tuberculose,3554102,Taboão da Serra,gru,1.691,2.16,-1.088,66.21,16
-tuberculose,3554102,Taboão da Serra,lgbm,1.509,1.787,-0.429,68.18,16
-tuberculose,3554102,Taboão da Serra,lstm,1.507,1.983,-0.759,62.72,16
-tuberculose,3554102,Taboão da Serra,nhits,1.767,2.044,-0.87,128.58,16
-tuberculose,3554102,Taboão da Serra,prophet,1.343,1.635,-0.196,64.63,16
-tuberculose,3554102,Taboão da Serra,sarima,1.359,1.728,-0.337,62.92,16
-tuberculose,3554102,Taboão da Serra,seasonal_ma3,1.479,1.714,-0.315,76.67,16
-tuberculose,3554102,Taboão da Serra,seasonal_naive,1.875,2.345,-1.462,98.15,16
-tuberculose,3554102,Taboão da Serra,tft,1.783,2.133,-1.036,69.66,16
-tuberculose,3554102,Taboão da Serra,xgboost,1.419,1.68,-0.263,66.05,16
+tuberculose,3505708,Barueri,catboost,1.547,1.67,-0.192,70.91,16.0
+tuberculose,3505708,Barueri,deepar,1.3212500214576721,1.5050789179043707,0.031874436436111986,60.31665995282688,
+tuberculose,3505708,Barueri,gru,1.405,1.605,-0.101,67.07,16.0
+tuberculose,3505708,Barueri,lgbm,1.548,1.664,-0.183,70.82,16.0
+tuberculose,3505708,Barueri,lstm,1.249,1.436,0.118,58.19,16.0
+tuberculose,3505708,Barueri,nhits,1.877,2.165,-1.003,116.03,16.0
+tuberculose,3505708,Barueri,prophet,1.422,1.57,-0.054,65.55,16.0
+tuberculose,3505708,Barueri,sarima,1.367,1.507,0.029,61.12,16.0
+tuberculose,3505708,Barueri,seasonal_ma3,1.417,1.662,-0.181,67.65,16.0
+tuberculose,3505708,Barueri,seasonal_naive,1.5,1.871,-0.496,77.82,16.0
+tuberculose,3505708,Barueri,tft,1.561,1.808,-0.397,73.68,16.0
+tuberculose,3505708,Barueri,xgboost,1.545,1.684,-0.212,69.71,16.0
+tuberculose,3506003,Bauru,catboost,2.614,3.396,-0.282,55.78,16.0
+tuberculose,3506003,Bauru,deepar,2.2718750089406967,3.2620325480639125,-0.18283075302859575,48.9476825486924,
+tuberculose,3506003,Bauru,gru,2.155,2.782,0.14,47.35,16.0
+tuberculose,3506003,Bauru,lgbm,2.388,3.266,-0.186,50.98,16.0
+tuberculose,3506003,Bauru,lstm,2.176,3.104,-0.071,47.22,16.0
+tuberculose,3506003,Bauru,nhits,2.259,3.111,-0.076,49.25,16.0
+tuberculose,3506003,Bauru,prophet,2.192,3.133,-0.091,47.08,16.0
+tuberculose,3506003,Bauru,sarima,2.684,3.485,-0.35,55.26,16.0
+tuberculose,3506003,Bauru,seasonal_ma3,2.354,3.396,-0.282,51.07,16.0
+tuberculose,3506003,Bauru,seasonal_naive,3.125,3.984,-0.765,70.49,16.0
+tuberculose,3506003,Bauru,tft,2.746,3.326,-0.23,57.77,16.0
+tuberculose,3506003,Bauru,xgboost,2.211,3.09,-0.061,47.54,16.0
+tuberculose,3509502,Campinas,catboost,3.931,4.8,-0.117,46.46,16.0
+tuberculose,3509502,Campinas,deepar,3.3781250417232513,4.584301343015388,-0.019141809758402628,40.55794499424428,
+tuberculose,3509502,Campinas,gru,3.249,4.406,0.059,38.32,16.0
+tuberculose,3509502,Campinas,lgbm,3.655,4.407,0.058,44.23,16.0
+tuberculose,3509502,Campinas,lstm,3.342,4.393,0.064,39.92,16.0
+tuberculose,3509502,Campinas,nhits,4.135,4.694,-0.068,48.06,16.0
+tuberculose,3509502,Campinas,prophet,3.872,5.185,-0.304,48.46,16.0
+tuberculose,3509502,Campinas,sarima,3.536,4.281,0.111,41.93,16.0
+tuberculose,3509502,Campinas,seasonal_ma3,3.792,5.372,-0.4,46.05,16.0
+tuberculose,3509502,Campinas,seasonal_naive,3.188,4.562,-0.009,36.75,16.0
+tuberculose,3509502,Campinas,tft,4.211,5.031,-0.228,51.59,16.0
+tuberculose,3509502,Campinas,xgboost,3.94,4.922,-0.175,45.6,16.0
+tuberculose,3510609,Carapicuíba,catboost,2.686,3.507,-0.245,64.51,16.0
+tuberculose,3510609,Carapicuíba,deepar,3.3743749260902405,4.047053623265022,-0.6585967624893712,71.66787009533168,
+tuberculose,3510609,Carapicuíba,gru,2.898,3.428,-0.19,66.08,16.0
+tuberculose,3510609,Carapicuíba,lgbm,2.609,3.342,-0.131,64.97,16.0
+tuberculose,3510609,Carapicuíba,lstm,2.908,3.397,-0.169,67.88,16.0
+tuberculose,3510609,Carapicuíba,nhits,2.701,3.791,-0.455,70.58,16.0
+tuberculose,3510609,Carapicuíba,prophet,2.565,3.185,-0.027,62.77,16.0
+tuberculose,3510609,Carapicuíba,sarima,2.849,3.658,-0.355,69.27,16.0
+tuberculose,3510609,Carapicuíba,seasonal_ma3,2.479,3.556,-0.281,59.78,16.0
+tuberculose,3510609,Carapicuíba,seasonal_naive,3.5,4.637,-1.177,86.82,16.0
+tuberculose,3510609,Carapicuíba,tft,2.468,3.034,0.068,60.1,16.0
+tuberculose,3510609,Carapicuíba,xgboost,2.728,3.464,-0.215,67.45,16.0
+tuberculose,3513801,Diadema,catboost,2.761,3.678,-0.509,66.05,16.0
+tuberculose,3513801,Diadema,deepar,2.306249961256981,3.049428208739731,-0.037275457283637126,57.71590624857736,
+tuberculose,3513801,Diadema,gru,2.359,3.355,-0.256,54.08,16.0
+tuberculose,3513801,Diadema,lgbm,2.61,3.538,-0.396,63.65,16.0
+tuberculose,3513801,Diadema,lstm,2.534,3.406,-0.294,56.3,16.0
+tuberculose,3513801,Diadema,nhits,3.515,4.355,-1.115,128.58,16.0
+tuberculose,3513801,Diadema,prophet,2.347,3.25,-0.178,55.19,16.0
+tuberculose,3513801,Diadema,sarima,2.64,3.541,-0.398,61.88,16.0
+tuberculose,3513801,Diadema,seasonal_ma3,2.354,3.031,-0.025,60.77,16.0
+tuberculose,3513801,Diadema,seasonal_naive,3.125,3.857,-0.659,85.41,16.0
+tuberculose,3513801,Diadema,tft,2.701,3.504,-0.37,58.66,16.0
+tuberculose,3513801,Diadema,xgboost,2.652,3.565,-0.418,64.25,16.0
+tuberculose,3518701,Guarujá,catboost,3.044,3.63,-0.314,38.97,16.0
+tuberculose,3518701,Guarujá,deepar,3.2024999856948853,3.9552339067688123,-0.5601215683120151,39.35123001871029,
+tuberculose,3518701,Guarujá,gru,2.526,3.222,-0.035,30.39,16.0
+tuberculose,3518701,Guarujá,lgbm,3.109,3.502,-0.223,39.6,16.0
+tuberculose,3518701,Guarujá,lstm,2.872,3.391,-0.147,34.49,16.0
+tuberculose,3518701,Guarujá,nhits,3.141,4.075,-0.656,40.36,16.0
+tuberculose,3518701,Guarujá,prophet,2.665,3.237,-0.045,31.58,16.0
+tuberculose,3518701,Guarujá,sarima,2.577,2.993,0.107,32.94,16.0
+tuberculose,3518701,Guarujá,seasonal_ma3,2.958,3.747,-0.4,36.43,16.0
+tuberculose,3518701,Guarujá,seasonal_naive,3.25,3.889,-0.508,40.33,16.0
+tuberculose,3518701,Guarujá,tft,2.599,3.202,-0.023,31.45,16.0
+tuberculose,3518701,Guarujá,xgboost,3.174,3.73,-0.388,40.52,16.0
+tuberculose,3518800,Guarulhos,catboost,1.991,2.336,-0.052,46.42,16.0
+tuberculose,3518800,Guarulhos,deepar,2.0793749690055847,2.6947529337478087,-0.3998445058202258,46.36520603814941,
+tuberculose,3518800,Guarulhos,gru,2.741,3.432,-1.271,54.51,16.0
+tuberculose,3518800,Guarulhos,lgbm,1.899,2.375,-0.088,44.3,16.0
+tuberculose,3518800,Guarulhos,lstm,2.233,2.813,-0.525,48.59,16.0
+tuberculose,3518800,Guarulhos,nhits,2.576,3.162,-0.928,53.27,16.0
+tuberculose,3518800,Guarulhos,prophet,2.117,2.657,-0.361,47.19,16.0
+tuberculose,3518800,Guarulhos,sarima,1.816,2.425,-0.133,42.52,16.0
+tuberculose,3518800,Guarulhos,seasonal_ma3,2.875,3.325,-1.131,60.51,16.0
+tuberculose,3518800,Guarulhos,seasonal_naive,2.625,3.391,-1.217,60.27,16.0
+tuberculose,3518800,Guarulhos,tft,2.092,2.578,-0.281,47.26,16.0
+tuberculose,3518800,Guarulhos,xgboost,1.961,2.453,-0.16,45.25,16.0
+tuberculose,3522208,Itapevi,catboost,1.045,1.274,-0.039,112.0,16.0
+tuberculose,3522208,Itapevi,deepar,1.116874985396862,1.2338987939640003,0.02559601040267867,108.68231102818764,
+tuberculose,3522208,Itapevi,gru,1.083,1.382,-0.223,135.13,16.0
+tuberculose,3522208,Itapevi,lgbm,1.036,1.259,-0.015,112.2,16.0
+tuberculose,3522208,Itapevi,lstm,1.044,1.308,-0.095,121.2,16.0
+tuberculose,3522208,Itapevi,nhits,1.241,1.722,-0.899,191.07,16.0
+tuberculose,3522208,Itapevi,prophet,1.051,1.256,-0.009,113.69,16.0
+tuberculose,3522208,Itapevi,sarima,1.026,1.287,-0.059,121.33,16.0
+tuberculose,3522208,Itapevi,seasonal_ma3,1.146,1.431,-0.311,117.53,16.0
+tuberculose,3522208,Itapevi,seasonal_naive,1.125,1.696,-0.84,107.69,16.0
+tuberculose,3522208,Itapevi,tft,0.904,1.166,0.13,113.29,16.0
+tuberculose,3522208,Itapevi,xgboost,1.048,1.261,-0.018,114.75,16.0
+tuberculose,3525904,Jundiaí,catboost,1.115,1.335,-0.201,98.54,16.0
+tuberculose,3525904,Jundiaí,deepar,1.5275000017136335,1.6912643264095357,-0.9269894883607586,124.77529239348274,
+tuberculose,3525904,Jundiaí,gru,1.424,1.707,-0.963,119.21,16.0
+tuberculose,3525904,Jundiaí,lgbm,1.127,1.346,-0.221,97.41,16.0
+tuberculose,3525904,Jundiaí,lstm,1.384,1.581,-0.685,99.79,16.0
+tuberculose,3525904,Jundiaí,nhits,1.359,1.653,-0.84,154.46,16.0
+tuberculose,3525904,Jundiaí,prophet,1.26,1.622,-0.771,152.16,16.0
+tuberculose,3525904,Jundiaí,sarima,1.012,1.299,-0.136,108.62,16.0
+tuberculose,3525904,Jundiaí,seasonal_ma3,1.271,1.407,-0.333,117.37,16.0
+tuberculose,3525904,Jundiaí,seasonal_naive,1.125,1.458,-0.432,114.29,16.0
+tuberculose,3525904,Jundiaí,tft,1.312,1.518,-0.551,106.81,16.0
+tuberculose,3525904,Jundiaí,xgboost,1.084,1.326,-0.185,93.56,16.0
+tuberculose,3529401,Mauá,catboost,1.017,1.424,-0.022,66.88,16.0
+tuberculose,3529401,Mauá,deepar,1.1031249910593033,1.5195291229174326,-0.16357480586795448,70.45693141851544,
+tuberculose,3529401,Mauá,gru,1.434,1.795,-0.624,89.56,16.0
+tuberculose,3529401,Mauá,lgbm,0.981,1.452,-0.062,65.04,16.0
+tuberculose,3529401,Mauá,lstm,1.106,1.493,-0.123,78.74,16.0
+tuberculose,3529401,Mauá,nhits,1.473,1.985,-0.985,172.67,16.0
+tuberculose,3529401,Mauá,prophet,0.95,1.344,0.09,62.54,16.0
+tuberculose,3529401,Mauá,sarima,1.04,1.509,-0.147,64.49,16.0
+tuberculose,3529401,Mauá,seasonal_ma3,1.229,1.614,-0.312,77.72,16.0
+tuberculose,3529401,Mauá,seasonal_naive,1.188,1.785,-0.606,74.86,16.0
+tuberculose,3529401,Mauá,tft,1.113,1.562,-0.23,69.77,16.0
+tuberculose,3529401,Mauá,xgboost,0.991,1.424,-0.022,65.48,16.0
+tuberculose,3534401,Osasco,catboost,2.827,4.263,-0.145,45.74,16.0
+tuberculose,3534401,Osasco,deepar,2.3899999260902405,3.50733700621987,0.22510785038114256,39.141361734579114,
+tuberculose,3534401,Osasco,gru,2.463,3.443,0.253,41.16,16.0
+tuberculose,3534401,Osasco,lgbm,2.727,4.255,-0.14,43.88,16.0
+tuberculose,3534401,Osasco,lstm,2.894,3.889,0.047,47.8,16.0
+tuberculose,3534401,Osasco,nhits,3.546,5.475,-0.888,62.63,16.0
+tuberculose,3534401,Osasco,prophet,2.767,4.018,-0.017,45.08,16.0
+tuberculose,3534401,Osasco,sarima,2.804,4.066,-0.042,46.64,16.0
+tuberculose,3534401,Osasco,seasonal_ma3,2.875,4.561,-0.311,46.37,16.0
+tuberculose,3534401,Osasco,seasonal_naive,3.812,5.517,-0.917,52.66,16.0
+tuberculose,3534401,Osasco,tft,2.881,4.272,-0.149,46.66,16.0
+tuberculose,3534401,Osasco,xgboost,2.85,4.208,-0.115,46.68,16.0
+tuberculose,3536505,Paulínia,catboost,1.259,1.548,-0.208,119.92,16.0
+tuberculose,3536505,Paulínia,deepar,1.213749997317791,1.438862391698309,-0.04331337687875436,103.32112121771915,
+tuberculose,3536505,Paulínia,gru,1.277,1.604,-0.297,134.67,16.0
+tuberculose,3536505,Paulínia,lgbm,1.243,1.526,-0.174,119.05,16.0
+tuberculose,3536505,Paulínia,lstm,1.107,1.494,-0.125,111.77,16.0
+tuberculose,3536505,Paulínia,nhits,1.384,1.91,-0.837,183.09,16.0
+tuberculose,3536505,Paulínia,prophet,1.282,1.52,-0.164,104.93,16.0
+tuberculose,3536505,Paulínia,sarima,1.219,1.493,-0.124,115.73,16.0
+tuberculose,3536505,Paulínia,seasonal_ma3,1.542,1.911,-0.841,122.92,16.0
+tuberculose,3536505,Paulínia,seasonal_naive,1.5,2.031,-1.079,130.95,16.0
+tuberculose,3536505,Paulínia,tft,1.323,1.691,-0.441,135.38,16.0
+tuberculose,3536505,Paulínia,xgboost,1.182,1.481,-0.106,113.75,16.0
+tuberculose,3541000,Praia Grande,catboost,2.234,2.649,-0.499,57.23,16.0
+tuberculose,3541000,Praia Grande,deepar,1.8918750137090683,2.3963005787775358,-0.22603640929565105,46.147960713692896,
+tuberculose,3541000,Praia Grande,gru,2.24,2.489,-0.323,54.27,16.0
+tuberculose,3541000,Praia Grande,lgbm,2.023,2.54,-0.378,52.0,16.0
+tuberculose,3541000,Praia Grande,lstm,2.346,2.581,-0.422,56.85,16.0
+tuberculose,3541000,Praia Grande,nhits,3.349,3.935,-2.306,80.21,16.0
+tuberculose,3541000,Praia Grande,prophet,1.769,2.216,-0.048,43.57,16.0
+tuberculose,3541000,Praia Grande,sarima,2.242,2.619,-0.465,57.07,16.0
+tuberculose,3541000,Praia Grande,seasonal_ma3,1.812,2.268,-0.099,43.74,16.0
+tuberculose,3541000,Praia Grande,seasonal_naive,3.188,3.683,-1.896,74.62,16.0
+tuberculose,3541000,Praia Grande,tft,2.25,2.719,-0.579,53.89,16.0
+tuberculose,3541000,Praia Grande,xgboost,2.066,2.578,-0.419,52.66,16.0
+tuberculose,3543402,Ribeirão Preto,catboost,3.879,4.625,-0.181,49.27,16.0
+tuberculose,3543402,Ribeirão Preto,deepar,4.095625102519989,4.748224063533826,-0.24497017470352644,51.03084037255865,
+tuberculose,3543402,Ribeirão Preto,gru,3.791,4.258,-0.001,48.17,16.0
+tuberculose,3543402,Ribeirão Preto,lgbm,3.86,4.55,-0.143,49.46,16.0
+tuberculose,3543402,Ribeirão Preto,lstm,3.912,4.445,-0.091,49.41,16.0
+tuberculose,3543402,Ribeirão Preto,nhits,3.929,4.68,-0.21,47.05,16.0
+tuberculose,3543402,Ribeirão Preto,prophet,4.033,4.881,-0.315,52.5,16.0
+tuberculose,3543402,Ribeirão Preto,sarima,4.217,4.851,-0.299,52.5,16.0
+tuberculose,3543402,Ribeirão Preto,seasonal_ma3,4.313,4.746,-0.244,53.53,16.0
+tuberculose,3543402,Ribeirão Preto,seasonal_naive,5.125,6.364,-1.236,63.18,16.0
+tuberculose,3543402,Ribeirão Preto,tft,4.27,4.905,-0.328,51.14,16.0
+tuberculose,3543402,Ribeirão Preto,xgboost,3.916,4.658,-0.198,50.3,16.0
+tuberculose,3547809,Santo André,catboost,2.812,3.831,-0.202,43.63,16.0
+tuberculose,3547809,Santo André,deepar,2.9950000047683716,4.0514025738492165,-0.343763633111726,48.291339067932086,
+tuberculose,3547809,Santo André,gru,2.745,3.847,-0.211,42.68,16.0
+tuberculose,3547809,Santo André,lgbm,2.687,3.697,-0.119,42.2,16.0
+tuberculose,3547809,Santo André,lstm,2.832,3.804,-0.185,44.44,16.0
+tuberculose,3547809,Santo André,nhits,3.276,3.993,-0.306,49.48,16.0
+tuberculose,3547809,Santo André,prophet,2.566,3.398,0.055,40.59,16.0
+tuberculose,3547809,Santo André,sarima,2.776,3.802,-0.184,42.92,16.0
+tuberculose,3547809,Santo André,seasonal_ma3,2.812,3.587,-0.053,45.47,16.0
+tuberculose,3547809,Santo André,seasonal_naive,3.312,3.961,-0.284,53.14,16.0
+tuberculose,3547809,Santo André,tft,2.83,3.757,-0.155,42.32,16.0
+tuberculose,3547809,Santo André,xgboost,2.736,3.746,-0.149,42.54,16.0
+tuberculose,3548500,Santos,catboost,2.1,2.715,0.236,36.26,16.0
+tuberculose,3548500,Santos,deepar,2.678749978542328,3.4166174488364636,-0.20937205450166285,41.76432545585605,
+tuberculose,3548500,Santos,gru,3.086,3.832,-0.521,45.93,16.0
+tuberculose,3548500,Santos,lgbm,2.344,2.887,0.137,38.96,16.0
+tuberculose,3548500,Santos,lstm,3.783,4.885,-1.472,50.16,16.0
+tuberculose,3548500,Santos,nhits,3.378,3.823,-0.515,48.31,16.0
+tuberculose,3548500,Santos,prophet,2.991,3.825,-0.516,44.78,16.0
+tuberculose,3548500,Santos,sarima,2.037,2.583,0.309,34.86,16.0
+tuberculose,3548500,Santos,seasonal_ma3,3.146,3.792,-0.49,51.55,16.0
+tuberculose,3548500,Santos,seasonal_naive,3.312,3.717,-0.431,59.68,16.0
+tuberculose,3548500,Santos,tft,2.702,3.477,-0.252,41.77,16.0
+tuberculose,3548500,Santos,xgboost,2.325,2.922,0.115,38.83,16.0
+tuberculose,3548708,São Bernardo do Campo,catboost,2.318,2.911,-0.081,42.01,16.0
+tuberculose,3548708,São Bernardo do Campo,deepar,2.1843750029802322,2.8142683514205737,-0.010237781053668682,40.23858705934288,
+tuberculose,3548708,São Bernardo do Campo,gru,2.388,3.217,-0.32,44.15,16.0
+tuberculose,3548708,São Bernardo do Campo,lgbm,2.404,3.15,-0.265,43.72,16.0
+tuberculose,3548708,São Bernardo do Campo,lstm,2.096,2.94,-0.102,38.08,16.0
+tuberculose,3548708,São Bernardo do Campo,nhits,2.915,3.431,-0.501,66.85,16.0
+tuberculose,3548708,São Bernardo do Campo,prophet,2.114,2.776,0.017,38.3,16.0
+tuberculose,3548708,São Bernardo do Campo,sarima,2.437,3.042,-0.18,43.72,16.0
+tuberculose,3548708,São Bernardo do Campo,seasonal_ma3,2.396,3.278,-0.37,43.35,16.0
+tuberculose,3548708,São Bernardo do Campo,seasonal_naive,2.812,3.326,-0.411,53.18,16.0
+tuberculose,3548708,São Bernardo do Campo,tft,2.768,3.474,-0.54,49.7,16.0
+tuberculose,3548708,São Bernardo do Campo,xgboost,2.309,3.064,-0.198,41.65,16.0
+tuberculose,3549805,São José do Rio Preto,catboost,0.967,1.124,0.215,62.8,16.0
+tuberculose,3549805,São José do Rio Preto,deepar,1.3043750077486038,1.5302920568593261,-0.45509516382865844,89.08692864759087,
+tuberculose,3549805,São José do Rio Preto,gru,1.767,2.111,-1.768,149.45,16.0
+tuberculose,3549805,São José do Rio Preto,lgbm,1.109,1.353,-0.138,66.2,16.0
+tuberculose,3549805,São José do Rio Preto,lstm,1.553,1.836,-1.094,123.42,16.0
+tuberculose,3549805,São José do Rio Preto,nhits,1.58,1.996,-1.476,121.57,16.0
+tuberculose,3549805,São José do Rio Preto,prophet,1.227,1.419,-0.251,78.67,16.0
+tuberculose,3549805,São José do Rio Preto,sarima,1.176,1.451,-0.309,75.07,16.0
+tuberculose,3549805,São José do Rio Preto,seasonal_ma3,1.229,1.417,-0.247,77.19,16.0
+tuberculose,3549805,São José do Rio Preto,seasonal_naive,1.562,1.82,-1.058,94.82,16.0
+tuberculose,3549805,São José do Rio Preto,tft,1.82,2.157,-1.891,150.02,16.0
+tuberculose,3549805,São José do Rio Preto,xgboost,1.084,1.319,-0.081,68.59,16.0
+tuberculose,3549904,São José dos Campos,catboost,1.277,1.719,-0.589,80.63,16.0
+tuberculose,3549904,São José dos Campos,deepar,1.0024999901652336,1.276743908329522,0.12332100439311966,75.9298901495018,
+tuberculose,3549904,São José dos Campos,gru,1.557,1.958,-1.062,110.75,16.0
+tuberculose,3549904,São José dos Campos,lgbm,1.354,1.816,-0.773,86.22,16.0
+tuberculose,3549904,São José dos Campos,lstm,1.556,1.892,-0.926,110.72,16.0
+tuberculose,3549904,São José dos Campos,nhits,1.757,2.174,-1.541,165.53,16.0
+tuberculose,3549904,São José dos Campos,prophet,1.413,1.896,-0.933,130.68,16.0
+tuberculose,3549904,São José dos Campos,sarima,1.445,1.99,-1.13,82.07,16.0
+tuberculose,3549904,São José dos Campos,seasonal_ma3,1.188,1.609,-0.393,96.96,16.0
+tuberculose,3549904,São José dos Campos,seasonal_naive,1.312,1.785,-0.714,81.56,16.0
+tuberculose,3549904,São José dos Campos,tft,1.248,1.662,-0.486,98.76,16.0
+tuberculose,3549904,São José dos Campos,xgboost,1.331,1.749,-0.645,86.61,16.0
+tuberculose,3550308,São Paulo,catboost,18.572,20.868,-0.071,20.17,16.0
+tuberculose,3550308,São Paulo,deepar,16.68375015258789,19.24067203032112,0.08957034078479797,18.702736517238773,
+tuberculose,3550308,São Paulo,gru,16.387,20.597,-0.043,17.64,16.0
+tuberculose,3550308,São Paulo,lgbm,18.714,22.269,-0.22,20.09,16.0
+tuberculose,3550308,São Paulo,lstm,17.018,19.951,0.021,18.28,16.0
+tuberculose,3550308,São Paulo,nhits,16.704,20.141,0.002,18.07,16.0
+tuberculose,3550308,São Paulo,prophet,17.537,23.215,-0.325,18.63,16.0
+tuberculose,3550308,São Paulo,sarima,17.502,20.142,0.002,18.92,16.0
+tuberculose,3550308,São Paulo,seasonal_ma3,15.0,18.616,0.148,16.67,16.0
+tuberculose,3550308,São Paulo,seasonal_naive,16.625,19.449,0.07,18.09,16.0
+tuberculose,3550308,São Paulo,tft,15.105,19.404,0.074,16.31,16.0
+tuberculose,3550308,São Paulo,xgboost,18.21,20.879,-0.072,19.76,16.0
+tuberculose,3551009,São Vicente,catboost,4.201,5.821,-1.195,37.62,16.0
+tuberculose,3551009,São Vicente,deepar,3.586874783039093,5.053950672534117,-0.6549883205528884,31.57787496908664,
+tuberculose,3551009,São Vicente,gru,2.942,4.539,-0.335,27.7,16.0
+tuberculose,3551009,São Vicente,lgbm,3.813,5.12,-0.699,34.61,16.0
+tuberculose,3551009,São Vicente,lstm,2.878,4.388,-0.247,26.87,16.0
+tuberculose,3551009,São Vicente,nhits,4.208,5.114,-0.694,36.8,16.0
+tuberculose,3551009,São Vicente,prophet,3.534,4.518,-0.322,31.72,16.0
+tuberculose,3551009,São Vicente,sarima,5.179,6.27,-1.547,42.62,16.0
+tuberculose,3551009,São Vicente,seasonal_ma3,3.208,4.813,-0.501,31.31,16.0
+tuberculose,3551009,São Vicente,seasonal_naive,4.125,5.362,-0.863,39.83,16.0
+tuberculose,3551009,São Vicente,tft,3.622,4.812,-0.5,32.16,16.0
+tuberculose,3551009,São Vicente,xgboost,3.629,5.252,-0.787,32.44,16.0
+tuberculose,3552205,Sorocaba,catboost,0.721,1.056,-0.053,87.76,16.0
+tuberculose,3552205,Sorocaba,deepar,0.860624996945262,1.0052021017042851,0.045496664541320064,113.59867987399339,
+tuberculose,3552205,Sorocaba,gru,0.956,1.278,-0.543,142.55,16.0
+tuberculose,3552205,Sorocaba,lgbm,0.762,1.062,-0.066,100.03,16.0
+tuberculose,3552205,Sorocaba,lstm,1.236,1.558,-1.294,137.9,16.0
+tuberculose,3552205,Sorocaba,nhits,1.019,1.311,-0.622,151.09,16.0
+tuberculose,3552205,Sorocaba,prophet,0.876,1.332,-0.676,143.01,16.0
+tuberculose,3552205,Sorocaba,sarima,0.804,1.099,-0.141,113.56,16.0
+tuberculose,3552205,Sorocaba,seasonal_ma3,0.896,1.25,-0.476,125.85,16.0
+tuberculose,3552205,Sorocaba,seasonal_naive,1.0,1.414,-0.889,128.57,16.0
+tuberculose,3552205,Sorocaba,tft,0.959,1.191,-0.34,121.27,16.0
+tuberculose,3552205,Sorocaba,xgboost,0.735,1.062,-0.064,97.5,16.0
+tuberculose,3554102,Taboão da Serra,catboost,1.515,1.784,-0.425,69.45,16.0
+tuberculose,3554102,Taboão da Serra,deepar,1.9787499606609344,2.438367733798823,-1.6609844834601208,73.21765172925501,
+tuberculose,3554102,Taboão da Serra,gru,1.691,2.16,-1.088,66.21,16.0
+tuberculose,3554102,Taboão da Serra,lgbm,1.509,1.787,-0.429,68.18,16.0
+tuberculose,3554102,Taboão da Serra,lstm,1.507,1.983,-0.759,62.72,16.0
+tuberculose,3554102,Taboão da Serra,nhits,1.767,2.044,-0.87,128.58,16.0
+tuberculose,3554102,Taboão da Serra,prophet,1.343,1.635,-0.196,64.63,16.0
+tuberculose,3554102,Taboão da Serra,sarima,1.359,1.728,-0.337,62.92,16.0
+tuberculose,3554102,Taboão da Serra,seasonal_ma3,1.479,1.714,-0.315,76.67,16.0
+tuberculose,3554102,Taboão da Serra,seasonal_naive,1.875,2.345,-1.462,98.15,16.0
+tuberculose,3554102,Taboão da Serra,tft,1.783,2.133,-1.036,69.66,16.0
+tuberculose,3554102,Taboão da Serra,xgboost,1.419,1.68,-0.263,66.05,16.0
