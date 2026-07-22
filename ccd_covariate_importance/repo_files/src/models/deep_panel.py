@@ -295,10 +295,29 @@ def predict_and_score(model, test_dataset, df, cfg, split, model_name, disease):
     return records
 
 
+def extract_tft_importance(model, test_dataset, cfg) -> list[dict]:
+    """[NOVO] Importância de variável nativa do TFT (variable selection network),
+    via model.interpret_output — só disponível para TFT entre os 5 deep models.
+    Testado: retorna pesos de atenção agregados por variável do encoder/decoder,
+    não custa treino extra (reusa o modelo e o dataset de teste já existentes)."""
+    test_loader = test_dataset.to_dataloader(train=False, batch_size=cfg.batch_size * 4, num_workers=0)
+    raw = model.predict(test_loader, mode="raw", return_x=True,
+                        trainer_kwargs={"accelerator": cfg.accelerator, "devices": cfg.devices})
+    interp = model.interpret_output(raw.output, reduction="mean")
+    rows = []
+    for group, names in (("encoder", model.encoder_variables), ("decoder", model.decoder_variables)):
+        weights = interp[f"{group}_variables"].tolist()
+        total = sum(weights) or 1.0
+        for name, w in zip(names, weights):
+            rows.append({"group": group, "feature": name, "importance": w, "importance_norm": w / total})
+    return rows
+
+
 def run_deep_single(
     panel, disease, model_name="tft",
     origins=DEFAULT_ORIGINS, horizons=DEFAULT_HORIZONS,
     target_kind="count", cfg_overrides=None, seed: int = 42,
+    imp_records: list | None = None,
 ):
     target_col = f"n_{disease}" if target_kind == "count" else f"tx_{disease}"
     cfg = DeepConfig(target_col=target_col, max_prediction_length=max(horizons), seed=seed)
@@ -316,6 +335,14 @@ def run_deep_single(
         model, test_ds = trainer_fn(df, cfg, train_end_time_idx, log_name)
         records = predict_and_score(model, test_ds, df, cfg, split, model_name, disease)
         all_records.extend(records)
+        if imp_records is not None and model_name == "tft":
+            # [NOVO] importância de variável do TFT — pendente para os outros 4
+            # deep models (não têm variable selection network nativa como o TFT)
+            try:
+                for row in extract_tft_importance(model, test_ds, cfg):
+                    imp_records.append({"disease": disease, "origin": split.name, **row})
+            except Exception as e:
+                print(f"  [aviso] falha ao extrair importancia do TFT em {split.name}: {e}")
         rec_df = pd.DataFrame(records)
         for h in horizons:
             sub = rec_df[rec_df["horizon"] == h]
@@ -328,9 +355,9 @@ def run_deep_single(
     return out
 
 
-def run_deep_multiseed(panel, disease, model_name="tft", seeds=(42, 1, 7), **kw):
+def run_deep_multiseed(panel, disease, model_name="tft", seeds=(42, 1, 7), imp_records=None, **kw):
     """[NOVO] roda N sementes -> permite reportar média +/- desvio (item variância)."""
-    frames = [run_deep_single(panel, disease, model_name, seed=s, **kw) for s in seeds]
+    frames = [run_deep_single(panel, disease, model_name, seed=s, imp_records=imp_records, **kw) for s in seeds]
     return pd.concat(frames, ignore_index=True)
 
 
@@ -341,7 +368,12 @@ if __name__ == "__main__":
     model_name = sys.argv[2] if len(sys.argv) > 2 else "tft"
     seeds = tuple(int(x) for x in sys.argv[3].split(",")) if len(sys.argv) > 3 else (42,)
     print(f"== Treinando {model_name} em {disease} | seeds={seeds} ==")
-    df = run_deep_multiseed(panel, disease=disease, model_name=model_name, seeds=seeds)
+    imp_records = [] if model_name == "tft" else None
+    df = run_deep_multiseed(panel, disease=disease, model_name=model_name, seeds=seeds, imp_records=imp_records)
     out = PROJECT_ROOT / "reports" / f"deep_{model_name}_{disease}.csv"
     df.to_csv(out, index=False)
     print(f"saved {out}")
+    if imp_records:
+        imp_out = PROJECT_ROOT / "reports" / f"feature_importance_tft_{disease}.csv"
+        pd.DataFrame(imp_records).to_csv(imp_out, index=False)
+        print(f"saved {imp_out}")

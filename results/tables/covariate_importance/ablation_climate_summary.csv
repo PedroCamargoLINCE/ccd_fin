@@ -1,0 +1,6 @@
+disease,full,sem_clima,delta_mae,clima_ajuda
+hanseniase,0.4231,0.4384,0.0153,True
+hepatite,0.2635,0.2545,-0.009,False
+hiv_aids,2.5892,2.6653,0.0761,True
+sifilis,2.811,2.7321,-0.0789,False
+tuberculose,2.7573,2.7422,-0.0151,False

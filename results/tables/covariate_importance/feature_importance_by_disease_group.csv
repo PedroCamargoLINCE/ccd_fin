@@ -1,0 +1,26 @@
+disease,group,importance_norm
+hanseniase,alvo (lags/rolling),0.4700483246410587
+hanseniase,clima (defasado),0.33467679860349236
+hanseniase,municipio (categorico),0.05247782539780155
+hanseniase,sazonalidade (mes-alvo),0.008583657546479969
+hanseniase,socioeconomico (estatico),0.13421338922246193
+hepatite,alvo (lags/rolling),0.5798980752386426
+hepatite,clima (defasado),0.27287611766520065
+hepatite,municipio (categorico),0.02779870585447367
+hepatite,sazonalidade (mes-alvo),0.008206597438670653
+hepatite,socioeconomico (estatico),0.1112204979361638
+hiv_aids,alvo (lags/rolling),0.6797804576775356
+hiv_aids,clima (defasado),0.19512970062012025
+hiv_aids,municipio (categorico),0.023373940234628257
+hiv_aids,sazonalidade (mes-alvo),0.0071504666939923795
+hiv_aids,socioeconomico (estatico),0.09456542313946566
+sifilis,alvo (lags/rolling),0.5500633199651588
+sifilis,clima (defasado),0.26963539321017904
+sifilis,municipio (categorico),0.026794575574894636
+sifilis,sazonalidade (mes-alvo),0.00960677176386349
+sifilis,socioeconomico (estatico),0.1438999492090072
+tuberculose,alvo (lags/rolling),0.6005105435711043
+tuberculose,clima (defasado),0.21501798623179277
+tuberculose,municipio (categorico),0.044699517643459
+tuberculose,sazonalidade (mes-alvo),0.00773816948230751
+tuberculose,socioeconomico (estatico),0.13203378378801667
