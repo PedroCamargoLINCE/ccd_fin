@@ -4,6 +4,11 @@ Síntese consolidada do pipeline: baselines (SeasonalNaive, SeasonalMA3, SARIMA,
 
 `final_summary.csv` traz, por modelo × doença × horizonte: MAE, RMSE, R², SMAPE, recall/precisão de eventos não-zero, e desvio-padrão do MAE entre origens (`mae_std_origin`) e entre sementes (`mae_std_seed`, preenchido só em runs multi-seed). DTW por modelo × doença em `dtw_by_model.csv`.
 
+> ⚠️ **Leia antes de citar os vencedores:** o ranking por MAE é enganoso nas doenças
+> fortemente zero-infladas. Em hanseníase (88% de zeros) o modelo vencedor prevê
+> praticamente zero sempre e detecta só 18,5% dos eventos reais. Ver
+> [`docs/RESSALVA_ZERO_INFLACAO.md`](../docs/RESSALVA_ZERO_INFLACAO.md).
+
 ## Resumo agregado (MAE médio entre origens)
 
 | model          |    1 |    3 |    6 |   12 |

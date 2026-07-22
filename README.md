@@ -92,6 +92,11 @@ models e viesavam a comparação com os baselines de árvore:
 
 ## 5. Modelos implementados
 
+> **Detalhes completos de arquitetura e hiperparâmetros** (janelas de entrada, horizonte,
+> batch size, learning rate, épocas, topologia exata de cada modelo, defaults herdados da
+> biblioteca e tuning) em **[`docs/ARQUITETURAS.md`](docs/ARQUITETURAS.md)** — é a referência
+> para a seção de métodos do artigo.
+
 ### Baselines (`src/models/baselines.py`)
 - **SeasonalNaive**, **SeasonalMA3** — âncoras de sanidade
 - **AutoARIMA/SARIMA** (`statsforecast`, sazonalidade 12) — cobre ARIMA (caso especial)
@@ -112,8 +117,9 @@ re-rodado** sempre que o conjunto de modelos mudar — ver `results/ensemble/REA
 
 ### Não implementado (roadmap)
 - **ZINB explícito** para hanseníase/hepatite/sífilis (zero-inflação extrema).
-- **Importância de covariáveis** (SHAP/feature_importances_ dos GBDT, variable
-  selection do TFT) — pendente, precisa dos modelos treinados salvos.
+- **Importância de covariáveis nos deep models** — o hook do TFT (`interpret_output`)
+  já está no código; falta rodar em GPU para gerar os números. Para as árvores já está
+  feito: ver `results/tables/covariate_importance/`.
 - **ST-GNN**: com 23 nós, ganho marginal vs. custo de integração — descartado.
 
 ## 6. Resultados
@@ -197,7 +203,8 @@ preenche `mae_std_seed` automaticamente.
 
 ## 10. Próximos passos
 
-- **Importância de covariáveis** — feature importances dos GBDT + variable selection do TFT.
+- **Importância de covariáveis nos deep models** — rodar `python -m src.models.deep_panel <doenca> tft 42`
+  em GPU (as árvores já estão em `results/tables/covariate_importance/`).
 - **ZINB** explícito para hanseníase/hepatite/sífilis.
 - **Hyperparameter search** com Optuna (hidden_size, dropout, lr, encoder_length).
 - **Conformal prediction** post-hoc para intervalos calibrados.

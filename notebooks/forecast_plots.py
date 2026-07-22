@@ -49,8 +49,8 @@ OUT.mkdir(parents=True, exist_ok=True)
 for d in DISEASES:
     (OUT / d).mkdir(exist_ok=True)
 
-DEEP_MODELS = ["tft", "nhits", "deepar"]
-BASELINE_MODELS = ["seasonal_naive", "seasonal_ma3", "sarima", "lgbm", "catboost"]
+DEEP_MODELS = ["tft", "nhits", "deepar", "lstm", "gru"]
+BASELINE_MODELS = ["seasonal_naive", "seasonal_ma3", "sarima", "lgbm", "catboost", "xgboost", "prophet"]
 
 ORIGINS = ["origin_201912", "origin_202012", "origin_202112", "origin_202212"]
 ORIGIN_DATES = {
@@ -69,9 +69,13 @@ PALETTE = {
     "sarima":         "#3c6e91",
     "lgbm":           "#1f4e79",
     "catboost":       "#0d2c47",
+    "xgboost":        "#5b8db8",
+    "prophet":        "#8c8c8c",
     "tft":            "#d62728",
     "nhits":          "#ff7f0e",
     "deepar":         "#e377c2",
+    "lstm":           "#2ca02c",
+    "gru":            "#9467bd",
 }
 
 # %% [markdown]
