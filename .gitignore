@@ -57,3 +57,7 @@ Thumbs.db
 
 # CatBoost training artifacts
 catboost_info/
+
+# pacotes de entrega (nao versionar)
+ccd_*/
+ccd_*.zip
